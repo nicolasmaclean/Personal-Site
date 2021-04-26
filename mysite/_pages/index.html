@@ -1,0 +1,43 @@
+---
+layout: default
+is_post: false
+permalink: /
+
+title: Portfolio
+---
+
+<div class="flex-row portfolio">
+    <div class="flex-col portfolio-col-big">
+        {% for project in site.data.portfolio.Big %}
+            <div class="container">
+                <img src="{{ site.pictureurl | append: project.thumbnail }}" class="portfolio-thumbnail"/>
+                                   
+                <div class="portfolio-image-text">
+                    <h3 class="no-margin"> <b>{{ project.title }} </b> </h3>
+                    <p class="no-margin" > {{ project.tools_str }}</p>
+                </div>
+                
+                <video class="portfolio-video" autoplay loop>
+                    <source src="{{ site.pictureurl | append: project.video}}" type="video/mp4">
+                </video>
+            </div>
+            {% endfor %}
+        </div>
+        
+        <div class="flex-col portfolio-col-small">
+            {% for project in site.data.portfolio.Small %}
+            <div class="container">
+                <img src="{{ site.pictureurl | append: project.thumbnail }}" class="portfolio-thumbnail"/>
+                
+                <div class="portfolio-image-text">
+                    <h3 class="no-margin" > <b>{{ project.title }} </b> </h3>
+                    <p class="no-margin" > {{ project.tools_str }}</p>
+                </div>
+
+                <video class="portfolio-video" autoplay loop>
+                    <source src="{{ site.pictureurl | append: project.video}}" type="video/mp4">
+                </video>
+            </div>
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,47 @@
+---
+layout: default
+is_post: false
+permalink: /about/
+
+title: About
+---
+
+
+<div class="grid-about">
+    <div class="grid-item-header text-highlight">
+        <h1> Nick Maclean </h1>
+    </div>
+
+    <div class="grid-item-left">
+        <div class="flex-row">
+            <div class=flex-row-li> <h2 class="fas fa-school"></h2> </div>
+            <div class=flex-row-li> <h2> UT Dallas </h2> </div>
+        </div>
+
+        <img src="{{ site.pictureurl | append: "portrait.png"}}"> </img>
+    </div>
+
+    <div class="grid-item-right">
+        <p>
+            I am a <span class="text-highlight"> Computer Science </span> and <span class="text-highlight"> Arts/Technology (ATEC) </span> student at The University of Texas at Dallas. <br>
+        </p>
+        
+        <p>
+            I am first and foremost a programmer, but I do quite enjoy 3d modelling and other forms of creation. I love getting my hands dirty with some code and find the intersection of programming and art absolutely fascinating.<br>
+        </p>
+        
+        <p>
+            I am most familiar with the Unity Game Engine and HTML/CSS/JS, but I am reasonably capable with Java, C++, and Python. I also have experience with Blender, Maya, and Photoshop <br>
+        </p>
+
+        <p>
+            <b> Github: <a href="{{site.github_link}}" target="_blank" class="link-clean link-highlight"> {{site.github_username}} </a> </b>
+        </p>
+
+        <p>
+            <b class=text-highlight> {{site.email}} </b>
+        </p>
+    </div>
+</div>
+
+<!-- {% include socials.html %} -->

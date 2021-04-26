@@ -1,0 +1,26 @@
+// css grid
+.grid-about
+{
+    display: grid;
+    grid-template-areas:
+        'name name'
+        'left right';
+    column-gap: .8em;
+    grid-template-columns: 50% 50%;
+    margin-top: 2em;
+}
+
+.grid-item-left
+{
+    grid-area: left;
+}
+
+.grid-item-right
+{
+    grid-area: right;
+}
+
+.grid-item-name
+{
+    grid-area: name;
+}

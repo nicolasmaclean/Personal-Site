@@ -1,12 +1,108 @@
+// global document colors
+$color_primary: #282929;
+$color_secondary: #e2e2d8;
+// $color_secondary: #282929;
+// $color_primary: #f1f1f1;
+$color_tertiary: rgb(108, 206, 207);
+$color_quad: rgb(238, 163, 64);
+$color_black: #1d1d1d;
+
 *
 {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-  
+
 body
 {
     font-size: 30px;
     font-family: Arial;
-}  
+    background-color: $color_primary;
+    color: $color_secondary;
+    text-align: left;
+}
+
+main
+{
+    margin-left: 12%;
+    width: 75%;
+}
+
+h1
+{
+    font-size: 2.1em;
+}
+
+h2
+{
+    font-size: 1.25em;
+}
+
+h3
+{
+    font-size: 1em;
+    font-weight: normal;
+}
+
+p
+{
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.container
+{
+    position: relative;
+}
+
+.no-margin
+{
+    margin: 0;
+}
+
+.text-highlight
+{
+    color: $color_tertiary;
+}
+
+// links
+a:visited
+{
+    color: default;
+}
+
+.link-clean
+{
+    text-decoration: none;
+}
+
+.link-highlight
+{
+    color: $color_tertiary;
+    transition: color .2s;
+}
+
+.link-highlight:hover
+{
+    color: $color_quad;
+}
+
+// horizontal unordered lists
+.flex-row
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row-li
+{
+    margin-left: .25em;
+    margin-right: .5em;
+}

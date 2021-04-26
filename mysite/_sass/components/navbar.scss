@@ -1,0 +1,48 @@
+// whole nav bar
+nav
+{
+    background-color: $color_primary;
+    box-shadow: 0px 1px 10px $color_black;
+    padding: .5em 1em;
+}
+
+// header in nav bar
+.nav-links > .nav-title
+{
+    border-right-style: solid;
+    border-right-color: $color_primary;
+    border-right-width: 3px;
+    padding-right: .4em;
+}
+
+// nav bar list
+.nav-links
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+// nav bar list items
+.nav-links > li
+{
+    display: inline-block;
+    padding-left: .2em;
+    padding-right: .2em;
+}
+
+// nav bar active link
+.nav-links > li > .active-page
+{
+    color: $color_tertiary;
+}
+
+// nav bar links
+.nav-links a
+{
+    text-decoration: none;
+    color: $color_secondary;
+    font-size: 1em;
+    // width: 100px;
+    text-align: center;
+}

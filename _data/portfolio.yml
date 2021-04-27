@@ -1,7 +1,7 @@
 Big:
   - title: Intro to Games - Term Project
     thumbnail: Racer.png
-    video: Racer.mp4
+    video: Racer
     tools_str: Unity, Maya, and Substance Painter
     tools:
       - Unity
@@ -10,7 +10,7 @@ Big:
 
   - title: Cellular Automata
     thumbnail: CellularAutomata.png
-    video: CellularAutomata.mp4
+    video: CellularAutomata
     tools_str: HTML, CSS, JavaScript, and React
     tools:
       - HTML
@@ -21,14 +21,14 @@ Big:
 Small:
   - title: Impossible Cube
     thumbnail: ImpossibleCube.png
-    video: ImpossibleCube.mp4
+    video: ImpossibleCube
     tools_str: Blender
     tools:
       - Blender
 
   # - title: Space Colonization
   #   thumbnail: SpaceColonization.png
-  #   hover: SpaceColonization.mp4
+  #   hover: SpaceColonization
   #   tools_str: HTML, CSS, and JavaScript
   #   tools:
   #     - HTML

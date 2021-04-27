@@ -35,7 +35,7 @@ them: null
 plugins:
   - jekyll-feed
 
-include: [_pages, _assets]
+include: [_pages, _assets, _scripts]
 sass:
   style: compressed
   sass_dir: _sass

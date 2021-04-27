@@ -106,3 +106,12 @@ a:visited
     margin-left: .25em;
     margin-right: .5em;
 }
+
+// responsiveness
+@media (max-width: 720px)
+{
+    .phone-no-opacity
+    {
+        display: none;
+    }
+}

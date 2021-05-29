@@ -1,0 +1,12 @@
+---
+title: home
+---
+<!-- The file path in this page is different from any of the other pages. '../' does not need to be pre-appended to a file path. -->
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title> Redirecting to portfolio </title>
+{% assign redirect_target = "/portfolio/" %}
+{% assign my_var = "123" %}
+<meta http-equiv="refresh" content="0; URL={{ site.url | append: redirect_target }}">
+<link rel="canonical" href="{{ site.url | append: redirect_target }}">

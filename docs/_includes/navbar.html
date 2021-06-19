@@ -1,19 +1,22 @@
 <nav>
-    <ul class="nav-links">
-        <li class="nav-title">
+    <div class="nav-links-left">
+        <div class="nav-title">
             <a href="/"> {{site.title}} </a>
-        </li>
-        <li>
+        </div>
+    </div>
+
+    <div class="nav-links-right">
+        <div>
             <a href="/about" {% if page.title == "About" %} class="active-page"{% endif %}> About </a>
-        </li>
-        <!-- <li>
+        </div>
+        <!-- <div>
             <a href="/contact" {% if page.title == "Contact" %} class="active-page"{% endif %}> Contact </a>
-        </li> -->
-        <li>
+        </div> -->
+        <div>
             <a href="/portfolio" {% if page.title == "Portfolio" %} class="active-page"{% endif %}> Portfolio </a>
-        </li>
+        </div>
         <!-- <li>
             <a href="/blog" {% if page.title == "Blog" %} class="active-page"{% endif %}> Blog </a>
-        </li> -->
-    </ul>
+        </ddiv> -->
+    </div>
 </nav>

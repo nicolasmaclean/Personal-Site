@@ -16,11 +16,12 @@ $color_black: #1d1d1d;
 
 body
 {
-    font-size: 30px;
+    font-size: 1.5em;
     font-family: Arial;
     background-color: $color_primary;
     color: $color_secondary;
     text-align: left;
+    line-height: 2rem;
 }
 
 main
@@ -31,12 +32,12 @@ main
 
 h1
 {
-    font-size: 2.1em;
+    font-size: 3rem;
 }
 
 h2
 {
-    font-size: 1.25em;
+    font-size: 2rem;
 }
 
 h3
@@ -47,8 +48,8 @@ h3
 
 p
 {
-    margin-top: .5em;
-    margin-bottom: .5em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .container

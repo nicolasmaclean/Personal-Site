@@ -5,9 +5,16 @@
     grid-template-areas:
         'name name'
         'left right';
-    column-gap: .8em;
+    column-gap: 1rem;
+    row-gap: 1rem;
     grid-template-columns: 50% 50%;
-    margin-top: 2em;
+
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    width: 75%;
 }
 
 .grid-item-left
@@ -23,4 +30,29 @@
 .grid-item-name
 {
     grid-area: name;
+}
+
+@media only screen and (max-width: 1050px)
+// small desktop or big tablet, tablet, and smartphone
+{
+    .grid-about
+    {
+        grid-template-areas:
+            'name name'
+            'left left'
+            'right right';
+        position: relative;
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+        margin-top: 2rem;
+        width: 100%;
+    }
+}
+
+@media (max-height: 850px)
+{
+    .grid-about
+    {
+        top: 55%;
+    }
 }

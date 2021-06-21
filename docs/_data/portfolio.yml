@@ -1,5 +1,5 @@
-Big:
-  - title: Intro to Games - Term Project
+Projects:
+  - title: Sand Mountain
     thumbnail: Racer.png
     video: Racer
     tools_str: Unity, Maya, and Substance Painter
@@ -7,6 +7,7 @@ Big:
       - Unity
       - Maya
       - Substance Painter
+    description: Compositing magic was used to produce non-Euclidean geometry. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
 
   - title: Cellular Automata
     thumbnail: CellularAutomata.png
@@ -17,14 +18,44 @@ Big:
       - CSS
       - JavaScript
       - React
+    description: Compositing magic was used to produce non-Euclidean geometry. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
 
-Small:
   - title: Impossible Cube
     thumbnail: ImpossibleCube.png
     video: ImpossibleCube
     tools_str: Blender
     tools:
       - Blender
+    description: Compositing magic was used to produce non-Euclidean geometry. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+    
+  - title: Sand Mountain
+    thumbnail: Racer.png
+    video: Racer
+    tools_str: Unity, Maya, and Substance Painter
+    tools:
+      - Unity
+      - Maya
+      - Substance Painter
+    description: Compositing magic was used to produce non-Euclidean geometry. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+
+  - title: Cellular Automata
+    thumbnail: CellularAutomata.png
+    video: CellularAutomata
+    tools_str: HTML, CSS, JavaScript, and React
+    tools:
+      - HTML
+      - CSS
+      - JavaScript
+      - React
+    description: Compositing magic was used to produce non-Euclidean geometry. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+
+  - title: Impossible Cube
+    thumbnail: ImpossibleCube.png
+    video: ImpossibleCube
+    tools_str: Blender
+    tools:
+      - Blender
+    description: Compositing magic was used to produce non-Euclidean geometry. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
 
   # - title: Space Colonization
   #   thumbnail: SpaceColonization.png
@@ -34,3 +65,4 @@ Small:
   #     - HTML
   #     - CSS
   #     - JavaScript
+  #   description: Compositing magic was used to produce non-Euclidean geometry. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.

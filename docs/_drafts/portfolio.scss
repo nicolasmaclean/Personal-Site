@@ -1,0 +1,43 @@
+.portfolio
+{
+    margin-top: 2em;
+    justify-content: space-between;
+}
+
+.portfolio-col-big
+{
+    width: 59.25%;
+}
+
+.portfolio-col-small
+{
+    width: 40%;
+}
+
+.portfolio-video
+{
+    width: 100%;
+    filter: brightness(95%)
+}
+
+.portfolio-image-text
+{
+    position: absolute;
+    bottom: .8rem;
+    left: .75rem;
+
+    text-shadow: 2px 3px 10px $color_black;
+}
+
+@media (max-width: 1200px)
+{
+    .portfolio
+    {
+        flex-direction: column;
+    }
+
+    .portfolio-col-big, .portfolio-col-small
+    {
+        width: 100%
+    }
+}

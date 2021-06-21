@@ -5,9 +5,44 @@ permalink: /portfolio/
 
 title: Portfolio
 ---
-<script src="../_scripts/image-video-hover.js"></script>
 
-<div class="flex-row portfolio">
+{% assign ext_mp4 = ".mp4" %}
+{% assign ext_webm = ".webm" %}
+<!-- <script src="../_scripts/image-video-hover.js"></script> -->
+
+<div class="portfolio">
+    <div class="portfolio-focus">
+        {% assign indexID = 0 %}
+        {% for project in site.data.portfolio.Projects %}
+            <div class="portfolio-project" id="portfolio-project-{% increment indexID %}">
+                <video class="portfolio-video" poster="{{ site.pictureurl | append: project.thumbnail }}" loop muted>
+                    <source src="{{ site.pictureurl | append: project.video | append: ext_mp4 }}" type="video/mp4">
+                    <source src="{{ site.pictureurl | append: project.video | append: ext_webm }}" type="video/webm">
+                    Your browser will not load/play .mp4 files.
+                </video>
+                <!-- <img src="{{ site.pictureurl | append: project.thumbnail }}" /> -->
+                <div>
+                    <h2 class="no-margin"> <b> {{ project.title }} </b> </h2>
+                    <h3 class="no-margin"> {{ project.tools_str }} </h3>
+                    <p class="no-margin"> {{ project.description }} </p>
+                </div>
+            </div>
+            
+        {% endfor %}
+    </div>
+    
+    <div class="portfolio-carousel">
+        {% assign indexId = 0 %}
+        {% for project in site.data.portfolio.Projects %}
+            <a href="#portfolio-project-{% increment indexId %}">
+                <img src="{{ site.pictureurl | append: project.thumbnail }}" />
+            </a>
+        {% endfor %}
+    </div>
+</div>
+
+
+<!-- <div class="flex-row portfolio">
     <div class="flex-col portfolio-col-big">
         {% assign ext_mp4 = ".mp4" %}
         {% assign ext_webm = ".webm" %}
@@ -22,7 +57,6 @@ title: Portfolio
                 
                 <div class="portfolio-image-text">
                     <h3 class="no-margin"> <b> {{ project.title }} </b> </h3>
-                    <p class="no-margin phone-no-opacity"> {{ project.tools_str }} </p>
                 </div>
             </div>
             {% endfor %}
@@ -30,7 +64,6 @@ title: Portfolio
         
         <div class="flex-col portfolio-col-small">
             {% for project in site.data.portfolio.Small %}
-            <!-- <a href="../about/"> -->
                 <div class="container portfolio-project">
                     <video class="portfolio-video" poster="{{ site.pictureurl | append: project.thumbnail }}" loop muted>
                         <source src="{{ site.pictureurl | append: project.video | append: ext_mp4 }}" type="video/mp4">
@@ -40,10 +73,8 @@ title: Portfolio
                     
                     <div class="portfolio-image-text">
                         <h3 class="no-margin" > <b>{{ project.title }} </b> </h3>
-                        <p class="no-margin phone-no-opacity" > {{ project.tools_str }}</p>
                     </div>
                 </div>
-            <!-- </a> -->
         {% endfor %}
     </div>
-</div>
+</div> -->

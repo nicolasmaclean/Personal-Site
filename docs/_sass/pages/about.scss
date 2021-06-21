@@ -30,6 +30,12 @@
 .grid-item-name
 {
     grid-area: name;
+    margin-bottom: 1rem;
+}
+
+.grid-item-name > h1
+{
+    margin-bottom: 1rem;
 }
 
 @media only screen and (max-width: 1050px)

@@ -9,17 +9,28 @@
     row-gap: 1rem;
     grid-template-columns: 50% 50%;
 
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-
-    width: 75%;
+    margin-top: 3rem;
+    width: 100%;
 }
 
 .grid-item-left
 {
     grid-area: left;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-item-left > img
+{
+    width: 50%;
+    max-width: 300px;
+}
+
+.grid-item-left > p
+{
+    margin-top: .5rem;
 }
 
 .grid-item-right
@@ -31,6 +42,9 @@
 {
     grid-area: name;
     margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .grid-item-name > h1
@@ -47,10 +61,7 @@
             'name name'
             'left left'
             'right right';
-        position: relative;
-        -ms-transform: translateY(0%);
-        transform: translateY(0%);
-        margin-top: 2rem;
+
         width: 100%;
     }
 }

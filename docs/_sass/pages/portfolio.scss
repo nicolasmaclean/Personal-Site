@@ -23,7 +23,12 @@
     width: 90vw;
     margin-bottom: 2rem;
 
-    scrollbar-color: rgba(0,0,0,0) rgba(0,0,0,0);
+    scrollbar-width: none;
+}
+
+.portfolio-focus::-webkit-scrollbar
+{
+    display: none;
 }
 
 .portfolio-project
@@ -72,6 +77,16 @@
     scrollbar-color: #e4e4d923 rgba(0,0,0,0);
 }
 
+.portfolio-carousel::-webkit-scrollbar
+{
+    background: rgba(0,0,0,0);
+}
+
+.portfolio-carousel::-webkit-scrollbar-thumb
+{
+    background: #e4e4d923;
+}
+
 .portfolio-carousel > a > img
 {
     max-width: 25vw;
@@ -79,6 +94,23 @@
     width: auto;
     height: auto;
     margin: 0 .5vw;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: .2s all ease-in;
+}
+
+.portfolio-carousel > a > img:hover
+{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    scale: 105%;
+}
+
+.portfolio-carousel > a > img:active
+{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    scale: 100%;
 }
 
 @media (max-width: 850px)

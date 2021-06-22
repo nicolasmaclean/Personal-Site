@@ -96,7 +96,7 @@
     margin: 0 .5vw;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    transition: .2s all ease-in;
+    transition: .2s all ease-in-out;
 }
 
 .portfolio-carousel > a > img:hover
@@ -110,7 +110,7 @@
 {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
-    scale: 100%;
+    scale: 95%;
 }
 
 @media (max-width: 850px)

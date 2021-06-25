@@ -1,7 +1,9 @@
 <nav>
     <div class="nav-links-left">
         <div class="nav-title">
-            <a href="/"> {{site.title}} </a>
+            <a href="/"> 
+                <b> {{site.title}} </b>
+            </a>
         </div>
     </div>
 
@@ -15,9 +17,6 @@
                 {% endif %}
                 > About </a>
             </div>
-            <!-- <div>
-                <a href="/contact" {% if page.title == "Contact" %} class="text-highlight"{% endif %}> Contact </a>
-            </div> -->
             <div>
                 <a href="/portfolio"
                     {% if page.title == "Portfolio" %}
@@ -27,8 +26,5 @@
                     {% endif %}
                 > Portfolio </a>
         </div>
-        <!-- <li>
-            <a href="/blog" {% if page.title == "Blog" %} class="text-highlight"{% endif %}> Blog </a>
-        </div> -->
     </div>
 </nav>

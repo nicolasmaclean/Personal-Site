@@ -1,15 +1,14 @@
 // global document colors
-$color_primary: #282929;
-$color_secondary: #e2e2d8;
-// $color_secondary: #282929;
-// $color_primary: #f1f1f1;
-$color_tertiary: rgb(108, 206, 207);
-$color_quad: rgb(238, 163, 64);
-$color_f: #FF3864;
-$color_s: #F194B4;
-$color_sv: #c1292e;
-$color_black: #1d1d1d;
+$color_black: #1e1f1f;
+$color_white: #fafafa;
+$color_orange: #f5ab35;
 
+$color_primary: #282929;
+$color_secondary: #fafafa;
+$color_blue_dark: #3455db;
+$color_blue_light: #19b5fe;
+
+// default document formatting
 *
 {
     box-sizing: border-box;
@@ -74,14 +73,30 @@ p
     margin: 0;
 }
 
-.text-highlight
+// colors
+.text-primary
 {
-    color: $color_tertiary;
+    color: $color_primary;
 }
 
-.text-highlight-quad
+.text-secondary
 {
-    color: $color_s;
+    color: $color_secondary;
+}
+
+.text-blue-light
+{
+    color: $color_blue_light;
+}
+
+.text-blue-dark
+{
+    color: $color_blue_dark;
+}
+
+.text-orange
+{
+    color: $color_orange;
 }
 
 // links
@@ -97,13 +112,13 @@ a:visited
 
 .link-highlight
 {
-    color: $color_tertiary;
+    color: $color_orange;
     transition: color .2s;
 }
 
 .link-highlight:hover
 {
-    color: $color_quad;
+    color: $color_orange;
 }
 
 // horizontal unordered lists
@@ -123,13 +138,4 @@ a:visited
 {
     margin-left: .25em;
     margin-right: .5em;
-}
-
-// responsiveness
-@media (max-width: 720px)
-{
-    .phone-no-opacity
-    {
-        display: none;
-    }
 }

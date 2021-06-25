@@ -8,27 +8,28 @@ title: Portfolio
 
 {% assign ext_mp4 = ".mp4" %}
 {% assign ext_webm = ".webm" %}
-<!-- <script src="../_scripts/image-video-hover.js"></script> -->
 
 <div class="portfolio">
     <div class="portfolio-focus">
+
         {% assign indexID = 0 %}
         {% for project in site.data.portfolio.Projects %}
             <div class="portfolio-project" id="portfolio-project-{% increment indexID %}">
+                
                 <video class="portfolio-video" muted controls>
-                    <!-- <source src="{{ site.pictureurl | append: project.video | append: ext_webm }}" type="video/webm"> -->
                     <source src="{{ site.pictureurl | append: project.video | append: ext_mp4 }}" type="video/mp4">
                     Your browser will not load/play .mp4 files.
                 </video>
-                <!-- <img src="{{ site.pictureurl | append: project.thumbnail }}" /> -->
+
                 <div>
-                    <h2 class="no-margin"> <b> {{ project.title }} </b> </h2>
+                    <h2 class="no-margin text-blue-light"> <b> {{ project.title }} </b> </h2>
                     <h3 class="no-margin"> {{ project.tools_str }} </h3>
                     <p class="no-margin"> {{ project.description }} </p>
                 </div>
             </div>
             
         {% endfor %}
+
     </div>
     
     <div class="portfolio-carousel">

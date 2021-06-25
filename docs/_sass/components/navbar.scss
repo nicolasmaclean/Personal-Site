@@ -1,8 +1,7 @@
 // whole nav bar
 nav
 {
-    background-color: $color_primary;
-    box-shadow: 0px 1px 10px $color_black;
+    background-color: $color_secondary;
     padding: .5em 10vw;
     display: flex;
     flex-direction: row;
@@ -25,15 +24,10 @@ nav
     margin-left: 2rem;
 }
 
-// header in nav bar
-nav > .nav-title
+.nav-title > a
 {
-    border-right-style: solid;
-    border-right-color: $color_primary;
-    border-right-width: 3px;
-    padding-right: .4em;
+    color: $color_primary;
 }
-
 // nav bar links
 nav a
 {

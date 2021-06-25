@@ -7,13 +7,25 @@
 
     <div class="nav-links-right">
         <div>
-            <a href="/about" {% if page.title == "About" %} class="text-highlight"{% endif %}> About </a>
-        </div>
-        <!-- <div>
-            <a href="/contact" {% if page.title == "Contact" %} class="text-highlight"{% endif %}> Contact </a>
-        </div> -->
-        <div>
-            <a href="/portfolio" {% if page.title == "Portfolio" %} class="text-highlight"{% endif %}> Portfolio </a>
+            <a href="/about"
+                {% if page.title == "About" %}
+                    class="text-blue-dark"
+                {% else %}
+                    class="text-primary"
+                {% endif %}
+                > About </a>
+            </div>
+            <!-- <div>
+                <a href="/contact" {% if page.title == "Contact" %} class="text-highlight"{% endif %}> Contact </a>
+            </div> -->
+            <div>
+                <a href="/portfolio"
+                    {% if page.title == "Portfolio" %}
+                        class="text-blue-dark"
+                    {% else %}
+                        class="text-primary"
+                    {% endif %}
+                > Portfolio </a>
         </div>
         <!-- <li>
             <a href="/blog" {% if page.title == "Blog" %} class="text-highlight"{% endif %}> Blog </a>

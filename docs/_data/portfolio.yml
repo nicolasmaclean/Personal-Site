@@ -3,29 +3,18 @@ Projects:
     thumbnail: CellularAutomata.jpg
     video: CellularAutomata
     tools_str: HTML, CSS, JavaScript, and React
-    tools:
-      - HTML
-      - CSS
-      - JavaScript
-      - React
     description: A flexible cellular automata library rendered using HTML canvas and organized into React components. Save files store simulation rules/states to allow highly customizable simulations.
 
   - title: Sand Mountain
     thumbnail: Racer.jpg
     video: Racer
     tools_str: Unity, Maya, and Substance Painter
-    tools:
-      - Unity
-      - Maya
-      - Substance Painter
     description: A single-level game made almost entirely by me. The models, animations, textures, particle effects, and most of the code were created by myself.
 
   - title: Impossible Cube
     thumbnail: ImpossibleCube.jpg
     video: ImpossibleCube
     tools_str: Blender
-    tools:
-      - Blender
     description: Compositing magic was used to produce the illusion of non-Euclidean geometry.
 
   # - title: Space Colonization

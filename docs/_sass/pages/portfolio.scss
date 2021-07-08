@@ -41,7 +41,6 @@
     align-items: center;
     
     width: 90vw;
-    min-width: 90vw;
 }
 
 .portfolio-project > video
@@ -319,5 +318,36 @@
     {
         font-size: .85rem;
         line-height: 1.3rem;
+    }
+}
+
+// smoll phone
+@media (max-width:410px)
+{
+    // .portfolio-project > div > p
+    // {
+    //     overflow: scroll;
+    // }
+
+    // .portfolio-project > div
+    // {
+    //     overflow-y: scroll;
+    // }
+    
+    // .portfolio-project
+    // {
+    //     overflow-x: hidden;
+    //     overflow-y: scroll;
+    // }
+    
+    // .portfolio-focus
+    // {
+    //     overflow-y: scroll;
+    // }
+    
+    .portfolio
+    {
+        // overflow-y: scroll;
+        margin-top: 4rem;
     }
 }

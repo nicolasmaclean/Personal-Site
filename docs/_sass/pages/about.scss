@@ -73,3 +73,27 @@
         top: 55%;
     }
 }
+
+@media (max-width: 410px)
+{
+    .grid-item-name h1
+    {
+        font-size: 2rem;
+        margin-bottom: .2rem;
+    }
+
+    .grid-item-name h2
+    {
+        font-size: 1.7rem;
+    }
+
+    .grid-item-name
+    {
+        margin-bottom: 0;
+    }
+    
+    .grid-about
+    {
+        margin-top: 1.2rem;
+    }
+}

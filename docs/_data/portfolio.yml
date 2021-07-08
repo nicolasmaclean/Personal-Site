@@ -5,6 +5,18 @@ Projects:
     tools_str: HTML, CSS, JavaScript, and React
     description: A flexible cellular automata library rendered using HTML canvas and organized into React components. Save files store simulation rules/states to allow highly customizable simulations.
 
+  - title: My Portfolio Site
+    thumbnail: Portfolio.jpg
+    video: Portfolio
+    tools_str: HTML, SCSS, JavaScript, and Jekyll
+    description: I created the site you're looking at right now! I utilized Markdown and the liquid templating language to allow easy future updates to content. I also created the design in Adobe XD. 
+
+  - title: Radio
+    thumbnail: Radio.png
+    video: Radio
+    tools_str: Maya
+    description:  This is a high poly model with holding and anti-stretch edges. The front and back plates were modelled using the negative space technique.
+
   - title: Hexadecimal to MIPS disassembler
     thumbnail: MIPS.jpg
     video: MIPS
@@ -22,9 +34,3 @@ Projects:
     video: Racer
     tools_str: Unity, Maya, and Substance Painter
     description: A single-level game made almost entirely by me. The models, animations, textures, particle effects, and most of the code were created by myself.
-
-  - title: Radio
-    thumbnail: Radio.png
-    video: Radio
-    tools_str: Maya
-    description:  This is a high poly model with holding and anti-stretch edges. The front and back plates were modelled using the negative space technique.

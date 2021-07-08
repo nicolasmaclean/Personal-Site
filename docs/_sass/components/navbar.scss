@@ -59,3 +59,22 @@ nav a:hover
         font-size: 1.1rem;
     }
 }
+
+// smoll phone
+@media (max-width: 410px)
+{
+    .nav-title > a
+    {
+        font-size: 1.1rem;
+    }
+
+    .nav-links-right > div > a
+    {
+        font-size: .95rem;
+    }
+
+    .nav-links-right > div
+    {
+        margin-left: .4rem;
+    }
+}

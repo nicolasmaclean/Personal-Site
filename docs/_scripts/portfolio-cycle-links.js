@@ -1,19 +1,20 @@
 window.addEventListener('load', (event) =>
 {
-    var projects = document.getElementsByClassName('portfolio-focus')[0];
-    var projectAmt = projects.childElementCount;
-    var projectsX = [];
-
-    // stores offset foreach project
-    for (let x = 0; x < projects.childElementCount; x++)
-    {
-        var child = projects.children[x];
-        projectsX.push(child.offsetLeft);
-    }
     
     // clicks the next image link
     function cycle(amt)
     {
+        var projects = document.getElementsByClassName('portfolio-focus')[0];
+        var projectAmt = projects.childElementCount;
+        var projectsX = [];
+    
+        // stores offset foreach project
+        for (let x = 0; x < projects.childElementCount; x++)
+        {
+            var child = projects.children[x];
+            projectsX.push(child.offsetLeft);
+        }
+
         // finds the current element being viewed
         var closest = 0;
         var curOffset = projects.scrollLeft;
@@ -37,8 +38,6 @@ window.addEventListener('load', (event) =>
         {
             closest %= projectAmt;
         }
-
-        console.log(closest, projectAmt);
 
         // makes the move
         var nextLink = projects.children[closest];
@@ -71,8 +70,8 @@ window.addEventListener('load', (event) =>
     }
 
     // adds events
-    var leftArrow = document.getElementsByClassName('arrow-left')[0];
-    var rightArrow = document.getElementsByClassName('arrow-right')[0];
+    var leftArrow = document.getElementsByClassName('arrow-left')[0].parentElement;
+    var rightArrow = document.getElementsByClassName('arrow-right')[0].parentElement;
 
     leftArrow.addEventListener('click', (event) =>
     {

@@ -15,7 +15,7 @@ Projects:
     thumbnail: ImpossibleCube.jpg
     video: ImpossibleCube
     tools_str: Blender
-    description: Compositing magic was used to produce the illusion of non-Euclidean geometry.
+    description: Compositing magic was used to produce the illusion of non-Euclidean geometry. There were 2 scenes within the cube and each one was in its own layer. Compositing chose which of the layers to display according to which face of the cube was being viewed through.
 
   - title: Sand Mountain
     thumbnail: Racer.jpg
@@ -27,4 +27,4 @@ Projects:
     thumbnail: Radio.png
     video: Radio
     tools_str: Maya
-    description: This radio was created for Modeling and Texturing 1 during the 2021 Summer semester. This is a high poly model with holding and anti-stretch edges. The front and back plates were modelled using the negative space technique.
+    description:  This is a high poly model with holding and anti-stretch edges. The front and back plates were modelled using the negative space technique.

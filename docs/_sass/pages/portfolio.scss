@@ -41,6 +41,7 @@
     align-items: center;
     
     width: 90vw;
+    min-width: 90vw;
 }
 
 .portfolio-project > video
@@ -121,6 +122,13 @@
     -moz-transform: scale(95%);
     -webkit-transform: scale(95%);
     transform: scale(95%);
+}
+
+.arrow-wrapper
+{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .arrow-left, .arrow-right
@@ -204,6 +212,18 @@
         flex-direction: column;
     }
 
+    .portfolio-project > div
+    {
+        max-width: none;
+        width: auto;
+        margin-top: 1rem;
+    }
+
+    .portfolio-project > video
+    {
+        max-width: 80vw;
+    }
+
     // TODO make arrows bigger
 }
 
@@ -212,7 +232,7 @@
 {
     .portfolio-project
     {
-        min-width: 95vw;
+        min-width: 90vw;
     }
 
     .portfolio-project > video
@@ -245,6 +265,53 @@
     .portfolio-project > div > h3
     {
         font-size: 1.15rem;
+        line-height: 1rem;
+    }
+
+    .portfolio-project > div > p
+    {
+        font-size: .85rem;
+        line-height: 1.3rem;
+    }
+
+    .arrow-left, .arrow-right
+    {
+        width: 4vw;
+        height: 11vw;
+        margin-bottom: 0;
+        margin-top: .4rem;
+        margin-right: .5rem;
+        margin-left: .5rem;
+    }
+
+    .portfolio-carousel-wrapper
+    {
+        margin-left: -3vw;
+    }
+}
+
+// phone - landscape orientation
+@media (max-height: 500px)
+{
+    .portfolio-project
+    {
+        flex-direction: row;
+    }
+
+    .portfolio-project > div
+    {
+        max-height: 45vh;
+        overflow-y: scroll;
+    }
+    
+    .portfolio-project > div > h2
+    {
+        font-size: 1.3rem;
+    }
+
+    .portfolio-project > div > h3
+    {
+        font-size: 1.1rem;
         line-height: 1rem;
     }
 

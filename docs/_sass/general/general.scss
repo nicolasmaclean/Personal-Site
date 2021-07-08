@@ -113,8 +113,9 @@ a:visited
 .link-highlight
 {
     color: $color_orange;
-    transition: all .2s;
+    transition: all .2s ease-in-out;
     border-bottom: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 2px;
 }
 
 .link-highlight:hover

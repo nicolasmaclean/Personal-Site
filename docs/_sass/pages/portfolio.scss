@@ -7,6 +7,9 @@
     position: fixed;
     top: 50%;
     -ms-transform: translateY(-45%);
+    -moz-transform: translateY(-45%);
+    -webkit-transform: translateY(-45%);
+    -o-transform: translateY(-45%);
     transform: translateY(-45%);
 }
 
@@ -102,14 +105,22 @@
 {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
-    scale: 105%;
+    -o-transform: scale(105%);
+    -ms-transform: scale(105%);
+    -moz-transform: scale(105%);
+    -webkit-transform: scale(105%);
+    transform: scale(105%);
 }
 
 .portfolio-carousel > a > img:active
 {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
-    scale: 95%;
+    -o-transform: scale(95%);
+    -ms-transform: scale(95%);
+    -moz-transform: scale(95%);
+    -webkit-transform: scale(95%);
+    transform: scale(95%);
 }
 
 .arrow-left, .arrow-right
@@ -134,17 +145,47 @@
 
 .arrow-right
 {
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 
-.arrow-left:hover, .arrow-right:hover
+.arrow-right:hover
 {
-    scale: 105%;
+    -ms-transform: rotate(180deg) scale(105%);
+    -webkit-transform: rotate(180deg) scale(105%);
+    -moz-transform: rotate(180deg) scale(105%);
+    -o-transform: rotate(180deg) scale(105%);
+    transform: rotate(180deg) scale(105%);
 }
 
-.arrow-left:active, .arrow-right:active
+.arrow-right:active
 {
-    scale: 95%;
+    -ms-transform: rotate(180deg) scale(95%);
+    -webkit-transform: rotate(180deg) scale(95%);
+    -moz-transform: rotate(180deg) scale(95%);
+    -o-transform: rotate(180deg) scale(95%);
+    transform: rotate(180deg) scale(95%);
+}
+
+.arrow-left:hover
+{
+    -o-transform: scale(105%);
+    -ms-transform: scale(105%);
+    -moz-transform: scale(105%);
+    -webkit-transform: scale(105%);
+    transform: scale(105%) ;
+}
+
+.arrow-left:active
+{
+    -o-transform: scale(95%);
+    -ms-transform: scale(95%);
+    -moz-transform: scale(95%);
+    -webkit-transform: scale(95%);
+    transform: scale(95%);
 }
 
 .portfolio-carousel-wrapper

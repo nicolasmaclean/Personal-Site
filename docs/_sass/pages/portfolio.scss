@@ -64,7 +64,7 @@
 
 .portfolio-carousel
 {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
 
     overflow-x: scroll;
@@ -73,7 +73,6 @@
     scroll-behavior: smooth;
 
     width: 80vw;
-    margin-left:5vw;
     scrollbar-color: #e4e4d923 rgba(0,0,0,0);
 }
 
@@ -113,6 +112,50 @@
     scale: 95%;
 }
 
+.arrow-left, .arrow-right
+{
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: .5rem;
+    margin-left: .5rem;
+
+    width: 2vw;
+    height: 5.5vw;
+
+    background-image: url("../pictures/arrow-left.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    flex-shrink: 0;
+
+    transition: .2s all ease-in-out
+}
+
+.arrow-right
+{
+    transform: rotate(180deg);
+}
+
+.arrow-left:hover, .arrow-right:hover
+{
+    scale: 105%;
+}
+
+.arrow-left:active, .arrow-right:active
+{
+    scale: 95%;
+}
+
+.portfolio-carousel-wrapper
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+// tablets
 @media (max-width: 850px)
 {
     .portfolio-project
@@ -120,62 +163,53 @@
         flex-direction: column;
     }
 
-    // .portfolio-project > div
-    // {
-    //     margin-top: 1rem;
-    //     width: 90vw;
-    // }
-
-    // .portfolio-project > img
-    // {
-    //     width: 90vw;
-    //     max-height: none;
-    //     max-width: none;
-    // }
+    // TODO make arrows bigger
 }
 
+// phones
+@media (max-width: 550px)
+{
+    .portfolio-project
+    {
+        min-width: 95vw;
+    }
 
+    .portfolio-project > video
+    {
+        max-width: 90vw;
+        max-height: none;
+    }
 
-// .portfolio
-// {
-//     margin-top: 2em;
-//     justify-content: space-between;
-// }
+    .portfolio-project > div
+    {
+        min-width: 90vw;
+        margin-top: 1.25rem;
+    }
 
-// .portfolio-col-big
-// {
-//     width: 59.25%;
-// }
+    .portfolio
+    {
+        flex-direction: column-reverse;
+    }
+    
+    .portfolio-carousel
+    {
+        margin-bottom: .75rem;
+    }
 
-// .portfolio-col-small
-// {
-//     width: 40%;
-// }
+    .portfolio-project > div > h2
+    {
+        font-size: 1.4rem;
+    }
 
-// .portfolio-video
-// {
-//     width: 100%;
-//     filter: brightness(95%)
-// }
+    .portfolio-project > div > h3
+    {
+        font-size: 1.15rem;
+        line-height: 1rem;
+    }
 
-// .portfolio-image-text
-// {
-//     position: absolute;
-//     bottom: .8rem;
-//     left: .75rem;
-
-//     text-shadow: 2px 3px 10px $color_black;
-// }
-
-// @media (max-width: 1200px)
-// {
-//     .portfolio
-//     {
-//         flex-direction: column;
-//     }
-
-//     .portfolio-col-big, .portfolio-col-small
-//     {
-//         width: 100%
-//     }
-// }
+    .portfolio-project > div > p
+    {
+        font-size: .85rem;
+        line-height: 1.3rem;
+    }
+}

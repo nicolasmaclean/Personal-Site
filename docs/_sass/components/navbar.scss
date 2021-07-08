@@ -36,3 +36,16 @@ nav a
     font-size: 1.6rem;
     text-align: center;
 }
+
+@media only screen and (max-width: 550px)
+{
+    .nav-title > a
+    {
+        font-size: 1.25rem;
+    }
+
+    .nav-links-right > div > a
+    {
+        font-size: 1.1rem;
+    }
+}

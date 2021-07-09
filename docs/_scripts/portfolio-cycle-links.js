@@ -42,17 +42,16 @@ window.addEventListener('load', (event) =>
         // makes the move
         var nextLink = projects.children[closest];
         nextLink.scrollIntoView(true);
-        
-        
+
         // chrome will only scroll one element at a time, so this uses a timeout, so it won't scroll to the thumbnail till its on the right project
         if (navigator.userAgent.indexOf("Chrome") != -1 )
         {
-            var scrollTarget = nextLink.offsetLeft;
+            var scrollTarget = [nextLink.offsetLeft, nextLink.offsetLeft + nextLink.scrollWidth];
             var curScrollSRC = nextLink.parentElement;
-            
+
             var ScrollInterval = window.setInterval(() =>
             {
-                if (curScrollSRC.scrollLeft === scrollTarget)
+                if (curScrollSRC.scrollLeft === scrollTarget[0] || curScrollSRC.scrollLeft + curScrollSRC.offsetWidth === scrollTarget[1])
                 {
                     nextLink = document.getElementById('portfolio-project-thumbnail-' + closest);
                     nextLink.scrollIntoView(true);

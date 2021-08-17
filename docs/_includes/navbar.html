@@ -1,30 +1,27 @@
 <nav>
     <div class="nav-links-left">
-        <div class="nav-title">
-            <a href="/"> 
-                <b> {{site.title}} </b>
-            </a>
-        </div>
+        <a href="/"> 
+            <b> {{site.title}} </b>
+        </a>
     </div>
 
     <div class="nav-links-right">
-        <div>
-            <a href="/about"
-                {% if page.title == "About" %}
-                    class="text-blue-dark"
-                {% else %}
-                    class="text-primary"
-                {% endif %}
-            > About </a>
-        </div>
-        <div>
-            <a href="/portfolio"
-                {% if page.title == "Portfolio" %}
-                    class="text-blue-dark"
-                {% else %}
-                    class="text-primary"
-                {% endif %}
-            > Portfolio </a>
-        </div>
+        <a href="/essays"
+            {% if page.title == 'Essays' %}
+                class='bold'
+            {% endif %}
+        > Essays </a>
+
+        <a href="/about"
+            {% if page.title == 'About' %}
+                class='bold'
+            {% endif %}
+        > About </a>
+        
+        <a href="/portfolio"
+            {% if page.title == 'Portfolio' %}
+                class='bold'
+            {% endif %}
+        > Portfolio </a>
     </div>
 </nav>

@@ -1,0 +1,15 @@
+---
+---
+
+.portfolio
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
+}
+
+.portfolio-project > img
+{
+    max-width: 100%;
+    width: 100%;
+}

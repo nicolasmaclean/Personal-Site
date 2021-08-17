@@ -1,0 +1,50 @@
+// image size
+.img-20 > img
+{
+    width: 20%;
+}
+
+.img-40 > img
+{
+    width: 40%;
+}
+
+.img-60 > img
+{
+    width: 60%;
+}
+
+.img-80 > img
+{
+    width: 80%;
+}
+
+.img-100 > img
+{
+    width: 100%;
+}
+
+
+// image alignment
+.img-center
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.img-center > figcaption
+{
+    text-align: center;
+}
+
+.img-center > img
+{
+    align-self: center;
+}
+
+
+// defaults
+figcaption
+{
+    margin-top: 1rem;
+}

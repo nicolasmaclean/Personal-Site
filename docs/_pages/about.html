@@ -1,4 +1,5 @@
 ---
+type: page
 permalink: /about/
 custom-css: about
 
@@ -7,9 +8,7 @@ description: This is a page about Nick Maclean and who is.
 ---
 
 <div class="about">
-    <div class="about-picture">
-        <img src="{{ site.pictureurl | append: "portrait.jpg"}}"> </img>
-    </div>
+    {% include image.html type="page" name="portrait.jpg" caption="I'm the one on the left :)" class="about-picture img-center" %}
 
     <div class="about-text">
         <p>
@@ -21,7 +20,7 @@ description: This is a page about Nick Maclean and who is.
         </p>
         
         <p>
-            I am proficent with HTML/CSS/JavaScript with Jekyll and the Unity Game Engine with C#, but I am also reasonable capable with Python, C++, Java, and MIPS. I also have experience with Photoshop, Substance Painter, and modelling in Blender/Maya. <br>
+            I am proficent in HTML/CSS/JavaScript, Jekyll (static website generator), and the Unity Game Engine with C#, but I am also reasonable capable with Python, C++, Java, and MIPS.I also have experience with Photoshop, Substance Painter, and modelling in Blender/Maya. <br>
         </p>
 
     </div>

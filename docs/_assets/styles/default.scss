@@ -15,6 +15,11 @@ main
     height: 100%;
 }
 
+p
+{
+    text-align: justify;
+}
+
 
 // responsiveness
 @media screen and (max-width: 1300px)

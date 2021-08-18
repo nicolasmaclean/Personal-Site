@@ -1,7 +1,6 @@
-<!-- allows easy images. It will automatically add images (and captions) to portfolio projects. the name, image width, and caption can be sent as paramaters. -->
-<!-- *** NOTE indentation in an includes template may result in the output rendering as a code snippet *** -->
-
-{% assign imagePath = "/_assets/portfolio/" | append: page.folder | append: "/" | append: include.name %}
+{% capture imagePath %}
+    {{ "/_assets/" }}{% if include.type == "page" %}{{ "page/" }}{% elsif include.type == "project" %}{{ "project/" }}{{ page.name | split:"." | first}}{{"/"}}{% elsif include.type == "portfolio" %}{{ "project/" }}{{ include.folder }}{{"/"}}{% endif %}{{include.name}}
+{% endcapture %}
 
 {% if include.caption %}
 <figure {% if include.class %} class="{{ include.class }}" {% endif %}>

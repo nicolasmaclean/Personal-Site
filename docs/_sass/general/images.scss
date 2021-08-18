@@ -1,25 +1,25 @@
 // image size
-.img-20 > img
+.pc-20 > img, .pc-20 > video
 {
     width: 20%;
 }
 
-.img-40 > img
+.pc-40 > img, .pc-40 > video
 {
     width: 40%;
 }
 
-.img-60 > img
+.pc-60 > img, .pc-60 > video
 {
     width: 60%;
 }
 
-.img-80 > img
+.pc-80 > img, .pc-80 > video
 {
     width: 80%;
 }
 
-.img-100 > img
+.pc-100 > img, .pc-100 > video
 {
     width: 100%;
 }
@@ -37,7 +37,7 @@
     text-align: center;
 }
 
-.img-center > img
+.img-center > img, .img-center > video
 {
     align-self: center;
 }

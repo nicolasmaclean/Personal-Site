@@ -45,13 +45,6 @@ defaults:
       permalink: /blog/:categories/:title/
   -
     scope:
-      path: _portfolio
-    values:
-      is_portfolio: true
-      layout: project
-      permalink: /portfolio/:folder/
-  -
-    scope:
       type: pages
       path: _pages
     values:

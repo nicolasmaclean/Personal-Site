@@ -9,9 +9,11 @@ description: This Nick Maclean's personal portfolio.
 {% assign str_thumbnail = "thumbnail.jpg" %}
 
 <div class="portfolio">
-    {% for project in site.data.portfolio.Projects %}
+    {% for project in site.data.portfolio.projects %}
         <div class="portfolio-project">
-            <img src="{{ site.portfoliourl | append: project.folder | append: "/thumbnail.jpg"}}">
+            <a href="/projects/{{project.name}}">
+                {% include image.html type="portfolio" folder=project.name name="thumbnail.jpg" class="no-margin" %}
+            </a>
         </div>
     {% endfor %}
 </div>

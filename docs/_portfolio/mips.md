@@ -4,7 +4,7 @@ layout: post
 
 title: A peaceful Tea Time
 description: I consider the different steps of creating a scene.
-tags: [Maya, Blender, Substance Painter, 3D-Modeling]
+tags: [MIPS, programming]
 ---
 
 {% include image.html type="project" name="hero.jpg" class="pc-100 no-side-margin img-center" %}

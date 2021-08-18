@@ -11,8 +11,9 @@ body
 
 main
 {
-    margin: 0 20vw;
+    margin: 0 max(20vw, 50vw-425px);
     height: 100%;
+    max-width: 850px;
 }
 
 p
@@ -26,7 +27,7 @@ p
 {
     main
     {
-        margin: 0 12.5vw;
+        margin: 0 max(12.5vw, 50vw-425px);
     }
 }
 

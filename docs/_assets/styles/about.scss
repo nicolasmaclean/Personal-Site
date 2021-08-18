@@ -31,6 +31,8 @@
 .about-picture > img
 {
     max-width: min(100%, 300px);                // *** NEED TO UPDATE WHEN THE PROFILE PICTURE CHANGES ***
+
+    border-radius: 2%;
 }
 
 .about p

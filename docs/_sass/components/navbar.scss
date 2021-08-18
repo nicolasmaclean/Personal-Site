@@ -2,7 +2,7 @@ nav
 {
     background-color: $clr-secondary;
     margin: -.5rem -.5rem 0 -.5rem;
-    padding: calc(0rem + .5rem) calc(20vw + .5rem);         // the .5rem offsets the default margin that's on the body
+    padding: calc(0rem + .5rem) ( max(20vw, 50vw-425px) + .5rem);         // the .5rem offsets the default margin that's on the body
 }
 
 nav > div
@@ -25,24 +25,16 @@ nav > div
 
 nav a
 {
-    text-decoration: none;
     color: $clr_primary;
     font-size: 1.75rem;
-
-    border-bottom: 3px solid rgba($clr-orange,  0);
-    transition: all ease-in-out .15s;
-}
-
-nav a:hover
-{
-    border-bottom: 3px solid rgba($clr-orange, 1);
+    border-bottom-width: 4px;
 }
 
 @media screen and (max-width: 1300px)
 {
     nav
     {
-        padding: calc(0rem + .5rem) calc(12.5vw + .5rem);
+        padding: calc(0rem + .5rem) ( max(12.5vw, 50vw-425px) + .5rem);
     }
 
     .nav-links-right > div

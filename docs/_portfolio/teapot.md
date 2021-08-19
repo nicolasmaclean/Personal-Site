@@ -1,5 +1,5 @@
 ---
-permalink: /projects/Teapot/
+permalink: /projects/teapot.html
 layout: post
 
 title: A peaceful Tea Time

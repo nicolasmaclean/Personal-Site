@@ -1,5 +1,5 @@
 ---
-permalink: /projects/Portfolio/
+permalink: /projects/portfolio.html
 layout: post
 
 title: My Portfolio

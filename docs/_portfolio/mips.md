@@ -1,5 +1,5 @@
 ---
-permalink: /projects/MIPS/
+permalink: /projects/mips.html
 layout: post
 
 title: MIPS Disassembler (Hex to Assembly)

@@ -1,5 +1,5 @@
 ---
-permalink: /projects/Cellular-Automata/
+permalink: /projects/cellular-automata.html
 layout: post
 
 title: My Cellular Automata Framework

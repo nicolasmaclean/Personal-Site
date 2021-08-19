@@ -1,5 +1,5 @@
 ---
-permalink: /projects/Impossible-Cube/
+permalink: /projects/impossible-cube.html
 layout: post
 
 title: The Impossible Cube

@@ -27,6 +27,11 @@ footer
     background-color: $clr-gray;
 }
 
+footer a
+{
+    border-bottom-width: 0px;
+}
+
 
 // responsiveness
 @media screen and (max-width: 1300px)

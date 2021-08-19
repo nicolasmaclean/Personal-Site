@@ -1,6 +1,12 @@
-{% capture imagePath %}
-    {{ "/_assets/" }}{% if include.type == "page" %}{{ "page/" }}{% elsif include.type == "project" %}{{ "project/" }}{{ page.name | split:"." | first}}{{"/"}}{% elsif include.type == "portfolio" %}{{ "project/" }}{{ include.folder }}{{"/"}}{% endif %}{{include.name}}
-{% endcapture %}
+{% if include.type == "web" %}
+    {% capture imagePath%}
+        {{include.name}}
+    {% endcapture %}
+{% else %}
+    {% capture imagePath %}
+        {{ "/_assets/" }}{% if include.type == "page" %}{{ "page/" }}{% elsif include.type == "project" %}{{ "project/" }}{{ page.name | split:"." | first}}{{"/"}}{% elsif include.type == "portfolio" %}{{ "project/" }}{{ include.folder }}{{"/"}}{% endif %}{{include.name}}
+    {% endcapture %}
+{% endif %}
 
 {% if include.caption %}
 <figure {% if include.class %} class="{{ include.class }}" {% endif %}>

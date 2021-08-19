@@ -1,80 +1,59 @@
-// whole nav bar
 nav
 {
-    background-color: $color_secondary;
-    padding: .5em 10vw;
-    display: flex;
-    flex-direction: row;
-    margin: 0;
+    background-color: $clr-secondary;
+    margin: -.5rem -.5rem 0 -.5rem;
+    padding: calc(0rem + .5rem) ( max(20vw, 50vw-425px) + .5rem);         // the .5rem offsets the default margin that's on the body
 }
 
-.nav-links-left
+nav > div
 {
-    flex: 1 1 200px;
+    display: inline;
 }
 
 .nav-links-right
 {
-    display: flex;
+    float: right;
+
+    display: inline-flex;
     flex-direction: row;
 }
 
-.nav-links-right > div
+.nav-links-right a
 {
-    margin-left: 2rem;
+    margin-left: 1.5rem;
 }
 
-.nav-title > a
-{
-    color: $color_primary;
-}
-
-// nav bar links
 nav a
 {
-    text-decoration: none;
-    color: $color_secondary;
-    font-size: 1.6rem;
-    text-align: center;
-
-    transition: .2s all ease-in-out;
-    border-bottom: 3px solid rgba(0, 0, 0, 0);
-    border-radius: 2px;
+    color: $clr_primary;
+    font-size: 1.75rem;
+    border-bottom-width: 4px;
 }
 
-nav a:hover
+@media screen and (max-width: 1300px)
 {
-    border-bottom-color: $color_orange;
-}
-
-@media only screen and (max-width: 550px)
-{
-    .nav-title > a
+    nav
     {
-        font-size: 1.25rem;
-    }
-
-    .nav-links-right > div > a
-    {
-        font-size: 1.1rem;
-    }
-}
-
-// smoll phone
-@media (max-width: 410px)
-{
-    .nav-title > a
-    {
-        font-size: 1.1rem;
-    }
-
-    .nav-links-right > div > a
-    {
-        font-size: .95rem;
+        padding: calc(0rem + .5rem) ( max(12.5vw, 50vw-425px) + .5rem);
     }
 
     .nav-links-right > div
     {
-        margin-left: .4rem;
+        margin-left: 1.25rem;
     }
+
+}
+
+@media screen and (max-width: 850px)
+{
+    nav
+    {
+        padding: calc(0rem + .5rem) calc(2vw + .5rem);
+    }
+
+    .nav-links-right > div
+    {
+        margin-left: 1rem;
+    }
+
 }

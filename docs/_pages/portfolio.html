@@ -1,56 +1,19 @@
 ---
-layout: default
-is_post: false
 permalink: /portfolio/
+custom-css: portfolio
 
 title: Portfolio
+description: This Nick Maclean's personal portfolio.
 ---
 
-<script src="../_scripts/portfolio-cycle-links.js"></script>
-
-{% assign ext_mp4 = ".mp4" %}
-{% assign ext_webm = ".webm" %}
+{% assign str_thumbnail = "thumbnail.jpg" %}
 
 <div class="portfolio">
-    <div class="portfolio-focus">
-
-        {% assign indexID = 0 %}
-        {% for project in site.data.portfolio.Projects %}
-            <div class="portfolio-project" id="portfolio-project-{% increment indexID %}">
-                
-                <video class="portfolio-video" muted controls>
-                    <source src="{{ site.pictureurl | append: project.video | append: ext_mp4 }}" type="video/mp4">
-                    Your browser will not load/play .mp4 files.
-                </video>
-                
-                <div>
-                    <h2 class="no-margin text-blue-light"> <b> {{ project.title }} </b> </h2>
-                    <h3 class="no-margin"> {{ project.tools_str }} </h3>
-                    <p class="no-margin"> {{ project.description }} </p>
-                </div>
-            </div>
-        {% endfor %}
-        
-    </div>
-    
-    <div class="portfolio-carousel-wrapper">
-        <div class="arrow-wrapper">
-            <div class="arrow-left" > </div>
-        </div>
-        
-        <div class="portfolio-carousel">
-            
-            {% assign indexId = 0 %}
-            {% for project in site.data.portfolio.Projects %}
-            <a href="#portfolio-project-{% increment indexId %}">
-                <img src="{{ site.pictureurl | append: project.thumbnail }}" {% decrement indexId %} id="portfolio-project-thumbnail-{% increment indexId %}" />
+    {% for project in site.data.portfolio.projects %}
+        <div class="portfolio-project">
+            <a href="/projects/{{project.name}}">
+                {% include image.html type="portfolio" folder=project.name name="thumbnail.jpg" class="no-margin" %}
             </a>
-            {% endfor %}
-            
         </div>
-        
-        <div class="arrow-wrapper">
-            <div class="arrow-right" > </div>
-        </div>
-    </div>
+    {% endfor %}
 </div>

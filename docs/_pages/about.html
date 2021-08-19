@@ -1,39 +1,31 @@
 ---
-layout: default
-is_post: false
+type: page
 permalink: /about/
+custom-css: about
 
 title: About
+description: This is a page about Nick Maclean and who is.
 ---
 
+<div class="about">
+    {% include image.html type="page" name="portrait.jpg" caption="I'm the one on the left :)" class="about-picture img-center" %}
 
-<div class="grid-about">
-    <div class="grid-item-name">
-        <h1 class="text-blue-light"> Nick Maclean </h1>
-        <div class="flex-row">
-            <div class=flex-row-li> <h2 class="fas fa-school"></h2> </div>
-            <div class=flex-row-li> <h2> UT Dallas </h2> </div>
-        </div>
-    </div>
-
-    <div class="grid-item-left">
-        <img src="{{ site.pictureurl | append: "portrait.jpg"}}"> </img>
-        <p> I'm the one on the left!</p>
-    </div>
-
-    <div class="grid-item-right">
+    <div class="about-text">
         <p>
-            I am a <span class="text-blue-light"> Computer Science </span> and <span class="text-blue-light"> Arts/Technology (ATEC) </span> student at The University of Texas at Dallas. <br>
+            I am a <span class="blue-light"> Computer Science </span> and <span class="blue-light"> Arts, Technology, and Emerging Communications (ATEC) </span> student at The University of Texas at Dallas. <br>
         </p>
         
         <p>
-            I have always had a fascination with the ability to create. It is a truly great ability to imagine something and implement it through software, model it digitally, or whatever other form something may take shape in. My passion has led me deeper into game development and web development through programming and spread into 3d modelling.<br>
+            I have always had a fascination with the ability to create. It is truly amazing to imagine something and bring it to life. This passion has led me deeper into game development and web development through programming and spread into 3d Art.<br>
         </p>
         
         <p>
-            I am proficent with HTML/CSS/JavaScript with Jekyll and the Unity Game Engine with C#, but I am also reasonable capable with Python, C++, Java, and MIPS. I also have experience with Photoshop, Substance Painter, and modelling in Blender/Maya. <br>
+            I am proficent in HTML/CSS/JavaScript, Jekyll (static website generator), and the Unity Game Engine with C#, but I am also reasonable capable with Python, C++, Java, and MIPS.<br>
+        </p>
+        
+        <p>
+            I also have strong skills in 3D modeling with Maya/Blender, texturing in Substance Painter, and some experience with PhotoShop and Clip Studio Paint. <br>
         </p>
 
-        {% include socials.html %}
     </div>
 </div>

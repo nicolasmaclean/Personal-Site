@@ -1,36 +1,7 @@
-Projects:
-  - title: Cellular Automata
-    thumbnail: CellularAutomata.jpg
-    video: CellularAutomata
-    tools_str: HTML, CSS, JavaScript, and React
-    description: A flexible cellular automata library rendered using HTML canvas and organized into React components. Save files store simulation rules/states to allow highly customizable simulations.
-
-  - title: My Portfolio Site
-    thumbnail: Portfolio.jpg
-    video: Portfolio
-    tools_str: HTML, SCSS, JavaScript, and Jekyll
-    description: I created the site you're looking at right now! I utilized Markdown and the liquid templating language to allow easy future updates to content. I also created the design in Adobe XD. 
-
-  - title: Radio
-    thumbnail: Radio.png
-    video: Radio
-    tools_str: Maya
-    description:  This is a high poly model with holding and anti-stretch edges. The front and back plates were modelled using the negative space technique.
-
-  - title: Hexadecimal to MIPS disassembler
-    thumbnail: MIPS.jpg
-    video: MIPS
-    tools_str: MIPS and MARS
-    description: A partner (Nick Weldum) and I created a MIPS disassembler, in MIPS. The program would take an input text file of instructions in hexadecimal format and output a MIPS assembly file. We used a table to store opcode/funct codes and their corresponding string instructions to streamline the process of adding compatiblility for instructions. Our program supported 43 instructions, almost over triple the required 18.
-
-  - title: Impossible Cube
-    thumbnail: ImpossibleCube.jpg
-    video: ImpossibleCube
-    tools_str: Blender
-    description: Compositing magic was used to produce the illusion of non-Euclidean geometry. There were 2 scenes within the cube and each one was in its own layer. Compositing chose which of the layers to display according to which face of the cube was being viewed through.
-
-  - title: Sand Mountain
-    thumbnail: Racer.jpg
-    video: Racer
-    tools_str: Unity, Maya, and Substance Painter
-    description: A single-level game made almost entirely by me. The models, animations, textures, particle effects, and most of the code were created by myself.
+projects:
+  - name: cellular-automata
+  - name: teapot
+  - name: portfolio
+  - name: sorcerers-den
+  - name: mips
+  - name: impossible-cube

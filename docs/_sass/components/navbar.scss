@@ -55,5 +55,22 @@ nav a
     {
         margin-left: 1rem;
     }
+}
 
+@media screen and (max-width: 600px)
+{
+    .nav-links-right
+    {
+        float: none;
+        display: block;
+        margin-top: .5rem;
+    }
+
+    .nav-links-right a
+    {
+        margin-right: 1rem;
+        margin-left: 0;
+
+        font-size: 1.4rem;
+    }
 }

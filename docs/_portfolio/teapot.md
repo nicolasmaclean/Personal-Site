@@ -2,7 +2,7 @@
 permalink: /projects/teapot.html
 layout: post
 
-title: A peaceful Tea Time
+title: Tea Time
 description: I consider the different steps of creating a scene.
 tags: [Maya, Blender, Substance Painter, 3D-Modeling]
 ---

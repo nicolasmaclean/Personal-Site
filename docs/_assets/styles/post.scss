@@ -1,3 +1,20 @@
 ---
 ---
 
+figure
+{
+    margin: 2rem 0rem;
+}
+
+main
+{
+    margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 600px)
+{
+    main
+    {
+        margin-bottom: 2rem;
+    }
+}

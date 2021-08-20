@@ -39,8 +39,6 @@
 {
     line-height: 1.5rem;
     margin: .5rem 0;
-
-    text-align: justify;
 }
 
 @media screen and (max-width: 1000px)
@@ -61,10 +59,5 @@
 
         margin: 2rem 0;
         grid-row-gap: 1.5rem;
-    }
-
-    .about-picture
-    {
-        flex-direction: row;
     }
 }

@@ -22,3 +22,14 @@
 {
     transform: scale(1.05);
 }
+
+@media screen and (orientation: portrait)
+{
+    .portfolio
+    {
+        grid-template-columns: 1fr 1fr;
+
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}

@@ -1,9 +1,10 @@
 projects:
-  - name: before-your-eyes
-  - name: space-explorer
-  - name: cellular-automata
+  - name: maya-stacker
   - name: portfolio
+  - name: cellular-automata
   - name: teapot
   - name: sorcerers-den
   - name: impossible-cube
+  - name: before-your-eyes
+  - name: space-explorer
   - name: mips

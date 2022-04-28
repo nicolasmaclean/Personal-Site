@@ -25,7 +25,7 @@ markdown: kramdown
 highlighter: rouge
 theme: null
 
-include: [_pages, _assets, _scripts, _portfolio]
+include: [_assets, _pages, _portfolio]
 sass:
   style: compressed
   sass_dir: _sass

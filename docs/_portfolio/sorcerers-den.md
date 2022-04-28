@@ -1,5 +1,5 @@
 ---
-permalink: /projects/sorcerers-den.html
+permalink: /portfolio/sorcerers-den/
 layout: post
 
 title: The Sorcerer's Den

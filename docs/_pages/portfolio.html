@@ -11,7 +11,7 @@ description: This Nick Maclean's personal portfolio.
 <div class="portfolio">
     {% for project in site.data.portfolio.projects %}
         <div class="portfolio-project">
-            <a href="/projects/{{project.name}}.html">
+            <a href="/portfolio/{{project.name}}/">
                 {% include image.html type="portfolio" folder=project.name name="thumbnail.jpg" class="no-margin" %}
             </a>
         </div>

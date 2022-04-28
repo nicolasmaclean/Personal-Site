@@ -1,5 +1,5 @@
 ---
-permalink: /projects/portfolio.html
+permalink: /portfolio/portfolio/
 layout: post
 
 title: My Portfolio
@@ -25,7 +25,7 @@ As I continued to work on other projects, I was able to realize this issue and o
 
 This current iteration really unlocked a lot of Jekyll's features. By separating projects into their own pages, I've been able to really streamline the process of adding/updating content with markdown files, as opposed to html. It makes adding new projects much more simple.
 
-To add a project, I add a new sub-folder under _assets for the project that contains all the images and videos associated and write a markdown file. Writing the content through markdown is extremely intuitive and completely removes the friction of trying to create content.
+To add a project, I add a new sub-folder under \_assets for the project that contains all the images and videos associated and write a markdown file. Writing the content through markdown is extremely intuitive and completely removes the friction of trying to create content.
 
 {% include image.html type="project" name="markdown.jpg" caption="look at how easy it is to write new pages" class="pc-80 no-side-margin img-center" %}
 

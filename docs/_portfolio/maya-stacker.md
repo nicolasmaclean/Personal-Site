@@ -1,5 +1,5 @@
 ---
-permalink: /projects/maya-stacker.html
+permalink: /portfolio/maya-stacker/
 layout: post
 
 title: Maya Stacker Tool

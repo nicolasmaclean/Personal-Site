@@ -1,5 +1,5 @@
 ---
-permalink: /projects/ghost-house.html
+permalink: /portfolio/ghost-house/
 layout: post
 
 title: Ghost House | Game Lab Spring 2022

@@ -1,5 +1,5 @@
 ---
-permalink: /projects/teapot.html
+permalink: /portfolio/teapot/
 layout: post
 
 title: Tea Time

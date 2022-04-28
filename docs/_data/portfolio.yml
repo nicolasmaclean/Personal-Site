@@ -1,10 +1,9 @@
 projects:
+  - name: ghost-house
   - name: maya-stacker
   - name: portfolio
   - name: cellular-automata
   - name: teapot
   - name: sorcerers-den
-  - name: impossible-cube
-  - name: before-your-eyes
-  - name: space-explorer
-  - name: mips
+  # - name: impossible-cube
+  # - name: mips

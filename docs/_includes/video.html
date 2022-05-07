@@ -1,6 +1,12 @@
-{% capture videopath %}
-    {{ "/_assets/" }}{% if include.type == "page" %}{{ "page/" }}{% elsif include.type == "project" %}{{ "project/" }}{{ page.name | split:"." | first}}{{"/"}}{% elsif include.type == "portfolio" %}{{ "project/" }}{{ include.folder }}{{"/"}}{% endif %}{{include.name}}
-{% endcapture %}
+{% if include.type == "page" %}
+{% capture videopath %}{{"/_assets/page/" | append: include.name | strip}}{% endcapture %}
+
+{% elsif include.type == "post" %}
+{% capture videopath %}{{page.dir | strip | append: include.dir | strip | append: include.name | strip}}{% endcapture %}
+
+{% elsif include.type == "custom" %}
+{% capture videopath %}{{include.dir | strip | append: include.name | strip}}{% endcapture %}
+{% endif %}
 
 {% if include.caption %}
 <figure {% if include.class %} class="{{ include.class }}" {% endif %}>

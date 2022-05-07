@@ -1,19 +1,18 @@
 ---
-permalink: /portfolio/teapot/
-layout: post
+permalink: /_posts/teapot/
 
 title: Tea Time
 description: I consider the different steps of creating a scene.
 tags: [Maya, Blender, Substance Painter, 3D-Modeling]
 ---
 
-{% include image.html type="project" name="hero.jpg" class="pc-100 no-side-margin img-center" %}
+{% include image.html type="post" name="hero.jpg" class="pc-100 no-side-margin img-center" %}
 
 This project began with the teapot. I modeled it in Maya, textured in Substance Painter, and rendered in Arnold for the Modeling and Texturing 1 class. Shortly after the class finished, I added some teacups and made some final renders. The work done after the class was done primarily in Blender, but the textures for the teacups were made in Substance Painter.
 
 ## Reflection
 
-{% include video.html type="project" name="turntable.mp4" caption="rendered in Blender using the cycles engine" class="pc-80 no-side-margin img-center" %}
+{% include video.html type="post" name="turntable.mp4" caption="rendered in Blender using the cycles engine" class="pc-80 no-side-margin img-center" %}
 
 I've had experience modeling and animating with Blender prior to joining the ATEC program, so I fought with my muscle memory as I learned Maya. But funny enough, after spending two semesters in Maya, Blender became somewhat foreign to work in. I would try to hold alt as I use the mouse to navigate, like in Maya. After a continuing the scene the Blender, I've become much more comfortable switching between the two software packages.
 
@@ -21,6 +20,6 @@ As I wrote earlier, I modeled and UVed the teapot in Maya and the rest of the sc
 
 ## Other Images
 
-{% include image.html type="project" name="textures.jpg" class="pc-80 no-side-margin img-center" %}
-{% include image.html type="project" name="reference.jpg" class="pc-80 no-side-margin img-center" %}
-{% include image.html type="project" name="modelSheet.jpg" class="pc-80 no-side-margin img-center" %}
+{% include image.html type="post" name="textures.jpg" class="pc-80 no-side-margin img-center" %}
+{% include image.html type="post" name="reference.jpg" class="pc-80 no-side-margin img-center" %}
+{% include image.html type="post" name="modelSheet.jpg" class="pc-80 no-side-margin img-center" %}

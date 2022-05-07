@@ -6,13 +6,15 @@ title: Portfolio
 description: This Nick Maclean's personal portfolio.
 ---
 
-{% assign str_thumbnail = "thumbnail.jpg" %}
-
 <div class="portfolio">
     {% for project in site.data.portfolio.projects %}
+        {% capture projectpath %}
+        {{"/_posts/" | append: project.name | append: "/"}}
+        {% endcapture %}
+
         <div class="portfolio-project">
-            <a href="/portfolio/{{project.name}}/">
-                {% include image.html type="portfolio" folder=project.name name="thumbnail.jpg" class="no-margin" %}
+            <a href={{projectpath}}>
+                {% include image.html type="custom" dir=projectpath name="thumbnail.jpg" class="no-margin" %}
             </a>
         </div>
     {% endfor %}

@@ -25,22 +25,17 @@ markdown: kramdown
 highlighter: rouge
 theme: null
 
-include: [_assets, _pages, _portfolio]
+include: [_assets, _pages, _posts]
 sass:
   style: compressed
   sass_dir: _sass
-
 # Front Matter Defaults
 defaults:
   - scope:
-      type: posts
-      path: _posts
-    values:
-      is_post: true
-      layout: post
-      permalink: /blog/:categories/:title/
-  - scope:
-      type: pages
       path: _pages
     values:
       layout: default
+  - scope:
+      path: _posts
+    values:
+      layout: post

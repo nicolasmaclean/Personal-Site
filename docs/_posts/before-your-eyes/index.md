@@ -1,13 +1,13 @@
 ---
-permalink: /projects/before-your-eyes.html
-layout: post
+permalink: /_posts/before-your-eyes/
+archived: true
 
 title: Before Your Eyes *** WIP ***
 description: I helped program and lead a narrative based game for the sgda 2021 fall game jam.
 tags: [Unity, pixel-art]
 ---
 
-{% include image.html type="project" name="layout.jpg" class="pc-100 no-side-margin img-center" %}
+{% include image.html type="post" name="layout.jpg" class="pc-100 no-side-margin img-center" %}
 
 This is a current work in progress with the help of Ariana Mendez, Kathryn Perrine, Basil El-Hindi, and myself. Ariana is our environment artist, Kathryn our sprite artist and narrative designer, and Basil along with myself are our programmers. This project began for the SGDA 2021 fall game jam, but we decided to continue working on it to add more polish and bring it closer to our original vision.
 
@@ -15,7 +15,7 @@ After taking a short break, Basil and I have been refactoring our code and resea
 
 ## Asset Processing
 
-{% include video.html type="project" name="material-workflow.mp4" class="pc-100 no-side-margin img-center" caption="Material names are used to map textures" %}
+{% include video.html type="post" name="material-workflow.mp4" class="pc-100 no-side-margin img-center" caption="Material names are used to map textures" %}
 
 I have been exploring asset post-processing to streamline model, texture, and sprite importing. For models, the material name (from the .fbx file) is parsed to find its corresponding texture. For example, a model with a material `MD_bench` will search the `Textures` folder for a texture `TX_bench`. Further, textures with the `TX_` prefix are given a new set of default import settings that are appropriate for pixel art.
 
@@ -23,7 +23,7 @@ My next point of automation comes to the sprites. Spritesheets can be automatica
 
 Finally, we have animations. These can be extremely time-consuming to import manually. Assembling animation clips from sprites out of spritesheets, then placing clips into however many animators you need is horrible. We had 4 characters, each with their own animation clips (that changed between levels), so this just killed us. It took way too long to assemble the animations.
 
-{% include video.html type="project" name="animation-workflow.mp4" class="pc-100 no-side-margin img-center" caption="This is an example of a character animation import, in less than a minute!" %}
+{% include video.html type="post" name="animation-workflow.mp4" class="pc-100 no-side-margin img-center" caption="This is an example of a character animation import, in less than a minute!" %}
 
 Now, spritesheets for animations are denoted with the `AS_` prefix along with their frame count and name (`AS_##_level-name`). The spritesheet is sliced in the pre-processing, similar to the `SS_` spritesheet. After all assets have gone through post-processing, spritesheets with the `AS_` prefix are processed once more. The sprites that have been cutout are then assembled into an animation clip with the specified framerate and saved as an asset in the project.
 

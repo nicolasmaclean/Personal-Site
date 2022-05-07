@@ -1,13 +1,12 @@
 ---
-permalink: /portfolio/ghost-house/
-layout: post
+permalink: /_posts/ghost-house/
 
 title: Ghost House | Game Lab Spring 2022
 description: I worked in a team of ~40 people over the course of semester to create a narrative driven, 3rd person game in Unity.
 tags: [Unity, C#]
 ---
 
-{% include video.html type="project" name="trailer.mp4" class="pc-100 no-side-margin img-center" %}
+{% include video.html type="post" name="trailer.mp4" class="pc-100 no-side-margin img-center" %}
 
 Ghost House is a 3rd person, narrative driven game created in Unity 2019. The player explores the narrative and environment by performing 100+ interactions with the scene that trigger dialog between characters, move or manipulate items in the house, and even talk to a bird.
 
@@ -23,7 +22,7 @@ The professors do a great job balancing creative freedom for the students and se
 
 My main role on the team was the implementing and teaching of the dialog system and acting as a general game programmer where necessary. More specifically, I integrated [Yarn Spinner](https://docs.yarnspinner.dev/) and extended custom DialogViews to fit the needs of our game.
 
-{% include image.html type="project" name="dialog.png" class="pc-80 no-side-margin img-center"%}
+{% include image.html type="post" name="dialog.png" class="pc-80 no-side-margin img-center"%}
 
 I chose to leverage Yarn Spinner as a part of our dialog system for 2 reasons: the twine-like syntax makes it easy for narrative designers to pick up and quite honestly I saw this as an oportunity to learn more about Yarn Spinner. Its an open source project that is still growing quite fast and I saw them as the best option over other Unity oriented packages short of creating my own system.
 

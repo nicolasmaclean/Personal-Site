@@ -2,6 +2,6 @@ projects:
   - name: ghost-house
   - name: maya-stacker
   - name: portfolio
-  - name: cellular-automata
+  - name: arcade-jam
   - name: teapot
-  - name: sorcerers-den
+  - name: cellular-automata

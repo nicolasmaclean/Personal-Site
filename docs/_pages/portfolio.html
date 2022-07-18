@@ -1,26 +1,11 @@
 ---
-permalink: /
-custom-css: portfolio
-layout: default
+permalink: /portfolio
 
 title: Portfolio
 description: This Nick Maclean's personal portfolio.
 ---
-
-<div class="portfolio">
-    {% for project in site.data.portfolio.projects %}
-        {% capture projectpath %}
-        {{"posts/" | append: project.year | append: "/" | append: project.month | append: "/" | append: project.name | append: "/"}}
-        {% endcapture %}
-
-        {% capture projectthumbnail %}
-        {{projectpath | strip | prepend: "/assets/"}}
-        {% endcapture%}
-
-        <div class="portfolio-project">
-            <a href={{projectpath}}>
-                {% include image.html type="custom" dir=projectthumbnail name="thumbnail.jpg" class="no-margin" %}
-            </a>
-        </div>
-    {% endfor %}
-</div>
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title> Redirecting to portfolio </title>
+<meta http-equiv="refresh" content="0; URL={{ site.url }}">
+<link rel="canonical" href="{{ site.url }}">

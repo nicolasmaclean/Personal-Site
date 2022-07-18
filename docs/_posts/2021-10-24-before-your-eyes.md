@@ -1,7 +1,7 @@
 ---
 title: Before Your Eyes *** WIP ***
 description: I helped program and lead a narrative based game for the sgda 2021 fall game jam.
-tags: [Unity, pixel-art]
+tags: [Unity, Game Jam, Programming, Pixel Art, C#]
 ---
 
 {% include image.html type="post" name="layout.jpg" class="pc-100 no-side-margin img-center" %}

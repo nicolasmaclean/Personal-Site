@@ -1,7 +1,7 @@
 ---
 title: The Impossible Cube
 description: I breakdown the Impossible Cube effect from Antichamber.
-tags: [Blender, 3D-Modeling, animation]
+tags: [Blender, 3D-Modeling, Animation]
 ---
 
 {% include video.html type="post" name="Impossible Cube.mp4" class="pc-100 no-side-margin img-center" %}

@@ -16,26 +16,20 @@ github_link: https://github.com/nicolasmaclean
 linkedin_username: nick maclean
 linkedin_link: https://linkedin.com/in/nick-maclean
 
-# file paths
-pictureurl: "/_assets/pictures/"
-portfoliourl: "/_assets/portfolio/"
-
 # Build settings
+include: ["_pages"]
 markdown: kramdown
 highlighter: rouge
 theme: null
 
-include: [_assets, _pages, _posts]
 sass:
   style: compressed
   sass_dir: _sass
 # Front Matter Defaults
 defaults:
   - scope:
-      path: _pages
-    values:
-      layout: default
-  - scope:
       path: _posts
     values:
       layout: post
+      
+permalink: /posts/:year/:month/:title/

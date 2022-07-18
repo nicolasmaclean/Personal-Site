@@ -1,6 +1,5 @@
 ---
 permalink: /stylesheet/
-
 title: Stylesheet
 description: This is the stylesheet for my website. It contains the different styles for html elements and components that I use throughout the site. It helps keep my design/code consistent as my project grows older.
 ---

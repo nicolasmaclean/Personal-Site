@@ -1,6 +1,7 @@
 ---
-permalink: /portfolio/
+permalink: /
 custom-css: portfolio
+layout: default
 
 title: Portfolio
 description: This Nick Maclean's personal portfolio.
@@ -9,12 +10,16 @@ description: This Nick Maclean's personal portfolio.
 <div class="portfolio">
     {% for project in site.data.portfolio.projects %}
         {% capture projectpath %}
-        {{"/_posts/" | append: project.name | append: "/"}}
+        {{"posts/" | append: project.year | append: "/" | append: project.month | append: "/" | append: project.name | append: "/"}}
         {% endcapture %}
+
+        {% capture projectthumbnail %}
+        {{projectpath | strip | prepend: "/assets/"}}
+        {% endcapture%}
 
         <div class="portfolio-project">
             <a href={{projectpath}}>
-                {% include image.html type="custom" dir=projectpath name="thumbnail.jpg" class="no-margin" %}
+                {% include image.html type="custom" dir=projectthumbnail name="thumbnail.jpg" class="no-margin" %}
             </a>
         </div>
     {% endfor %}

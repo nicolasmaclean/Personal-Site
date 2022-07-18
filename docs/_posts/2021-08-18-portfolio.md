@@ -1,7 +1,7 @@
 ---
 title: My Portfolio
 description: I explore the development process for my website.
-tags: [Jekyll, HTML, CSS, Adobe XD, Web Development]
+tags: [Jekyll, HTML, CSS, Adobe-XD, Web-Development]
 ---
 
 {% include image.html type="post" name="full.jpg" class="pc-100 no-side-margin img-center" %}

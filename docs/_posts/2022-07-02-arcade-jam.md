@@ -1,7 +1,7 @@
 ---
 title: Arcade Game Jam | Revenge of the Roombas
 description: I lead a team of 4 other students to create a 3d, arena fighter for the SGDA and MakerSpace's Spring 2022 Game Jam.
-tags: [Unity, Game Jam, 3D]
+tags: [Unity, Game-Jam, 3D]
 ---
 
 {% include video.html type="post" name="gameplay.mp4" class="pc-100 no-side-margin img-center" %}

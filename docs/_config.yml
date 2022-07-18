@@ -21,6 +21,14 @@ include: ["_pages"]
 markdown: kramdown
 highlighter: rouge
 theme: null
+plugins:
+  - jekyll-archives
+
+jekyll-archives:
+  enabled: [categories]
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
 
 sass:
   style: compressed

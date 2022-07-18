@@ -1,6 +1,7 @@
 ---
 title: My Cellular Automata Framework
 description: I explore my experience creating Cellular-Automata-JS
+categories: [programming, web]
 tags: [JavaScript, React]
 ---
 

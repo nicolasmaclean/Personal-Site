@@ -1,10 +1,14 @@
 <div class="neighbors">
-    <a href="{{page.next.url}}">
+    {% if page.next.url %}
+    <a href="{{page.next.url}}" class="neighbor-next">
         <div class="arrow-left"></div>
         <p> {{page.next.title}} </p>
     </a>
-    <a href="{{page.previous.url}}">
+    {% endif %}
+    {% if page.previous.url %}
+    <a href="{{page.previous.url}}" class="neighbor-prev">
         <div class="arrow-right"></div>
         <p> {{page.previous.title}} </p>
     </a>
+    {% endif %}
 </div>

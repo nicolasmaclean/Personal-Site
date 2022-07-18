@@ -8,10 +8,6 @@ description: This Nick Maclean's archive of posts.
 ---
 
 <div class="archive">
-    <!-- {% for post in site.posts %}
-        <p> {{post.url}} </p>
-    {% endfor %} -->
-
     {% for post in site.posts %}
         {% capture projectthumbnail %}
         {{post.url | strip | prepend: "/assets/"}}

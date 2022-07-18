@@ -1,6 +1,7 @@
 ---
 title: My Portfolio
 description: I explore the development process for my website.
+categories: [programming, web]
 tags: [Jekyll, HTML, CSS, Adobe-XD, Web-Development]
 ---
 

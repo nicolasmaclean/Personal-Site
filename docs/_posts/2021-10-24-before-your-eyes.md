@@ -1,6 +1,7 @@
 ---
 title: Before Your Eyes *** WIP ***
 description: I helped program and lead a narrative based game for the sgda 2021 fall game jam.
+categories: [programming, game-dev, game-jam, tool]
 tags: [Unity, Game-Jam, Programming]
 ---
 

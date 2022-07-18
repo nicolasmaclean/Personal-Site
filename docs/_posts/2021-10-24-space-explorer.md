@@ -1,6 +1,7 @@
 ---
 title: Space Explorer
 description: I created a simple, 2D space survival game in Unity.
+categories: [programming, game-dev]
 tags: [Unity, 2D]
 ---
 

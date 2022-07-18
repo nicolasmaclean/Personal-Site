@@ -1,6 +1,7 @@
 ---
 title: The Sorcerer's Den
 description: Donna, Ariana, and I created a low-poly scene.
+categories: [art]
 tags: [Maya, 3D-Modeling]
 ---
 

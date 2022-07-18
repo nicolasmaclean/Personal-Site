@@ -9,7 +9,7 @@
 {
     display: flex;
     align-items: center;
-    flex-direction: row-reverse;
+    flex-direction: row;
     
     height: 4rem;
     padding: .5rem 1rem;
@@ -30,10 +30,14 @@
     text-align: left;
 }
 
-.neighbors a:first-child
+.neighbors .neighbor-prev
 {
-    flex-direction: row;
+    flex-direction: row-reverse;
 }
+
+// .neighbors a:nth-child(2)
+// {
+// }
 
 .neighbors a:hover
 {

@@ -1,6 +1,7 @@
 ---
 title: Ghost House | Game Lab Spring 2022
 description: I worked in a team of ~40 people over the course of semester to create a narrative driven, 3rd person game in Unity.
+categories: [programming, game-dev]
 tags: [Unity, Programming]
 ---
 

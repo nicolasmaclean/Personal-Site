@@ -4,10 +4,6 @@ description: I created a Maya tool using Python and PySide2 that stacks objects.
 tags: [Maya, Python, PyQt]
 ---
 
-{{page.dir}}
-
-h
-
 {% include video.html type="post" name="demo.mp4" class="pc-100 no-side-margin img-center" %}
 
 This tool was created throughout the Spring 2022 semester in Scripting for Animation. As we learned more about Python, Maya, and PySide2 the tool evolved.

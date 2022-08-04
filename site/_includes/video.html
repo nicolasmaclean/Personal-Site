@@ -1,0 +1,28 @@
+{% if include.type == "page" %}
+{% capture videopath %}{{"/assets/images/" | append: include.name | strip}}{% endcapture %}
+
+{% elsif include.type == "post" %}
+{% capture videopath %}{{page.url | prepend: "/assets" | append: include.name | strip}}{% endcapture %}
+
+{% elsif include.type == "custom" %}
+{% capture videopath %}{{include.dir | strip | append: include.name | strip}}{% endcapture %}
+{% endif %}
+
+{% if include.caption %}
+<figure {% if include.class %} class="{{ include.class }}" {% endif %}>
+<video muted autoplay controls loop>
+<source src="{{ videopath }}">
+Your browser will not load/play .mp4 files.
+</video>
+<figcaption>{{ include.caption }}</figcaption>
+</figure>
+
+{% else %}
+<figure {% if include.class %} class="{{ include.class }}" {% endif %}>
+<video muted autoplay controls loop>
+<source src="{{ videopath }}">
+Your browser will not load/play .mp4 files.
+</video>
+</figure>
+
+{% endif %}

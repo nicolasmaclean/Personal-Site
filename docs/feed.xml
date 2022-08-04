@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-08-04T11:44:55-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Nick Maclean</title><subtitle>Personal portfollio website for Nick Maclean.</subtitle><entry><title type="html">Arcade Game Jam | Revenge of the Roombas</title><link href="http://localhost:4000/posts/2022/07/arcade-jam/" rel="alternate" type="text/html" title="Arcade Game Jam | Revenge of the Roombas" /><published>2022-07-02T00:00:00-05:00</published><updated>2022-07-02T00:00:00-05:00</updated><id>http://localhost:4000/posts/2022/07/arcade-jam</id><content type="html" xml:base="http://localhost:4000/posts/2022/07/arcade-jam/">&lt;figure class=&quot;pc-100 no-side-margin img-center&quot;&gt;
+&lt;video muted=&quot;&quot; autoplay=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;
+&lt;source src=&quot;/assets/posts/2022/07/arcade-jam/gameplay.mp4&quot; /&gt;
+Your browser will not load/play .mp4 files.
+&lt;/video&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Ariana Mendez, Conor Boone, Wesley Pate, Kellyn Mendez, and myself created this game for the SGDA’s Spring 2022 game jam. We spent a week building the game in Unity and receieved &lt;em&gt;Best Technical Achievement&lt;/em&gt;. The game jam page is &lt;a href=&quot;https://amendez.itch.io/revenge-of-the-roombas&quot;&gt;here&lt;/a&gt; and the repo may be found &lt;a href=&quot;https://github.com/nicolasmaclean/arcade-jam&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;flex-row&quot;&gt;
+    
+
+
+&lt;figure class=&quot;pc-90 img-center margin-bottom-1rem&quot;&gt;
+&lt;img src=&quot;/assets/posts/2022/07/arcade-jam/gameplay_01.png&quot; /&gt;
+&lt;/figure&gt;
+
+
+    
+
+
+&lt;figure class=&quot;pc-90 img-center margin-bottom-1rem&quot;&gt;
+&lt;img src=&quot;/assets/posts/2022/07/arcade-jam/gameplay_02.png&quot; /&gt;
+&lt;/figure&gt;
+
+
+&lt;/div&gt;
+
+&lt;div class=&quot;flex-row&quot;&gt;
+    
+
+
+&lt;figure class=&quot;pc-90 img-center no-margin-top&quot;&gt;
+&lt;img src=&quot;/assets/posts/2022/07/arcade-jam/gameplay_03.png&quot; /&gt;
+&lt;/figure&gt;
+
+
+    
+
+
+&lt;figure class=&quot;pc-90 img-center no-margin-top&quot;&gt;
+&lt;img src=&quot;/assets/posts/2022/07/arcade-jam/gameplay_04.png&quot; /&gt;
+&lt;/figure&gt;
+
+
+&lt;/div&gt;
+
+&lt;p&gt;This jam was a little more unique in that it coincided with the unveiling of the MakerSpace’s arcade cabinet so we were encouraged to build our games for it. The theme was “Combo”. Our team very quickly agreed that leaning into the arcade cabinet would be a lot more fun. Working under that constraint helped guide our decision making and focus our energy. It was also a really awesome experience watching others play our game on an arcade cabinet!&lt;/p&gt;
+
+&lt;p&gt;In retrospect, I filled not only the role of programmer but also project lead. I taught Kellyn Unity specific concepts for programming like coroutines and UI while specifically giving her tasks to incrementally build experience with Unity; I worked closely with Connor to integrate animations and VFX into gameplay; and created a system for Wesley to connect SFX to actions in-game.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;figure class=&quot;pc-60 img-center&quot;&gt;
+&lt;img src=&quot;/assets/posts/2022/07/arcade-jam/enemyWalla.png&quot; /&gt;
+&lt;figcaption&gt;&lt;a href=&quot;https://github.com/nicolasmaclean/arcade-jam/blob/develop/arcade-jam/Assets/_Game/Scripts/Mechanics/Enemy/EnemyWalla.cs&quot;&gt; This Script on GitHub &lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I setup a StateMachine base class for the enemy AI to leverage Unity’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NavMeshAgent&lt;/code&gt; that could be inherited from to create specific enemy types. In the above screenshot, we have the “Walla” enemy that randomly wanders while trying to maintain a certain distance from the player. Their role was to clutter the screen, create a little chaos, and give the player some targets. Implementation requires the derrived enemy class and any necessary &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;State&lt;/code&gt;s. The derrived class coordinates transitions and manages the AI’s state, while the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;State&lt;/code&gt; objects allow modular logic to be reused between enemies.&lt;/p&gt;</content><author><name></name></author><category term="programming" /><category term="game-dev" /><category term="game-jam" /><category term="Unity" /><category term="Game-Jam" /><category term="3D" /><summary type="html">Your browser will not load/play .mp4 files.</summary></entry><entry><title type="html">Ghost House | Game Lab Spring 2022</title><link href="http://localhost:4000/posts/2022/04/ghost-house/" rel="alternate" type="text/html" title="Ghost House | Game Lab Spring 2022" /><published>2022-04-28T00:00:00-05:00</published><updated>2022-04-28T00:00:00-05:00</updated><id>http://localhost:4000/posts/2022/04/ghost-house</id><content type="html" xml:base="http://localhost:4000/posts/2022/04/ghost-house/">&lt;figure class=&quot;pc-100 no-side-margin img-center&quot;&gt;
+&lt;video muted=&quot;&quot; autoplay=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;
+&lt;source src=&quot;/assets/posts/2022/04/ghost-house/trailer.mp4&quot; /&gt;
+Your browser will not load/play .mp4 files.
+&lt;/video&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Ghost House is a 3rd person, narrative driven game created in Unity 2019. The player explores the narrative and environment by performing 100+ interactions with the scene that trigger dialog between characters, move or manipulate items in the house, and even talk to a bird.&lt;/p&gt;
+
+&lt;p&gt;A direct download can be made &lt;a href=&quot;https://github.com/metalac190/GhostHouse/releases/download/Release/GhostHouse_Release.zip&quot;&gt;here&lt;/a&gt; from the GitHub release and you can find our GitHub rpository &lt;a href=&quot;https://github.com/metalac190/GhostHouse&quot;&gt;here&lt;/a&gt;!&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-game-lab&quot;&gt;What is Game Lab&lt;/h2&gt;
+
+&lt;p&gt;Game Lab is a course at UTD led by professors Tim Lewis and Adam Chandler. They assembled a team of ~40 people composed of artists, designers, programmers, and SFX artists. They provided a design document to serve as a starting point for the semester, then turned over the game to the students.&lt;/p&gt;
+
+&lt;p&gt;The professors do a great job balancing creative freedom for the students and setting defined boundaries for the project. There was extremely little that they said we &lt;em&gt;must&lt;/em&gt; do or &lt;em&gt;can’t&lt;/em&gt; do, but rather they explained why a different approach might be better or pointed issues with our ideas. They did, however, setup a system to mimic a production setting. We had milestones (alpha, beta, content lock, etc.) to track project progress, clearly defined teams (and to a smaller extent, heirarchy), and lectures oriented to teaching GitHub and other necessary skills for large projects.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-i-did&quot;&gt;What I Did&lt;/h2&gt;
+
+&lt;p&gt;My main role on the team was the implementing and teaching of the dialog system and acting as a general game programmer where necessary. More specifically, I integrated &lt;a href=&quot;https://docs.yarnspinner.dev/&quot;&gt;Yarn Spinner&lt;/a&gt; and extended custom DialogViews to fit the needs of our game.&lt;/p&gt;
+
+&lt;figure class=&quot;pc-80 no-side-margin img-center&quot;&gt;
+&lt;img src=&quot;/assets/posts/2022/04/ghost-house/dialog.png&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I chose to leverage Yarn Spinner as a part of our dialog system for 2 reasons: the twine-like syntax makes it easy for narrative designers to pick up and quite honestly I saw this as an oportunity to learn more about Yarn Spinner. Its an open source project that is still growing quite fast and I saw them as the best option over other Unity oriented packages short of creating my own system.&lt;/p&gt;
+
+&lt;p&gt;While learning how DialogViews, I spent a large portion of time looking through Yarn Spinner’s Unity integration and their .net implementation. I found it extremely useful for learning more about C# and .net ways of designing code and what I found extremely interesting: meta-programming.&lt;/p&gt;
+
+&lt;p&gt;C# Attributes and Unity’s PropertyAttributes are powerful. My current favorite use case comes as editor scripting. Drawers for PropertyAttributes can enable expose the functionality of Editor scripting without forcing the burden of updating a components editor script for &lt;em&gt;every&lt;/em&gt; change in a component script. Although I didn’t have the chance to realize this curiousity in this project to a great extent, I have in my personal Unity package, &lt;a href=&quot;https://github.com/nicolasmaclean/Gummi-Unity&quot;&gt;Gummi&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;The 2 main realities I had to face as a member of a production: work gets cut and you don’t always get your way.&lt;/p&gt;
+
+&lt;p&gt;I spent a non-trival effort setting up systems with Yarn Spinner that allowed narrative designers to script events in within the narrative script like trigger animations, timelines, etc., but it didn’t quite fit our production context. Our programming team discussed it and Tim Lewis gave us some input. The general consensus was in a long-term project, this is exactly what we would want to do, but the semester length of game lab doesn’t quite call for such a comprehensive solution like that. I more or less agree with the decision, but it still felt quite disappointing at the time. I had to push myself past that and continue working.&lt;/p&gt;
+
+&lt;p&gt;When you work on a team, comprises have to be made sometimes. There were times that I was asked to do something (or the programming team) that I thought was simply a bad idea, but at the end of the day my job was implement systems and teach them to whoever needed it. We had a team of artists and designers to make decisions and I needed to trust them to do their job as they mine. Of course, I would respectfully attempt to discuss what I didn’t like about the idea with them or alternatives that I might have come up with.&lt;/p&gt;
+
+&lt;p&gt;Having taught myself a large portion of what I know about programming, I have not had many opportunities to work on teams (and certainly little with such talented artists, designers, and programmers). However, I’m excited that is changing. My skills have finally risen to the point that opportunties like this class and game jams are being quite more common for me. It’s been an absolute pleasure having other fill in roles that I could not as well as them (if at all) and I can work with them. I learned a lot about how to work with designers and artists, and I learned a lot programing from the rest of our programming team.&lt;/p&gt;</content><author><name></name></author><category term="programming" /><category term="game-dev" /><category term="Unity" /><category term="Programming" /><summary type="html">Your browser will not load/play .mp4 files.</summary></entry><entry><title type="html">Maya Stacker Tool</title><link href="http://localhost:4000/posts/2022/04/maya-stacker/" rel="alternate" type="text/html" title="Maya Stacker Tool" /><published>2022-04-21T00:00:00-05:00</published><updated>2022-04-21T00:00:00-05:00</updated><id>http://localhost:4000/posts/2022/04/maya-stacker</id><content type="html" xml:base="http://localhost:4000/posts/2022/04/maya-stacker/">&lt;figure class=&quot;pc-100 no-side-margin img-center&quot;&gt;
+&lt;video muted=&quot;&quot; autoplay=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;
+&lt;source src=&quot;/assets/posts/2022/04/maya-stacker/demo.mp4&quot; /&gt;
+Your browser will not load/play .mp4 files.
+&lt;/video&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;This tool was created throughout the Spring 2022 semester in Scripting for Animation. As we learned more about Python, Maya, and PySide2 the tool evolved.&lt;/p&gt;
+
+&lt;p&gt;The Stacker tool creates randomized stacks of objects from a set of pools.&lt;/p&gt;
+
+&lt;h2 id=&quot;development&quot;&gt;Development&lt;/h2&gt;
+
+&lt;p&gt;Professor Casey Johnson split development into 3 phases: base stacking functionality, 1st pass gui, final gui and features.&lt;/p&gt;
+
+&lt;p&gt;The first phase simply stacked 3 transforms in the Maya scene on top of each other. This is done by passing the names of 3 transform nodes to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;stack_objs&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;stacker&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;stack_objs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;trans_bot&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;trans_mid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;trans_top&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;During the second phase I built a gui using PyQt’s VBox and HBox layouts to organize buttons and line edits. The selection mechanism allows the user to create pools of “parts” that are used to create stacks. When a stack is created, a part is randomly chosen from the appropriate pool and duplicated.&lt;/p&gt;
+
+&lt;p&gt;As seen in my demo, I quickly realized the potential applications for this tool. I used a modular set of building I found on the Synty Store to easily create randomized buildings.&lt;/p&gt;
+
+&lt;figure class=&quot;pc-60 no-side-margin img-center&quot;&gt;
+&lt;img src=&quot;/assets/posts/2022/04/maya-stacker/gui_first.jpg&quot; /&gt;
+&lt;figcaption&gt;1st Pass GUI&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The final iteration of the project allowed further parameterization with adjustable stack sizes and separation of the stacks. Additionally, a TreeViewWidget (on the right) displays the stacks created by the user to allow easy selection/viewing and XML “Assembly” files may be read to organize stacks’ position in the scene.&lt;/p&gt;
+
+&lt;figure class=&quot;pc-60 no-side-margin img-center&quot;&gt;
+&lt;img src=&quot;/assets/posts/2022/04/maya-stacker/gui_final.jpg&quot; /&gt;
+&lt;figcaption&gt;The Final GUI&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;This project was extremely satisfying to work on. The incremental and tangible progress felt rewarding as I learned more about Python, PyQt, and Maya.&lt;/p&gt;
+
+&lt;p&gt;It also filled me with anticipation for the future. As a programmer, I find great pleasure in helping artist (with much greater skill than me) realize their vision. The Scripting for Animation class has led me to join Animation Lab for Fall 2022, so I’m excited to work with the talented artists at UTD.&lt;/p&gt;</content><author><name></name></author><category term="tool" /><category term="Maya" /><category term="Python" /><category term="PyQt" /><summary type="html">Your browser will not load/play .mp4 files.</summary></entry><entry><title type="html">Before Your Eyes *** WIP ***</title><link href="http://localhost:4000/posts/2021/10/before-your-eyes/" rel="alternate" type="text/html" title="Before Your Eyes *** WIP ***" /><published>2021-10-24T00:00:00-05:00</published><updated>2021-10-24T00:00:00-05:00</updated><id>http://localhost:4000/posts/2021/10/before-your-eyes</id><content type="html" xml:base="http://localhost:4000/posts/2021/10/before-your-eyes/">&lt;figure class=&quot;pc-100 no-side-margin img-center&quot;&gt;
+&lt;img src=&quot;/assets/posts/2021/10/before-your-eyes/layout.jpg&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;This is a current work in progress with the help of Ariana Mendez, Kathryn Perrine, Basil El-Hindi, and myself. Ariana is our environment artist, Kathryn our sprite artist and narrative designer, and Basil along with myself are our programmers. This project began for the SGDA 2021 fall game jam, but we decided to continue working on it to add more polish and bring it closer to our original vision.&lt;/p&gt;
+
+&lt;p&gt;After taking a short break, Basil and I have been refactoring our code and researching easier ways to accomplish what we need. For example, I tried to implement a dialog system during the game jam, but the complexity grew much more quickly than I had initially realized. Importing our narrative script into Unity was a teidous and manual process that took more time than it should have. After performing some research, we have been learning and integrating Yarn Spinner into our game to allow a seemless interface from our script to gameplay.&lt;/p&gt;
+
+&lt;h2 id=&quot;asset-processing&quot;&gt;Asset Processing&lt;/h2&gt;
+
+&lt;figure class=&quot;pc-100 no-side-margin img-center&quot;&gt;
+&lt;video muted=&quot;&quot; autoplay=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;
+&lt;source src=&quot;/assets/posts/2021/10/before-your-eyes/material-workflow.mp4&quot; /&gt;
+Your browser will not load/play .mp4 files.
+&lt;/video&gt;
+&lt;figcaption&gt;Material names are used to map textures&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I have been exploring asset post-processing to streamline model, texture, and sprite importing. For models, the material name (from the .fbx file) is parsed to find its corresponding texture. For example, a model with a material &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MD_bench&lt;/code&gt; will search the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Textures&lt;/code&gt; folder for a texture &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TX_bench&lt;/code&gt;. Further, textures with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TX_&lt;/code&gt; prefix are given a new set of default import settings that are appropriate for pixel art.&lt;/p&gt;
+
+&lt;p&gt;My next point of automation comes to the sprites. Spritesheets can be automatically sliced on import, instead of having an artist open the sprite editor in Unity. Specifically, my script takes images with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SS_&lt;/code&gt; prefix, a number, and a name (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SS_##_name&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SS_##_##_name&lt;/code&gt;). The image is sliced into the number of sprites specified and names them according to their row and column.&lt;/p&gt;
+
+&lt;p&gt;Finally, we have animations. These can be extremely time-consuming to import manually. Assembling animation clips from sprites out of spritesheets, then placing clips into however many animators you need is horrible. We had 4 characters, each with their own animation clips (that changed between levels), so this just killed us. It took way too long to assemble the animations.&lt;/p&gt;
+
+&lt;figure class=&quot;pc-100 no-side-margin img-center&quot;&gt;
+&lt;video muted=&quot;&quot; autoplay=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;
+&lt;source src=&quot;/assets/posts/2021/10/before-your-eyes/animation-workflow.mp4&quot; /&gt;
+Your browser will not load/play .mp4 files.
+&lt;/video&gt;
+&lt;figcaption&gt;This is an example of a character animation import, in less than a minute!&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Now, spritesheets for animations are denoted with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AS_&lt;/code&gt; prefix along with their frame count and name (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AS_##_level-name&lt;/code&gt;). The spritesheet is sliced in the pre-processing, similar to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SS_&lt;/code&gt; spritesheet. After all assets have gone through post-processing, spritesheets with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AS_&lt;/code&gt; prefix are processed once more. The sprites that have been cutout are then assembled into an animation clip with the specified framerate and saved as an asset in the project.&lt;/p&gt;
+
+&lt;p&gt;Finally, each character can utilize an animator from a pool of templates, instead of each character needing their own, unique animator. Animation clips are assigned to its controller, at runtime.&lt;/p&gt;
+
+&lt;h2 id=&quot;reflection&quot;&gt;Reflection&lt;/h2&gt;
+
+&lt;p&gt;The short time constraints (and mid-term madness) made the game jam a very difficult week. We had to hack our way through some bits of the process, but I’ve learned more about how far corners can be cut, if necessary, and what corners can never be cut.&lt;/p&gt;
+
+&lt;p&gt;Larger design decisions and pipeline integration between artist/designers and programmers is extremely important. The techinal bunch on a project should not be responsible to manually import assets. It’s a repeative process that can easily be automated with scripts and a simple naming convention.&lt;/p&gt;</content><author><name></name></author><category term="programming" /><category term="game-dev" /><category term="game-jam" /><category term="tool" /><category term="Unity" /><category term="Game-Jam" /><category term="Programming" /><summary type="html"></summary></entry><entry><title type="html">Space Explorer</title><link href="http://localhost:4000/posts/2021/10/space-explorer/" rel="alternate" type="text/html" title="Space Explorer" /><published>2021-10-24T00:00:00-05:00</published><updated>2021-10-24T00:00:00-05:00</updated><id>http://localhost:4000/posts/2021/10/space-explorer</id><content type="html" xml:base="http://localhost:4000/posts/2021/10/space-explorer/">&lt;figure class=&quot;pc-100 no-side-margin img-center&quot;&gt;
+&lt;video muted=&quot;&quot; autoplay=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;
+&lt;source src=&quot;/assets/posts/2021/10/space-explorer/gameplay.mp4&quot; /&gt;
+Your browser will not load/play .mp4 files.
+&lt;/video&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;This simple survival game was made for the &lt;em&gt;Scripting for Games 1 class&lt;/em&gt;. The player can pickup powerups to help them survive as long as possible as they dodge randomly generated enemies.&lt;/p&gt;
+
+&lt;p&gt;The enemy spawning system was my main focus for the project. I experimented with placement and spawn rates of enemies. My final version of the game, converts between viewport and world space to spawn enemies just offscreen from the player. This creates greater consistency so that enemies’s velocities are not too high by the time they crosses the player’s view.&lt;/p&gt;
+
+&lt;figure class=&quot;pc-100 no-side-margin img-center&quot;&gt;
+&lt;img src=&quot;/assets/posts/2021/10/space-explorer/graph.jpg&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Each frame, a randomly generated number (from 0 to 1) is compared to the shown curve. If it is below the curve, it would spawn an enemy. The parameters i, a, and t correspond to the inital spawnrate, target spawnrate, and target time, respectively. I utilized these parameters to easily adjust the difficulty of the game.&lt;/p&gt;</content><author><name></name></author><category term="programming" /><category term="game-dev" /><category term="Unity" /><category term="2D" /><summary type="html">Your browser will not load/play .mp4 files.</summary></entry><entry><title type="html">MIPS Disassembler (Hex to Assembly)</title><link href="http://localhost:4000/posts/2021/08/mips/" rel="alternate" type="text/html" title="MIPS Disassembler (Hex to Assembly)" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>http://localhost:4000/posts/2021/08/mips</id><content type="html" xml:base="http://localhost:4000/posts/2021/08/mips/">&lt;figure class=&quot;pc-100 no-side-margin img-center&quot;&gt;
+&lt;video muted=&quot;&quot; autoplay=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;
+&lt;source src=&quot;/assets/posts/2021/08/mips/MIPS.mp4&quot; /&gt;
+Your browser will not load/play .mp4 files.
+&lt;/video&gt;
+&lt;figcaption&gt;Here's a Demonstration&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I created this project with Nick Weldum for the Computer Architecture class. The objective was to write a program in the MIPS assembly language that would read lines of hexadecimal from a file and output a corresponding MIPS assembly file. I had a lot of fun with this project. It was a great way to demonstrate our understanding of how MIPS works under the hood, file I/O, and other technical skills.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-process&quot;&gt;The Process&lt;/h2&gt;
+
+&lt;p&gt;Each line of hexadecimal needed to be converted from a string to an integer and separated into its pertinent parts using bit manipulation.&lt;/p&gt;
+
+&lt;figure class=&quot;pc-40 no-side-margin img-center&quot;&gt;
+&lt;img src=&quot;/assets/posts/2021/08/mips/instruction-diagram.jpg&quot; /&gt;
+&lt;figcaption&gt;the 3 instruction formats of MIPS&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The real crux of the project is how the program matches the code to its corresponding string for output. I’m sure a large portion of the class hard-coded if statements to match opcodes to their string, but I borrowed an idea from MIPS. I produced a table very similar to a MIPS processor’s error jump table. Instead of matching error codes to their handler’s memory addresses, I matched opcode/funct codes to their corresponding strings.&lt;/p&gt;
+
+&lt;p&gt;This allowed me to very easily and rapidly add more than the required 18 instructions. My program was able to disassemble 43 different instructions.&lt;/p&gt;</content><author><name></name></author><category term="programming" /><category term="MIPS" /><category term="programming" /><summary type="html">Your browser will not load/play .mp4 files. Here's a Demonstration</summary></entry><entry><title type="html">My Portfolio</title><link href="http://localhost:4000/posts/2021/08/portfolio/" rel="alternate" type="text/html" title="My Portfolio" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>http://localhost:4000/posts/2021/08/portfolio</id><content type="html" xml:base="http://localhost:4000/posts/2021/08/portfolio/">&lt;figure class=&quot;pc-100 no-side-margin img-center&quot;&gt;
+&lt;img src=&quot;/assets/posts/2021/08/portfolio/full.jpg&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;This website was a very different project for me. From the beginng, I knew there were two important factors to keep in mind: the aesthetics and maintainability. I couldn’t throw all of my content on a single page and call it a day. I used Adobe XD to design several prototypes before beginning any coding. It was immensly helpful to keep myself on track as I built the site. I could look back at my designs to remind myself the goals of my chosen design and what it should look like. I also had to design my site with longevity in mind. I wanted it to be easy to update the content and tweak the styles of each page. I chose to use Jekyll because I could easily add new content in the form of markdown files and utilize SCSS to organize my CSS in a more modular fashion.&lt;/p&gt;
+
+&lt;h2 id=&quot;design-process&quot;&gt;Design Process&lt;/h2&gt;
+
+&lt;figure class=&quot;pc-80 no-side-margin img-center&quot;&gt;
+&lt;img src=&quot;/assets/posts/2021/08/portfolio/prototype.jpg&quot; /&gt;
+&lt;figcaption&gt;these are screen-grabs straight from Adobe XD&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I knew from the beginning the site should be a gallery of projects. However when I began, I felt I did not have much to show for. I felt my current works were insignificant and too few. I way overthought and overengineered my designs, specifically the carousel idea as you can see below. I tried to compensate for this insecurity by creating a more unique design and functionality, but it simply was not worth it. The design was less intuitive to interact with and crammed too many elements in a small space. It was simply overwhelming to view.&lt;/p&gt;
+
+&lt;p&gt;As I continued to work on other projects, I was able to realize this issue and overcome this insecurity. I moved towards a minimialist design that was much easier to interact with and read. This has also had the pleasant side effect of leaning into Jekyll’s layout system for a much stronger maintainability.&lt;/p&gt;
+
+&lt;figure class=&quot;pc-80 no-side-margin img-center&quot;&gt;
+&lt;video muted=&quot;&quot; autoplay=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;
+&lt;source src=&quot;/assets/posts/2021/08/portfolio/carousel.mp4&quot; /&gt;
+Your browser will not load/play .mp4 files.
+&lt;/video&gt;
+&lt;figcaption&gt;this was my implementation of the 'carousel' design&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;jekyll&quot;&gt;Jekyll&lt;/h2&gt;
+
+&lt;p&gt;This current iteration really unlocked a lot of Jekyll’s features. By separating projects into their own pages, I’ve been able to really streamline the process of adding/updating content with markdown files, as opposed to html. It makes adding new projects much more simple.&lt;/p&gt;
+
+&lt;p&gt;To add a project, I add a new sub-folder under _assets for the project that contains all the images and videos associated and write a markdown file. Writing the content through markdown is extremely intuitive and completely removes the friction of trying to create content.&lt;/p&gt;
+
+&lt;figure class=&quot;pc-80 no-side-margin img-center&quot;&gt;
+&lt;img src=&quot;/assets/posts/2021/08/portfolio/markdown.jpg&quot; /&gt;
+&lt;figcaption&gt;look at how easy it is to write new pages&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;what-i-learned&quot;&gt;What I Learned&lt;/h2&gt;
+
+&lt;p&gt;I’ve worked with HTML and CSS for quite some time now, so I know how to translate what I want into code or can find a solution otherwise, but some of the less black and white concepts of web development (like responsiveness) are little less familar. Those concepts are usually a little more hidden, in that you will not find those concepts unless you look for them.&lt;/p&gt;
+
+&lt;p&gt;Working on this site has exposed me to a lot more concepts that fall into this category that ellude most beginners and intermediate developers. Choosing to use Jekyll was apart of a decision to get away from working with vanilla html, css, JavaScript and streamline development. I wanted it to be easy to update the content of my site, so Jekyll’s template system along with the ability to use Liquid allowed me to further separate content from layout.&lt;/p&gt;
+
+&lt;p&gt;I made a conscious effort while developing the site and some work refactoring the code after the fact to really simplify my code. I used Sass to separate my css into different files and organize them. It really helped me make my css more reusable and reduce any redundancies. It also has the nice side effect of making my site a little more lean.&lt;/p&gt;</content><author><name></name></author><category term="programming" /><category term="web" /><category term="Jekyll" /><category term="HTML" /><category term="CSS" /><category term="Adobe-XD" /><category term="Web-Development" /><summary type="html"></summary></entry><entry><title type="html">My Cellular Automata Framework</title><link href="http://localhost:4000/posts/2021/08/cellular-automata/" rel="alternate" type="text/html" title="My Cellular Automata Framework" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>http://localhost:4000/posts/2021/08/cellular-automata</id><content type="html" xml:base="http://localhost:4000/posts/2021/08/cellular-automata/">&lt;figure class=&quot;pc-100 no-side-margin img-center&quot;&gt;
+&lt;video muted=&quot;&quot; autoplay=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;
+&lt;source src=&quot;/assets/posts/2021/08/cellular-automata/Cellular Automata.mp4&quot; /&gt;
+Your browser will not load/play .mp4 files.
+&lt;/video&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I, as well as many others, was drawn to Cellular Automata and the many endless rulesets we can create. At its core, cellular automata is a discrete simulation, usually in 2D or 3D space. We define a ruleset to specify how cells may change states and provide an intial seed, or configuration of cells. In discrete steps of time, the simulation uses the ruleset to update cells as necessary.&lt;/p&gt;
+
+&lt;p&gt;I created a JavaScript framework for building custom simulations. I separated the logic of the simulation, from the rendering, and interactivity, to allow the developer to replace and customize anything they needed.&lt;/p&gt;
+
+&lt;p&gt;The current state of simulation, its ruleset, rendering functions, and other goodies may be saved into a JSON file, so the user could load it up later. The save file could also be edited as plain text, so the user could also adjust it as they like or could even create their own custom save files. Some examples of modifications: states of cells may be changed, custom rules may be written as JavaScript, and the rendering functions may be adjusted to utilize any JavaScript methods to draw on the canvas&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/nicolasmaclean/Cellular-Automata-JS#readme&quot;&gt;Link to the README for this project&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;what-i-would-do-differently&quot;&gt;What I Would Do Differently&lt;/h2&gt;
+
+&lt;p&gt;This project comes to about 4 or 5 thousand lines of code, so there’s definitely lots of things that could be refactored or done better. But there’s really one thing that sticks out. The save/load system. I love the ability to mod the save/load files to such a great extent through JavaScript, but for my site to load and run JavaScript from the user is certainly less than ideal. I don’t think there’s any security concern for it at the moment, but there are definitely better ways accomplish this.&lt;/p&gt;
+
+&lt;h2 id=&quot;specific-challenges&quot;&gt;Specific Challenges&lt;/h2&gt;
+
+&lt;p&gt;As I was creating this project, I wanted to solve the problems myself, so I avoided looking at how others have created similar projects. I had a lot of fun thinking of and trying new features. My favorites were the save/load system and the infinite 2D space the simulation takes place in.&lt;/p&gt;
+
+&lt;p&gt;I’ve come back to this project a couple times since finshing it to try writing some custom rules. I’ve been amazed at how easy it is to create completely new simluations by adding 2 or 3 lines of code to a save file. I was able to quickly simulate gravity by having a “sand” cell move downwards till it reaches a ground or sand cell.&lt;/p&gt;
+
+&lt;figure class=&quot;pc-80 no-side-margin img-center&quot;&gt;
+&lt;img src=&quot;/assets/posts/2021/08/cellular-automata/gravity.gif&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I’m also quite proud that I was able to figure out how to deal with an infinite 2D space. This bit I did do a little bit of research. I found the concept of a sparse matrix on Wikipedia and ran with it. All of the cells in the simulation with the default state aren’t stored and assumed to have that state, so the only data that is stored are the states of cells that are not the default.&lt;/p&gt;</content><author><name></name></author><category term="programming" /><category term="web" /><category term="JavaScript" /><category term="React" /><summary type="html">Your browser will not load/play .mp4 files.</summary></entry><entry><title type="html">The Impossible Cube</title><link href="http://localhost:4000/posts/2021/08/impossible-cube/" rel="alternate" type="text/html" title="The Impossible Cube" /><published>2021-08-17T00:00:00-05:00</published><updated>2021-08-17T00:00:00-05:00</updated><id>http://localhost:4000/posts/2021/08/impossible-cube</id><content type="html" xml:base="http://localhost:4000/posts/2021/08/impossible-cube/">&lt;figure class=&quot;pc-100 no-side-margin img-center&quot;&gt;
+&lt;video muted=&quot;&quot; autoplay=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;
+&lt;source src=&quot;/assets/posts/2021/08/impossible-cube/Impossible Cube.mp4&quot; /&gt;
+Your browser will not load/play .mp4 files.
+&lt;/video&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The game Antichamber (2013) has great puzzles and hypnotizing non-euclidean geometry. One effect in particular: the “Impossible Cube”. Each face shows a different scene inside of the cube.&lt;/p&gt;
+
+&lt;p&gt;Upon researching approaches to creating the effect, I predominately found methods meant for real-time games, not animations. They used stencil masks from within a shader to show the desired geometries. I took a slightly different approach, since I was creating this effect for non-real-time rendering.&lt;/p&gt;
+
+&lt;figure class=&quot;pc-60 no-side-margin img-center&quot;&gt;
+&lt;img src=&quot;/assets/posts/2021/08/impossible-cube/antichamber-reference.jpg&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&quot;breakdown&quot;&gt;Breakdown&lt;/h1&gt;
+
+&lt;p&gt;I created this effect with the magic of compositing. Layers were utilzed to render multiple versions of the same scene and were mixed together using masks. In a higher-level sense, I have 2 different animations: one of the ant and one of the ring. I used 5 layers to capture both of these animations and layer masks to composite them.&lt;/p&gt;
+
+&lt;figure class=&quot;pc-80 no-side-margin img-center&quot;&gt;
+&lt;img src=&quot;/assets/posts/2021/08/impossible-cube/nodes.jpg&quot; /&gt;
+&lt;figcaption&gt;The Compositing Nodes&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;For each frame of the animation, I have 3 versions of it: the cube has walls over both sides, the cube has one side open to view the ring, and the cube has the other side open to view the ant. The masks, which are the sides of the cube that we show/hide, are used to select the scene of the ant and ring and put them over the original image.&lt;/p&gt;
+
+&lt;figure class=&quot;pc-80 no-side-margin img-center&quot;&gt;
+&lt;img src=&quot;/assets/posts/2021/08/impossible-cube/layers.jpg&quot; /&gt;
+&lt;figcaption&gt;Here's A Close Up On the Layers Used (Including the Final Image)&lt;/figcaption&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="art" /><category term="Blender" /><category term="3D-Modeling" /><category term="Animation" /><summary type="html">Your browser will not load/play .mp4 files.</summary></entry><entry><title type="html">Tea Time</title><link href="http://localhost:4000/posts/2021/08/teapot/" rel="alternate" type="text/html" title="Tea Time" /><published>2021-08-17T00:00:00-05:00</published><updated>2021-08-17T00:00:00-05:00</updated><id>http://localhost:4000/posts/2021/08/teapot</id><content type="html" xml:base="http://localhost:4000/posts/2021/08/teapot/">&lt;figure class=&quot;pc-100 no-side-margin img-center&quot;&gt;
+&lt;img src=&quot;/assets/posts/2021/08/teapot/hero.jpg&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;This project began with the teapot. I modeled it in Maya, textured in Substance Painter, and rendered in Arnold for the Modeling and Texturing 1 class. Shortly after the class finished, I added some teacups and made some final renders. The work done after the class was done primarily in Blender, but the textures for the teacups were made in Substance Painter.&lt;/p&gt;
+
+&lt;h2 id=&quot;reflection&quot;&gt;Reflection&lt;/h2&gt;
+
+&lt;figure class=&quot;pc-80 no-side-margin img-center&quot;&gt;
+&lt;video muted=&quot;&quot; autoplay=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;
+&lt;source src=&quot;/assets/posts/2021/08/teapot/turntable.mp4&quot; /&gt;
+Your browser will not load/play .mp4 files.
+&lt;/video&gt;
+&lt;figcaption&gt;rendered in Blender using the cycles engine&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I’ve had experience modeling and animating with Blender prior to joining the ATEC program, so I fought with my muscle memory as I learned Maya. But funny enough, after spending two semesters in Maya, Blender became somewhat foreign to work in. I would try to hold alt as I use the mouse to navigate, like in Maya. After a continuing the scene the Blender, I’ve become much more comfortable switching between the two software packages.&lt;/p&gt;
+
+&lt;p&gt;As I wrote earlier, I modeled and UVed the teapot in Maya and the rest of the scene in Blender. It was really interesting how Blender outperforms Maya and the other way around. Blender’s modifers were much more reliable than Maya’s object history, but I felt Maya’s UVing toolkit was a much stronger.&lt;/p&gt;
+
+&lt;h2 id=&quot;other-images&quot;&gt;Other Images&lt;/h2&gt;
+
+&lt;figure class=&quot;pc-80 no-side-margin img-center&quot;&gt;
+&lt;img src=&quot;/assets/posts/2021/08/teapot/textures.jpg&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;figure class=&quot;pc-80 no-side-margin img-center&quot;&gt;
+&lt;img src=&quot;/assets/posts/2021/08/teapot/reference.jpg&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;figure class=&quot;pc-80 no-side-margin img-center&quot;&gt;
+&lt;img src=&quot;/assets/posts/2021/08/teapot/modelSheet.jpg&quot; /&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="art" /><category term="Maya" /><category term="Blender" /><category term="Substance-Painter" /><category term="3D-Modeling" /><summary type="html"></summary></entry></feed>

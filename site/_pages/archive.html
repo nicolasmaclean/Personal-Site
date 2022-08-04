@@ -1,0 +1,22 @@
+---
+permalink: /archive/
+layout: default
+custom-css: archive
+
+title: Archive
+description: This Nick Maclean's archive of posts.
+---
+
+<div class="archive">
+    {% for post in site.posts %}
+        {% capture projectthumbnail %}
+        {{post.url | strip | prepend: "/assets/"}}
+        {% endcapture%}
+
+        <div class="archive-project">
+            <a href={{post.url}}>
+                {% include image.html type="custom" dir=projectthumbnail name="thumbnail.jpg" class="no-margin" %}
+            </a>
+        </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I helped program and lead a narrative based game for the sgda 2021 fall game jam.">
+    <title> Nick Maclean | Before Your Eyes *** WIP ***</title>
+    
+    <link rel="stylesheet" type="text/css" href="/assets/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/default.css">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/post.css">
+
+    
+
+    <script src="https://kit.fontawesome.com/fb3d6d8900.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div>
+        <nav>
+    <div class="nav-links-left">
+        <a href="/"> 
+            <b> Nick Maclean </b>
+        </a>
+    </div>
+
+    <div class="nav-links-right">
+        <a href="/about"
+            
+        > About </a>
+        
+        <a href="/"
+            
+        > Portfolio </a>
+
+        <a href="/archive"
+            
+        > Archive </a>
+    </div>
+</nav>
+
+        <main class="page-content">
+            <h2 class="center-text">
+                Before Your Eyes *** WIP ***
+            </h2>
+
+            
+<figure class="pc-100 no-side-margin img-center">
+<img src="/assets/posts/2021/10/before-your-eyes/layout.jpg" />
+</figure>
+
+<p>This is a current work in progress with the help of Ariana Mendez, Kathryn Perrine, Basil El-Hindi, and myself. Ariana is our environment artist, Kathryn our sprite artist and narrative designer, and Basil along with myself are our programmers. This project began for the SGDA 2021 fall game jam, but we decided to continue working on it to add more polish and bring it closer to our original vision.</p>
+
+<p>After taking a short break, Basil and I have been refactoring our code and researching easier ways to accomplish what we need. For example, I tried to implement a dialog system during the game jam, but the complexity grew much more quickly than I had initially realized. Importing our narrative script into Unity was a teidous and manual process that took more time than it should have. After performing some research, we have been learning and integrating Yarn Spinner into our game to allow a seemless interface from our script to gameplay.</p>
+
+<h2 id="asset-processing">Asset Processing</h2>
+
+<figure class="pc-100 no-side-margin img-center">
+<video muted="" autoplay="" controls="" loop="">
+<source src="/assets/posts/2021/10/before-your-eyes/material-workflow.mp4" />
+Your browser will not load/play .mp4 files.
+</video>
+<figcaption>Material names are used to map textures</figcaption>
+</figure>
+
+<p>I have been exploring asset post-processing to streamline model, texture, and sprite importing. For models, the material name (from the .fbx file) is parsed to find its corresponding texture. For example, a model with a material <code class="language-plaintext highlighter-rouge">MD_bench</code> will search the <code class="language-plaintext highlighter-rouge">Textures</code> folder for a texture <code class="language-plaintext highlighter-rouge">TX_bench</code>. Further, textures with the <code class="language-plaintext highlighter-rouge">TX_</code> prefix are given a new set of default import settings that are appropriate for pixel art.</p>
+
+<p>My next point of automation comes to the sprites. Spritesheets can be automatically sliced on import, instead of having an artist open the sprite editor in Unity. Specifically, my script takes images with the <code class="language-plaintext highlighter-rouge">SS_</code> prefix, a number, and a name (<code class="language-plaintext highlighter-rouge">SS_##_name</code> or <code class="language-plaintext highlighter-rouge">SS_##_##_name</code>). The image is sliced into the number of sprites specified and names them according to their row and column.</p>
+
+<p>Finally, we have animations. These can be extremely time-consuming to import manually. Assembling animation clips from sprites out of spritesheets, then placing clips into however many animators you need is horrible. We had 4 characters, each with their own animation clips (that changed between levels), so this just killed us. It took way too long to assemble the animations.</p>
+
+<figure class="pc-100 no-side-margin img-center">
+<video muted="" autoplay="" controls="" loop="">
+<source src="/assets/posts/2021/10/before-your-eyes/animation-workflow.mp4" />
+Your browser will not load/play .mp4 files.
+</video>
+<figcaption>This is an example of a character animation import, in less than a minute!</figcaption>
+</figure>
+
+<p>Now, spritesheets for animations are denoted with the <code class="language-plaintext highlighter-rouge">AS_</code> prefix along with their frame count and name (<code class="language-plaintext highlighter-rouge">AS_##_level-name</code>). The spritesheet is sliced in the pre-processing, similar to the <code class="language-plaintext highlighter-rouge">SS_</code> spritesheet. After all assets have gone through post-processing, spritesheets with the <code class="language-plaintext highlighter-rouge">AS_</code> prefix are processed once more. The sprites that have been cutout are then assembled into an animation clip with the specified framerate and saved as an asset in the project.</p>
+
+<p>Finally, each character can utilize an animator from a pool of templates, instead of each character needing their own, unique animator. Animation clips are assigned to its controller, at runtime.</p>
+
+<h2 id="reflection">Reflection</h2>
+
+<p>The short time constraints (and mid-term madness) made the game jam a very difficult week. We had to hack our way through some bits of the process, but I’ve learned more about how far corners can be cut, if necessary, and what corners can never be cut.</p>
+
+<p>Larger design decisions and pipeline integration between artist/designers and programmers is extremely important. The techinal bunch on a project should not be responsible to manually import assets. It’s a repeative process that can easily be automated with scripts and a simple naming convention.</p>
+
+            <div class="post-meta">
+                <b> October 2021 </b>
+                <div class="post-categories">
+                    
+                        <a class="category cat-programming" href="/category/programming"> programming</a>
+                    
+                        <a class="category cat-game-dev" href="/category/game-dev"> game-dev</a>
+                    
+                        <a class="category cat-game-jam" href="/category/game-jam"> game-jam</a>
+                    
+                        <a class="category cat-tool" href="/category/tool"> tool</a>
+                    
+                </div>
+            </div>
+
+            <div class="neighbors">
+    
+    <a href="/posts/2021/10/space-explorer/" class="neighbor-next">
+        <div class="arrow-left"></div>
+        <p> Space Explorer </p>
+    </a>
+    
+    
+    <a href="/posts/2021/08/portfolio/" class="neighbor-prev">
+        <div class="arrow-right"></div>
+        <p> My Portfolio </p>
+    </a>
+    
+</div>
+        </main>
+    </div>
+
+    <footer class="clr-white">
+    <p>
+        Nick Maclean
+    </p>
+
+    <!-- socials -->
+    <div>
+        <a href="https://github.com/nicolasmaclean" target="_blank">
+            <i class="fab fa-github-square white orange-hover"></i>
+        </a>
+            
+        <a href = "mailto: nicolasimaclean@gmail.com">
+            <i class="far fa-envelope white orange-hover"></i> 
+        </a>
+        
+        <a href="https://linkedin.com/in/nick-maclean" target="_blank">
+            <i class="fa fa-linkedin white orange-hover"></i> 
+        </a>
+    </div>
+</footer>
+</body>
+</html>

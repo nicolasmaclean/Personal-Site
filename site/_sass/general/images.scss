@@ -1,0 +1,61 @@
+// default
+img, video
+{
+    border-radius: 3px;
+}
+
+// image size
+.pc-20 > img, .pc-20 > video
+{
+    width: 20%;
+}
+
+.pc-40 > img, .pc-40 > video
+{
+    width: 40%;
+}
+
+.pc-60 > img, .pc-60 > video
+{
+    width: 60%;
+}
+
+.pc-80 > img, .pc-80 > video
+{
+    width: 80%;
+}
+
+.pc-90 > img, .pc-90 > video
+{
+    width: 90%;
+}
+
+.pc-100 > img, .pc-100 > video
+{
+    width: 100%;
+}
+
+
+// image alignment
+.img-center
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.img-center > figcaption
+{
+    text-align: center;
+}
+
+.img-center > img, .img-center > video
+{
+    align-self: center;
+}
+
+
+// defaults
+figcaption
+{
+    margin-top: 1rem;
+}

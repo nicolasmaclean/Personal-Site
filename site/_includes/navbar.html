@@ -1,0 +1,27 @@
+<nav>
+    <div class="nav-links-left">
+        <a href="/"> 
+            <b> {{site.title}} </b>
+        </a>
+    </div>
+
+    <div class="nav-links-right">
+        <a href="/about"
+            {% if page.title == 'About' %}
+                class='bold'
+            {% endif %}
+        > About </a>
+        
+        <a href="/"
+            {% if page.title == 'Portfolio' %}
+                class='bold'
+            {% endif %}
+        > Portfolio </a>
+
+        <a href="/archive"
+            {% if page.title == 'Archive' %}
+                class='bold'
+            {% endif %}
+        > Archive </a>
+    </div>
+</nav>

@@ -1,0 +1,43 @@
+# basic config
+title: Nick Maclean
+description: >- # this means to ignore newlines until "baseurl:"
+  Personal portfollio website for Nick Maclean.
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.nicolasmaclean.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+# socials
+email: nicolasimaclean ( at ) gmail.com
+email_link: nicolasimaclean@gmail.com
+
+github_username: nicolasmaclean
+github_link: https://github.com/nicolasmaclean
+
+linkedin_username: nick maclean
+linkedin_link: https://linkedin.com/in/nick-maclean
+
+# Build settings
+include: ["_pages"]
+markdown: kramdown
+highlighter: rouge
+theme: null
+plugins:
+  - jekyll-archives
+
+jekyll-archives:
+  enabled: [categories]
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+
+sass:
+  style: compressed
+  sass_dir: _sass
+# Front Matter Defaults
+defaults:
+  - scope:
+      path: _posts
+    values:
+      layout: post
+      
+permalink: /posts/:year/:month/:title/

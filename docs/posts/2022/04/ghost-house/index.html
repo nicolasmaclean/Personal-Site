@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I worked in a team of ~40 people over the course of semester to create a narrative driven, 3rd person game in Unity.">
+    <title> Nick Maclean | Ghost House | Game Lab Spring 2022</title>
+    
+    <link rel="stylesheet" type="text/css" href="/assets/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/default.css">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/post.css">
+
+    
+
+    <script src="https://kit.fontawesome.com/fb3d6d8900.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div>
+        <nav>
+    <div class="nav-links-left">
+        <a href="/"> 
+            <b> Nick Maclean </b>
+        </a>
+    </div>
+
+    <div class="nav-links-right">
+        <a href="/about"
+            
+        > About </a>
+        
+        <a href="/"
+            
+        > Portfolio </a>
+
+        <a href="/archive"
+            
+        > Archive </a>
+    </div>
+</nav>
+
+        <main class="page-content">
+            <h2 class="center-text">
+                Ghost House | Game Lab Spring 2022
+            </h2>
+
+            
+<figure class="pc-100 no-side-margin img-center">
+<video muted="" autoplay="" controls="" loop="">
+<source src="/assets/posts/2022/04/ghost-house/trailer.mp4" />
+Your browser will not load/play .mp4 files.
+</video>
+</figure>
+
+<p>Ghost House is a 3rd person, narrative driven game created in Unity 2019. The player explores the narrative and environment by performing 100+ interactions with the scene that trigger dialog between characters, move or manipulate items in the house, and even talk to a bird.</p>
+
+<p>A direct download can be made <a href="https://github.com/metalac190/GhostHouse/releases/download/Release/GhostHouse_Release.zip">here</a> from the GitHub release and you can find our GitHub rpository <a href="https://github.com/metalac190/GhostHouse">here</a>!</p>
+
+<h2 id="what-is-game-lab">What is Game Lab</h2>
+
+<p>Game Lab is a course at UTD led by professors Tim Lewis and Adam Chandler. They assembled a team of ~40 people composed of artists, designers, programmers, and SFX artists. They provided a design document to serve as a starting point for the semester, then turned over the game to the students.</p>
+
+<p>The professors do a great job balancing creative freedom for the students and setting defined boundaries for the project. There was extremely little that they said we <em>must</em> do or <em>can’t</em> do, but rather they explained why a different approach might be better or pointed issues with our ideas. They did, however, setup a system to mimic a production setting. We had milestones (alpha, beta, content lock, etc.) to track project progress, clearly defined teams (and to a smaller extent, heirarchy), and lectures oriented to teaching GitHub and other necessary skills for large projects.</p>
+
+<h2 id="what-i-did">What I Did</h2>
+
+<p>My main role on the team was the implementing and teaching of the dialog system and acting as a general game programmer where necessary. More specifically, I integrated <a href="https://docs.yarnspinner.dev/">Yarn Spinner</a> and extended custom DialogViews to fit the needs of our game.</p>
+
+<figure class="pc-80 no-side-margin img-center">
+<img src="/assets/posts/2022/04/ghost-house/dialog.png" />
+</figure>
+
+<p>I chose to leverage Yarn Spinner as a part of our dialog system for 2 reasons: the twine-like syntax makes it easy for narrative designers to pick up and quite honestly I saw this as an oportunity to learn more about Yarn Spinner. Its an open source project that is still growing quite fast and I saw them as the best option over other Unity oriented packages short of creating my own system.</p>
+
+<p>While learning how DialogViews, I spent a large portion of time looking through Yarn Spinner’s Unity integration and their .net implementation. I found it extremely useful for learning more about C# and .net ways of designing code and what I found extremely interesting: meta-programming.</p>
+
+<p>C# Attributes and Unity’s PropertyAttributes are powerful. My current favorite use case comes as editor scripting. Drawers for PropertyAttributes can enable expose the functionality of Editor scripting without forcing the burden of updating a components editor script for <em>every</em> change in a component script. Although I didn’t have the chance to realize this curiousity in this project to a great extent, I have in my personal Unity package, <a href="https://github.com/nicolasmaclean/Gummi-Unity">Gummi</a>.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>The 2 main realities I had to face as a member of a production: work gets cut and you don’t always get your way.</p>
+
+<p>I spent a non-trival effort setting up systems with Yarn Spinner that allowed narrative designers to script events in within the narrative script like trigger animations, timelines, etc., but it didn’t quite fit our production context. Our programming team discussed it and Tim Lewis gave us some input. The general consensus was in a long-term project, this is exactly what we would want to do, but the semester length of game lab doesn’t quite call for such a comprehensive solution like that. I more or less agree with the decision, but it still felt quite disappointing at the time. I had to push myself past that and continue working.</p>
+
+<p>When you work on a team, comprises have to be made sometimes. There were times that I was asked to do something (or the programming team) that I thought was simply a bad idea, but at the end of the day my job was implement systems and teach them to whoever needed it. We had a team of artists and designers to make decisions and I needed to trust them to do their job as they mine. Of course, I would respectfully attempt to discuss what I didn’t like about the idea with them or alternatives that I might have come up with.</p>
+
+<p>Having taught myself a large portion of what I know about programming, I have not had many opportunities to work on teams (and certainly little with such talented artists, designers, and programmers). However, I’m excited that is changing. My skills have finally risen to the point that opportunties like this class and game jams are being quite more common for me. It’s been an absolute pleasure having other fill in roles that I could not as well as them (if at all) and I can work with them. I learned a lot about how to work with designers and artists, and I learned a lot programing from the rest of our programming team.</p>
+
+            <div class="post-meta">
+                <b> April 2022 </b>
+                <div class="post-categories">
+                    
+                        <a class="category cat-programming" href="/category/programming"> programming</a>
+                    
+                        <a class="category cat-game-dev" href="/category/game-dev"> game-dev</a>
+                    
+                </div>
+            </div>
+
+            <div class="neighbors">
+    
+    <a href="/posts/2022/07/arcade-jam/" class="neighbor-next">
+        <div class="arrow-left"></div>
+        <p> Arcade Game Jam | Revenge of the Roombas </p>
+    </a>
+    
+    
+    <a href="/posts/2022/04/maya-stacker/" class="neighbor-prev">
+        <div class="arrow-right"></div>
+        <p> Maya Stacker Tool </p>
+    </a>
+    
+</div>
+        </main>
+    </div>
+
+    <footer class="clr-white">
+    <p>
+        Nick Maclean
+    </p>
+
+    <!-- socials -->
+    <div>
+        <a href="https://github.com/nicolasmaclean" target="_blank">
+            <i class="fab fa-github-square white orange-hover"></i>
+        </a>
+            
+        <a href = "mailto: nicolasimaclean@gmail.com">
+            <i class="far fa-envelope white orange-hover"></i> 
+        </a>
+        
+        <a href="https://linkedin.com/in/nick-maclean" target="_blank">
+            <i class="fa fa-linkedin white orange-hover"></i> 
+        </a>
+    </div>
+</footer>
+</body>
+</html>

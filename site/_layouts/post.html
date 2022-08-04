@@ -31,7 +31,7 @@
                 <b> {{page.date | date: "%B %Y"}} </b>
                 <div class="post-categories">
                     {% for cat in page.categories %}
-                        <a class="category cat-{{cat}}" href="/category/{{cat}}"> {{cat}}</a>
+                        <a class="category cat-{{cat}}" href="/category/{{cat}}"> {{site.data.category-names | map: cat}}</a>
                     {% endfor %}
                 </div>
             </div>

@@ -20,7 +20,6 @@ linkedin_link: https://linkedin.com/in/nick-maclean
 include: ["_pages"]
 markdown: kramdown
 highlighter: rouge
-theme: null
 plugins:
   - jekyll-archives
 
@@ -33,11 +32,23 @@ jekyll-archives:
 sass:
   style: compressed
   sass_dir: _sass
+
 # Front Matter Defaults
 defaults:
   - scope:
       path: _posts
     values:
       layout: post
+      permalink: /posts/:year/:month/:title/
       
-permalink: /posts/:year/:month/:title/
+
+# Compress.html (html minifier)
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [development]
+  blanklines: false
+  profile: false
+  startings: [html, head, body]

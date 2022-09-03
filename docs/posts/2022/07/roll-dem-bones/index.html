@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I lead a team of 5 other students through the GMTK 48 hour game jam and the Dallas Society of Play's (DSOP) 2 week slow jam.">
+    <title> Nick Maclean | Roll Dem Bones</title>
+    
+    <link rel="stylesheet" type="text/css" href="/assets/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/default.css">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/post.css">
+
+    
+
+    <script src="https://kit.fontawesome.com/fb3d6d8900.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div>
+        <nav>
+    <div class="nav-links-left">
+        <a href="/"> 
+            <b> Nick Maclean </b>
+        </a>
+    </div>
+
+    <div class="nav-links-right">
+        <a href="/about"
+            
+        > About </a>
+        
+        <a href="/"
+            
+        > Portfolio </a>
+
+        <a href="/archive"
+            
+        > Archive </a>
+    </div>
+</nav>
+
+        <main class="page-content">
+            <h2 class="center-text">
+                Roll Dem Bones
+            </h2>
+
+            <!-- 
+
+
+<figure  class="pc-100 no-side-margin img-center" >
+<video muted autoplay controls loop>
+<source src="/assets/posts/2022/07/roll-dem-bones/gameplay.mp4">
+Your browser will not load/play .mp4 files.
+</video>
+</figure>
+
+ -->
+
+<div class="flex-row items-center">
+    
+
+
+<figure class="w-100 pc-90 img-center margin-bottom-1rem">
+<img src="/assets/posts/2022/07/roll-dem-bones/game-start.png" />
+</figure>
+
+
+    
+
+
+<figure class="w-100 pc-90 img-center margin-bottom-1rem">
+<img src="/assets/posts/2022/07/roll-dem-bones/game-hall.png" />
+</figure>
+
+
+</div>
+
+<div class="flex-row items-center">
+    
+
+
+<figure class="w-100 pc-90 img-center no-margin-top">
+<img src="/assets/posts/2022/07/roll-dem-bones/game-title.png" />
+</figure>
+
+
+    
+
+
+<figure class="w-100 pc-90 img-center no-margin-top">
+<img src="/assets/posts/2022/07/roll-dem-bones/game-lose.png" />
+</figure>
+
+
+</div>
+
+<p>I worked with 8 other members of the SGDA, including <a href="https://www.linkedin.com/in/phu--le">Phu Lee</a>, <a href="https://www.linkedin.com/in/ariana-z-mendez/">Ariana Mendez</a>, Shelley Sugiharto, and <a href="https://www.linkedin.com/in/john-huy-mai/">John Mai</a>. The final build can be found on <a href="https://amendez.itch.io/roll-dem-bones">itch.io</a>!</p>
+
+<h3 id="animations">Animations</h3>
+
+<p>As I have gained more experience developing FPS games in Unity, a lot of the work towards the beginning of the project can be rather simple, boiler-plate code. However, I have relatively little experience with 3D Animations in Unity. I have had little opportunity to work with complex Animators as I have little experience in animation. Over the course of the slow-jam, I had to redo the PlayerController as features demmanded by Phu simply were not supported by the previous system.</p>
+
+<p>I learned to lean into the Animator Controller. Instead of tracking cooldowns and the progress of the current animation state from within other components, I learned to poll that information from the Animator Controller. This enabled Phu to adjust the transitions between animation clips from the inspector, which improved our workflow and the visual quality of transitions.</p>
+
+<figure class="w-100 pc-90 img-center no-margin-top">
+<img src="/assets/posts/2022/07/roll-dem-bones/animator.png" />
+</figure>
+
+<p>One of the more challenging features that forced me to clean up the Player’s animator was the ability to combo melee attacks. There were 3 different animation clips (each for a different type of swing) that needed to be depending on the length of time since the last swing. My initial efforts to track the time spent in each state and since state changes created a complicated mess of edge cases that broke the animations.</p>
+
+<p>This much cleaner system, shown above, uses the <code class="language-plaintext highlighter-rouge">Exit Time</code> property of transitions to track the timing of swings.</p>
+
+<h3 id="production">Production</h3>
+
+<p>Shelley was an incoming freshman at the time with relatively little experience with game development. She came on as our 2d artist. She did a great job setting aside time to work on whatever tasks we had for her, but she also did a great job listening whenever we tried to teach her. I introduced a workflow for her to import 2D assets into the project (with GitHub) and introduced her to adjacent areas like VFX.</p>
+
+<p>I was really happy with how I was able to keep Shelley engaged with the project regardless of her beginner status. Of course, this was also thanks to Shelley for being so flexible.</p>
+
+            <div class="post-meta">
+                <b> July 2022 </b>
+                <div class="post-categories">
+                    
+                        <a class="category cat-programming" href="/category/programming"> Programming</a>
+                    
+                        <a class="category cat-game-dev" href="/category/game-dev"> Game Development</a>
+                    
+                        <a class="category cat-game-jam" href="/category/game-jam"> Game Jams</a>
+                    
+                </div>
+            </div>
+
+            <div class="neighbors">
+    
+    <a href="/posts/2022/08/sgda-website/" class="neighbor-next">
+        <div class="arrow-left"></div>
+        <p> SGDA Website </p>
+    </a>
+    
+    
+    <a href="/posts/2022/04/ghost-house/" class="neighbor-prev">
+        <div class="arrow-right"></div>
+        <p> Ghost House | Game Lab Spring 2022 </p>
+    </a>
+    
+</div>
+        </main>
+    </div>
+
+    <footer class="clr-white">
+    <p>
+        Nick Maclean
+    </p>
+
+    <!-- socials -->
+    <div>
+        <a href="https://github.com/nicolasmaclean" target="_blank">
+            <i class="fab fa-github-square white orange-hover"></i>
+        </a>
+            
+        <a href = "mailto: nicolasimaclean@gmail.com">
+            <i class="far fa-envelope white orange-hover"></i> 
+        </a>
+        
+        <a href="https://linkedin.com/in/nick-maclean" target="_blank">
+            <i class="fa fa-linkedin white orange-hover"></i> 
+        </a>
+    </div>
+</footer>
+    
+    <script async src="//static.getclicky.com/101377471.js"></script>
+    <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101377471ns.gif" /></p></noscript>
+</body>
+</html>

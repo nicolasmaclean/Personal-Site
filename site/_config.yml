@@ -17,11 +17,12 @@ linkedin_username: nick maclean
 linkedin_link: https://linkedin.com/in/nick-maclean
 
 # Build settings
-include: ["_pages"]
+include: ["_pages", "_redirects"]
 markdown: kramdown
 highlighter: rouge
 plugins:
   - jekyll-archives
+  - jekyll-redirect-from
 
 jekyll-archives:
   enabled: [categories]

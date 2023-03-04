@@ -2,7 +2,7 @@
 title: Maya Stacker Tool
 description: I created a Maya tool using Python and PySide2 that stacks objects.
 categories: [tool]
-tags: [Maya, Python, PyQt]
+tags: [Maya, Python, PySide2, PyQt5]
 ---
 
 {% include video.html type="post" name="demo.mp4" class="pc-100 no-side-margin img-center" %}

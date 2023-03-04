@@ -1,6 +1,6 @@
 ---
 title: SGDA Website
-description: John Main and I redesigned the UTD SGDA's website.
+description: John Mai and I redesigned the UTD SGDA's website.
 categories: [programming, web]
 tags: [Jekyll, HTML, CSS, Web-Development]
 ---

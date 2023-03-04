@@ -9,7 +9,7 @@ tags: [Unity, Programming]
 
 Ghost House is a 3rd person, narrative driven game created in Unity 2019. The player explores the narrative and environment by performing 100+ interactions with the scene that trigger dialog between characters, move or manipulate items in the house, and even talk to a bird.
 
-A direct download can be made [here](https://github.com/metalac190/GhostHouse/releases/download/Release/GhostHouse_Release.zip) from the GitHub release and you can find our GitHub rpository [here](https://github.com/metalac190/GhostHouse)!
+A direct download can be made [here](https://github.com/metalac190/GhostHouse/releases/download/Release/GhostHouse_Release.zip) from the GitHub release and you can find our GitHub repository [here](https://github.com/metalac190/GhostHouse)!
 
 ## What is Game Lab
 

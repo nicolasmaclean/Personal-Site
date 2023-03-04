@@ -8,19 +8,23 @@ description: This Nick Maclean's personal portfolio.
 ---
 
 <div class="portfolio">
-    {% for project in site.data.portfolio.projects %}
+    {% for column in site.data.portfolio.columns %}
+    <div class="column">
+        {% for project in column['projects'] %}
         {% capture projectpath %}
         {{"posts/" | append: project.year | append: "/" | append: project.month | append: "/" | append: project.name | append: "/"}}
         {% endcapture %}
-
+        
         {% capture projectthumbnail %}
         {{projectpath | strip | prepend: "/assets/"}}
         {% endcapture%}
-
+        
         <div class="portfolio-project">
             <a href={{projectpath}}>
-                {% include image.html type="custom" dir=projectthumbnail name="thumbnail.jpg" class="no-margin" %}
+                {% include image.html type="custom" dir=projectthumbnail name="thumbnail-portrait.jpg" class="no-margin" %}
             </a>
         </div>
+        {% endfor %}
+    </div>
     {% endfor %}
 </div>

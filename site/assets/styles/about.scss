@@ -1,63 +1,93 @@
 ---
 ---
 
+// .about
+// {
+//     display: grid;
+//     grid-template: 'pc pc pc pc . tx tx tx tx tx tx tx';
+//     grid-template-columns: repeat(12, 1fr);
+
+//     justify-content: center;
+//     align-content: center;
+// }
+
+// .about-text
+// {
+//     grid-area: tx;
+// }
+
+// .about-picture
+// {
+//     grid-area: pc;
+// }
+
+// .about-text, .about-picture
+// {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+// }
+
+// .about-picture > img
+// {
+//     max-width: min(100%, 300px);                // *** NEED TO UPDATE WHEN THE PROFILE PICTURE CHANGES ***
+
+//     border-radius: 2%;
+// }
+
+// .about p
+// {
+//     line-height: 1.5rem;
+//     margin: .5rem 0;
+// }
+
+// @media screen and (max-width: 1000px)
+// {
+//     .about
+//     {
+//         grid-template-columns: repeat(4, 1fr) .5fr repeat(7, 1fr);
+//     }
+// }
+
+// @media screen and (max-width: 700px)
+// {
+//     .about
+//     {
+//         grid-template-areas: 'pc'
+//                              'tx';
+//         grid-template-columns: 1fr;
+
+//         margin: 2rem 0;
+//         grid-row-gap: 1.5rem;
+//     }
+// }
+
+
 .about
 {
-    display: grid;
-    grid-template: 'pc pc pc pc . tx tx tx tx tx tx tx';
-    grid-template-columns: repeat(12, 1fr);
-
-    justify-content: center;
-    align-content: center;
-}
-
-.about-text
-{
-    grid-area: tx;
-}
-
-.about-picture
-{
-    grid-area: pc;
-}
-
-.about-text, .about-picture
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.about-picture > img
-{
-    max-width: min(100%, 300px);                // *** NEED TO UPDATE WHEN THE PROFILE PICTURE CHANGES ***
-
-    border-radius: 2%;
-}
-
-.about p
-{
-    line-height: 1.5rem;
-    margin: .5rem 0;
-}
-
-@media screen and (max-width: 1000px)
-{
-    .about
+    h1
     {
-        grid-template-columns: repeat(4, 1fr) .5fr repeat(7, 1fr);
+        font-size: 1.7rem;
+        border-bottom: 1px solid lighten(#28232D, 10%);
+        padding-bottom: .2rem;
+        margin-bottom: 1rem;
     }
-}
 
-@media screen and (max-width: 700px)
-{
-    .about
+    h2
     {
-        grid-template-areas: 'pc'
-                             'tx';
-        grid-template-columns: 1fr;
+        font-size: 1.4rem;
+        margin-bottom: .25rem;
+    }
 
-        margin: 2rem 0;
-        grid-row-gap: 1.5rem;
+    p
+    {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    ul
+    {
+        margin-top: 0.4rem;
+        margin-bottom: 1.5rem;
     }
 }

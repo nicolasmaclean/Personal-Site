@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I am Technical Director for UT Dallas' Animation Lab. I specifically worked on Bad Timing and Red Hat Ringo providing technical support, helped upgrade from a network to local workflow, and extended our pipeline to support rendering in Unreal Engine 5.1.">
+    <title> Nick Maclean | Anim Lab</title>
+    
+    <link rel="stylesheet" type="text/css" href="/assets/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/default.css">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/post.css">
+
+    
+
+    <script src="https://kit.fontawesome.com/fb3d6d8900.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div>
+        <nav>
+    <div class="nav-links-left">
+        <a href="/"> 
+            <b> Nick Maclean </b>
+        </a>
+    </div>
+
+    <div class="nav-links-right">
+        <a href="/about"
+            
+        > About </a>
+        
+        <a href="/"
+            
+        > Portfolio </a>
+
+        <a href="/archive"
+            
+        > Archive </a>
+    </div>
+</nav>
+
+        <main class="page-content">
+            <h2 class="center-text">
+                Anim Lab
+            </h2>
+
+            
+<figure class="pc-80 no-side-margin img-center">
+<video muted="" autoplay="" controls="" loop="">
+<source src="/assets/posts/2022/09/anim-lab/BadTiming_Logo.mp4" />
+Your browser will not load/play .mp4 files.
+</video>
+</figure>
+
+<h1 id="what-is-animation-lab">What is Animation Lab</h1>
+
+<p>Animation Lab is a course that aims to simulate a film studio environment. We had ~50 people over the course of 2 semesters (+1 more for a small pre-production team), during which we create a short, animated film. For Bad Timing (Spring - Fall 2022), we used Maya for everything from modeling to lighting with Substance Painter, Nuke, etc. For Red Hat Ringo (Spring - Fall 2023), we shifted to using Unreal 5.1 to render. Modeling, rigging, layout, and animation are still in Maya, but surfacing and lighting now work with Unreal.</p>
+
+<p>We have a pipeline that manages the storing and sharing of files for each stage that has been/is being built across these films. As a technical director, I help fix bugs with the pipe, provide technical support, add features to the pipe, and create tools for artists.</p>
+
+<h2 id="bad-timing">Bad Timing</h2>
+
+<p>I joined in the latter half of the film. Our pipeline was started a couple of years ago, so joining late didn’t matter too much. I still had to overcome joining a project with a large, pre-existing codebase. My professor, Casey Johnson, didn’t just throw all of that code at us. He gave us access to a handful of the modules. My fellow TD and I spent time looking around and experimenting to learn more about the pipe. As I settled in, I shifted to bug fixes and adding small features.</p>
+
+<h3 id="network">Network</h3>
+
+<p>The biggest struggle we faced during Bad Timing was our network drive. A 3rd party provides the school with this drive for free and unforuntately the quality of their service has decreased over the years. It has gotten to the point that working with files on the network is so slow, we’ve been updating our code to minimize requests to the network or circumvent it altogether.</p>
+
+<p>In practice, we leave our compiled code, project-wide data, and source files up there. But we download a copy of working files, work locally, and send versions/publishes back to the network. For the most part this is easy. Specific types of work like surfacing, hair grooms, assemblies, are little less simple. We have to carefully analyze those files before opening them for dependencies and make sure to download those too. It’s a teidous process of modifying each stage of the pipe to do this, because we need to be extremely careful to not lose work.</p>
+
+<p>I spent time upgrading our surfacing and xgen grooms to work locally. Unfortunately we had to ditch xgen for the final film, but it’ll be there for the future.</p>
+
+<hr />
+
+<h2 id="red-hat-rigno">Red Hat Rigno</h2>
+
+<p>As mentioned before, we made the switch from Arnold to Unreal 5.1 for this film. To extend our pipe, I modified the existing file launcher to find/open unreal projects; automated the MovieRenderPipeline; and created a lookdev setup. To keep our workflow consistent, we opted to use Python and PySide2 instead of using C++ or blueprints. We have keep compiled code on the network that is appended to the PYTHONPATH at project startup.</p>
+
+<h3 id="file-launcher">File Launcher</h3>
+
+<figure class="pc-80 no-side-margin img-center">
+<img src="/assets/posts/2022/09/anim-lab/FileLauncher.png" />
+<figcaption>Our Unreal Project Launcher</figcaption>
+</figure>
+
+<p>Our file launcher queries the ShotGun API to gather data about our project and populate this GUI, which then allows artists to open specific assets or shots for a stage in the pipe. This process is smart in how it decides what file to open. It’ll create an empty file (locally), if there is none; open a local file; or download the latest version from the network and open it.</p>
+
+<p>In the future I would like to update this GUI to decrease the friction for an artist to begin working. But the Unreal portion of the pipe still has much more important stuff for the time being…</p>
+
+<h3 id="rendering">Rendering</h3>
+
+<p>Although the MovieRenderPipeline is already quite a powerful tool for artists, I was tasked with automating the render process. This makes makes it easier for lighting artists not familiar with Unreal to render their work and allows the directors to more easily standardize settings across shots.</p>
+
+<figure class="pc-40 no-side-margin img-center">
+<img src="/assets/posts/2022/09/anim-lab/Rendering.png" />
+</figure>
+
+<p>This works by loading a rendering preset from an XML file stored on our network in the project-specific configs. I then have a set of convience methods and class to sit on top of Unreal’s Python API that simplify the process of loading the queue and rendering it. The loaded preset can be sent there and the render begins.</p>
+
+<hr />
+
+<h2 id="reflection">Reflection</h2>
+
+<p>Although I have loved this opportunity, there have been some tough portions. Somedays I just want to sit and code. Most of those times I can’t. There are bugs, artists, or other issues that demand my attention, but that’s just not how working is. No job is all sunshine.</p>
+
+<p>The aspect I had loved the most, was the chance to work so many talented artists and my fellow TD’s. I’ve been collaborating directly with users of my work. They give me feedback, I watch how they use my tools and tweak accordingly, and they request cool things from me.</p>
+
+<p>The unique position to work with such a diverse group of people is one of my favorite parts about tech art. Programmers in other fields, to some degree, are stuck in their own little bubble with other programmers. But I’m working with all of these amazing artists!</p>
+
+            <div class="post-meta">
+                <b> September 2022 </b>
+                <div class="post-categories">
+                    
+                        <a class="category cat-programming" href="/category/programming"> Programming</a>
+                    
+                        <a class="category cat-tool" href="/category/tool"> Tools Development</a>
+                    
+                </div>
+            </div>
+
+            <div class="neighbors">
+    
+    <a href="/posts/2023/01/death-bloom/" class="neighbor-next">
+        <div class="arrow-left"></div>
+        <p> Death Bloom </p>
+    </a>
+    
+    
+    <a href="/posts/2022/08/sgda-website/" class="neighbor-prev">
+        <div class="arrow-right"></div>
+        <p> SGDA Website </p>
+    </a>
+    
+</div>
+        </main>
+    </div>
+
+    <footer class="clr-white">
+    <p>
+        Nick Maclean
+    </p>
+
+    <!-- socials -->
+    <div>
+        <a href="/github/" target="_blank">
+            <i class="fab fa-github-square white orange-hover"></i>
+        </a>
+            
+        <a href = "/mail/" target="_blank">
+            <i class="far fa-envelope white orange-hover"></i> 
+        </a>
+        
+        <a href="/linkedin/" target="_blank">
+            <i class="fa fa-linkedin white orange-hover"></i> 
+        </a>
+    </div>
+</footer>
+    
+    <script async src="//static.getclicky.com/101377471.js"></script>
+    <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101377471ns.gif" /></p></noscript>
+</body>
+</html>

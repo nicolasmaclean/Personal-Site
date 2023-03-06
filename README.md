@@ -1,10 +1,9 @@
-Personal-Site
+# Nick Maclean
 
-# run jekyll site on local server
-bundle exec jekyll serve
+This is my personal portfolio! I update this with posts about my work to show off and talk about it.
 
+## Build Instructions
 
-<!-- This is a note for files used with 'include' -->
-<!-- allows easy images. It will automatically add images (and captions) to portfolio projects. the name, image width, and caption can be sent as paramaters. -->
-<!-- file depends on the page type -->
-<!-- *** NOTE indentation in an includes template may result in the output rendering as a code snippet *** -->
+1. Navigate to the site folder in command prompt (or open it in VSCode)
+2. First time running this site, run `bundle install`
+3. Run `bundle exec jekyll serve` to run a local server of this website

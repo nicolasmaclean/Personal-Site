@@ -1,0 +1,20 @@
+// color scheme
+// there should be NO hard-coded colors, they should all be here
+// should be imported by each dependent module
+
+// --- Global --- //
+$clr-background: #171717;
+
+$clr-text-primary: #fff;
+$clr-text-highlight: #00D9FA;
+$clr-text-dark: #8C9A98;
+$clr-text-highlight-alt: #f83577;
+
+// --- SGDA --- //
+$clr-sgda-blue:     #36a8b3;
+$clr-sgda-green:    #74b336;
+$clr-sgda-yellow:   #ffcf40;
+$clr-sgda-red:      #cc3629;
+$clr-sgda-purple:   #664766;
+$clr-sgda-lightgrey:#8a9899;
+$clr-sgda-darkgrey: #2b2f33;

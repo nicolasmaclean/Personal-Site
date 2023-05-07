@@ -1,20 +1,9 @@
-<footer class="clr-white">
-    <p>
-        Nick Maclean
-    </p>
+<footer class="content-wrapper py-5">
+    <div class="content flex flex-row justify-between">
+        <a href="/" class="display-block my-auto no-underline" style="height: fit-content;"> 
+            <h1 class="font-2xl m-0"> Nick Maclean </h1>
+        </a>
 
-    <!-- socials -->
-    <div>
-        <a href="/github/" target="_blank">
-            <i class="fab fa-github-square white orange-hover"></i>
-        </a>
-            
-        <a href = "/mail/" target="_blank">
-            <i class="far fa-envelope white orange-hover"></i> 
-        </a>
-        
-        <a href="/linkedin/" target="_blank">
-            <i class="fa fa-linkedin white orange-hover"></i> 
-        </a>
+        {% include socials.html class="flex flex-row flex-wrap justify-center font-2xl" child-class="mx-3 my-2 c-text-primary no-underline dark-to-default" %}
     </div>
 </footer>

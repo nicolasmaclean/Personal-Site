@@ -1,0 +1,150 @@
+// default styles for all html elements
+// generally used by posts
+// available globally
+
+// --- interal imports --- //
+@import 'colors';
+
+// --- fonts --- ///
+@import url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import '_icons'; // baked out subset of font awesome icons
+
+// --- default html element styles --- //
+body
+{
+    background-color: $clr-background;
+    color: $clr-text-primary;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3
+{
+    font-family: 'Oxygen Mono', monospace;
+}
+    
+h1
+{
+    color: $clr-text-highlight;
+
+    margin-top: 2.5rem;
+    font-size: 2.75rem;
+    line-height: 3rem;
+}
+
+h2
+{
+    margin-top: 2rem;
+    font-size: 1.7rem;
+    line-height: 1.875rem;
+}
+
+h3
+{
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+
+
+p, li, footer
+{
+    font-size: 1.1rem;
+}
+
+p
+{
+    line-height: 1.875rem;
+    margin: 1.125rem 0;
+}
+
+em
+{
+    color: $clr-text-highlight-alt;
+}
+
+a
+{
+    color: $clr-text-highlight;
+
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size cubic-bezier(0,.5,0,1) 0.3s;
+}
+
+a:hover
+{
+    background-size: 100% 2px;
+}
+
+ol, ul
+{
+    margin: 1.3rem 0;
+    padding-left: 2rem;
+}
+
+li
+{
+    margin: .6rem 0;
+    padding-left: .4rem;
+}
+
+ul
+{
+    list-style-type: '- ';
+}
+
+hr
+{
+    color: $clr-text-dark;
+    margin: 1.75rem 0;
+}
+
+blockquote
+{
+    color: lighten($clr-text-dark, 10%);
+    margin: 1.875rem 0;
+    padding-left: 1.875rem;
+    padding-right: 1rem;
+    
+    border-left: 3px solid $clr-text-highlight;
+    filter: brightness(90%);
+    transition: ease-in-out .1s filter;
+}
+
+blockquote:hover
+{
+    filter: brightness(100%);
+}
+
+figure
+{
+    padding: 1.25rem 1rem;
+}
+
+figure > img, figure > video
+{
+    border-radius: .25rem;
+}
+
+figcaption
+{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+button
+{
+    outline: none;
+    border: none;
+}
+
+// hide half rule if at bottom of content
+// simplifies list iterations
+main > hr:last-child
+{
+        display: none;
+}

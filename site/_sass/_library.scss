@@ -1,0 +1,46 @@
+// Useful CSS Components for general use
+// these are available globally
+
+@import 'colors';
+
+.bg-default
+{
+    background-color: $clr-background;
+}
+
+.c-text-primary
+{
+    color: $clr-text-primary;
+}
+
+.c-text-highlight
+{
+    color: $clr-text-highlight
+}
+
+.c-text-highlight-alt
+{
+    color: $clr-text-highlight-alt;
+}
+
+.c-text-dark
+{
+    color: $clr-text-dark;
+}
+
+a.no-underline:hover
+{
+    background-size: 0% 2px;
+}
+
+$link-initial-brightness: 80%;
+a.dark-to-default
+{
+    transition: ease-in-out .1s filter;
+    filter: brightness($link-initial-brightness);
+}
+
+a.dark-to-default:hover
+{
+    filter: brightness(100%);
+}

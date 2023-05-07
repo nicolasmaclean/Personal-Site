@@ -1,52 +1,16 @@
 ---
-layout: compress
+layout: default
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{page.description}}">
-    <title> {{ site.title }} | {{ page.title }}</title>
-    
-    <link rel="stylesheet" type="text/css" href="/assets/styles/main.css">
-    <link rel="stylesheet" type="text/css" href="/assets/styles/default.css">
-    <link rel="stylesheet" type="text/css" href="/assets/styles/post.css">
+<article class="content mb-12 pt-4">
+    <header class="mb-6"> <h1 style="text-align: center;">{{page.title}}</h1> </header>
+    <section>
+        {{content}}
 
-    {% if page.custom-css != null %}
-            <link rel="stylesheet" type="text/css" href="/assets/styles/{{page.custom-css}}.css">
-    {% endif %}
-
-    <script src="https://kit.fontawesome.com/fb3d6d8900.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-    <div>
-        {% include navbar.html %}
-
-        <main class="page-content">
-            <h2 class="center-text">
-                {{ page.title }}
-            </h2>
-
-            {{ content }}
-            <div class="post-meta">
-                <b> {{page.date | date: "%B %Y"}} </b>
-                <div class="post-categories">
-                    {% for cat in page.categories %}
-                        <a class="category cat-{{cat}}" href="/category/{{cat}}"> {{site.data.category-names | map: cat}}</a>
-                    {% endfor %}
-                </div>
-            </div>
-
-            {% include neighbor-post.html %}
-        </main>
-    </div>
-
-    {% include footer.html %}
-    
-    <script async src="//static.getclicky.com/101377471.js"></script>
-    <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101377471ns.gif" /></p></noscript>
-</body>
-</html>
+        {% if page.date %}
+        {% unless page.hide-date %}
+        <p class="text-right c-text-dark pt-1 font-light"> Last Updated: {{ page.date | date: "%B %Y" }} </p>
+        {% endunless %}
+        {% endif %}
+    </section>
+</article>

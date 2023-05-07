@@ -1,27 +1,26 @@
-<nav>
-    <div class="nav-links-left">
-        <a href="/"> 
-            <b> {{site.title}} </b>
-        </a>
-    </div>
-
-    <div class="nav-links-right">
-        <a href="/about"
-            {% if page.title == 'About' %}
-                class='bold'
-            {% endif %}
-        > About </a>
-        
-        <a href="/"
-            {% if page.title == 'Portfolio' %}
-                class='bold'
-            {% endif %}
-        > Portfolio </a>
-
-        <a href="/archive"
-            {% if page.title == 'Archive' %}
-                class='bold'
-            {% endif %}
-        > Archive </a>
+<nav class="main line-1">
+    <div class="content-wrapper bg-default">
+        <div class="content">
+            <div class="flex flex-column lg:flex-row items-center">
+                <div class="flex flex-row items-center lg:mr-auto w-full lg:w-auto">
+                    <!-- logo -->
+                    <a class="display-block py-4 mr-auto no-underline" href="/"> 
+                        <h1 class="font-2xl m-0" style="line-height: 2rem;"> Nick Maclean </h1>
+                    </a>
+                    
+                    <!-- Burger Navigation (for mobile) -->
+                    {% include burger.html id="nav-burger" class="lg:display-none" %}
+                </div>
+                
+                <!-- links -->
+                <div class="links flex flex-column lg:flex-row items-center w-full lg:w-auto text-center overflow-hidden stateful" for="nav-burger" speed="450">
+                {% assign i = 0 %}
+                {% for item in site.data.navigation %}
+                    <a class="w-full h-full lg:pl-4 py-3 no-underline c-text-primary {% if page.title == item.title %}font-bold current-page{% else %}dark-to-default{% endif %}" href="{{ item.link }}"> {{ item.title }} </a>
+                    {% assign i = i | plus: 1 %}
+                {% endfor %}
+                </div>
+            </div>
+        </div>
     </div>
 </nav>

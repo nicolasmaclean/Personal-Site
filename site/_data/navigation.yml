@@ -1,0 +1,11 @@
+# Used in _includes/navbar.html component
+
+# - title: Used as the text for the link
+#   link: Link to desired page
+
+- title: About
+  link: /about
+- title: Portfolio
+  link: /
+- title: Archive
+  link: /archive

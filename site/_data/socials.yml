@@ -1,0 +1,17 @@
+# Used in _includes/socials.html component
+
+# - name: Used as the text for the link
+#   fa:   (optional) HTML class name for the font-awesome icon
+#   link: Link to social media page
+
+- name: GitHub
+  fa: icon-github
+  link: /github
+
+- name: Mail
+  fa: icon-envelope
+  link: /mail
+
+- name: LinkedIn
+  fa: icon-linkedin
+  link: /linkedin

@@ -1,0 +1,24 @@
+// makes the site responsive to desktop and mobile
+
+.content-wrapper
+{
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+}
+
+$max-width: 850px;
+.content, .children-are-content > *:not(.ignore)
+{
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: $max-width)
+{
+    .children-are-content > *:not(.ignore)
+    {
+        padding-left: 1.75rem;
+        padding-right: 1.75rem;
+    }
+}

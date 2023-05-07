@@ -1,0 +1,44 @@
+@import "colors";
+@import "includes/burger";
+
+nav.main
+{
+    font-weight: 600;
+
+    @media (max-width: 991px)
+    {
+        padding-bottom: 2px;
+        background-color: $clr-sgda-yellow;
+        background: linear-gradient(90deg, $clr-sgda-red 0%, $clr-sgda-yellow 33%, $clr-sgda-green 50%, $clr-sgda-blue 90%);
+
+        .links *:last-child
+        {
+            margin-bottom: 1rem;
+        }
+    }
+
+    @media (min-width: 992px)
+    {
+        .content
+        {
+            padding-bottom: 2px;
+            background-color: $clr-sgda-yellow;
+            background: linear-gradient(90deg, $clr-sgda-red 0%, $clr-sgda-yellow 33%, $clr-sgda-green 50%, $clr-sgda-blue 90%);
+
+            > div
+            {
+                background-color: $clr-background;
+            }
+
+            .links
+            {
+                max-height: fit-content !important;
+            }
+        }
+    }
+    
+    a.current-page, a.current-page:hover
+    {
+        color: $clr-text-highlight-alt;
+    }
+}

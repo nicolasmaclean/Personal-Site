@@ -1,0 +1,12 @@
+<div class="{{ include.class }}">
+    {% for item in site.data.socials %}
+    <div>
+        <a href="{{ item.link | relative_url }}" class="flex flex-row {{include.child-class}}" aria-label="{{ item.name }}">
+            {% if item.fa %}
+            <i class="{{ item.fa }} my-auto mr-2"></i>
+            {% endif %}
+            <p class="my-1">{{ item.name }}</p>
+        </a>
+    </div>
+    {% endfor %}
+</div>

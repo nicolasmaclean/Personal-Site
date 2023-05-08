@@ -21,14 +21,7 @@ include: ["_pages", "_redirects"]
 markdown: kramdown
 highlighter: rouge
 plugins:
-  - jekyll-archives
   - jekyll-redirect-from
-
-jekyll-archives:
-  enabled: [categories]
-  layout: archive
-  permalinks:
-    category: '/category/:name/'
 
 sass:
   style: compressed

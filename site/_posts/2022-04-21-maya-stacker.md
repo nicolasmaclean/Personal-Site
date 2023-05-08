@@ -1,6 +1,6 @@
 ---
-title: Maya Stacker Tool
-description: I created a Maya tool using Python and PySide2 that stacks objects.
+title: Maya Procedural Building Tool
+description: I developed a Maya tool using Python and PySide2 that creates randomized building by stacking pieces of a modular kit. 
 categories: [tool]
 tags: [Maya, Python, PySide2, PyQt5]
 ---

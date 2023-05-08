@@ -1,0 +1,19 @@
+<div class="flex flex-column sm:flex-row justify-between font-xl items-center">
+    {% if page.previous %}
+    <a href="{{ page.previous.url }}" class="no-underline">
+        <i class="icon-arrow-left my-auto mr-2"></i> {{ page.previous.title }}
+    </a>
+    
+    <a href="#top" class="mt-5 sm:mt-0 no-underline">
+        <i class="icon-arrow-up my-auto mr-2"></i>
+        Back to Top
+        <i class="icon-arrow-up my-auto ml-2"></i>
+    </a>
+
+    {% endif %}
+    {% if page.next %}
+    <a href="{{ page.next.url }}" class="no-underline mt-5 sm:mt-0">
+        {{ page.next.title }} <i class="icon-arrow-right my-auto ml-2"></i>
+    </a>
+    {% endif %}
+</div>

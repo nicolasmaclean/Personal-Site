@@ -5,7 +5,7 @@
             {% if item.fa %}
             <i class="{{ item.fa }} my-auto mr-2"></i>
             {% endif %}
-            <p class="my-1">{{ item.name }}</p>
+            <p class="my-1 {% if include.hide-on-mobile %}display-none sm:display-block{% endif %}">{{ item.name }}</p>
         </a>
     </div>
     {% endfor %}

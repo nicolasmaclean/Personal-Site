@@ -1,15 +1,4 @@
-columns:
-  - projects:
-    - name: death-bloom
-      year: "2023"
-      month: "01"
-    - name: anim-lab
-      year: "2022"
-      month: "09"
-  - projects:
-    - name: maya-stacker
-      year: "2022"
-      month: "04"
-    - name: sgda-website
-      year: "2022"
-      month: "08"
+- Death Bloom
+- Animation Lab
+- Maya Procedural Building Tool
+- SGDA Website

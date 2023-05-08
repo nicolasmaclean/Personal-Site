@@ -44,3 +44,36 @@ a.dark-to-default:hover
 {
     filter: brightness(100%);
 }
+
+// arrow animation
+$arrow-offset: 10px;
+$arrow-half-cycle: .7s;
+a:hover .icon-arrow-right
+{
+    animation: arrow-right $arrow-half-cycle ease-in-out infinite alternate;
+}
+
+a:hover .icon-arrow-left
+{
+    animation: arrow-left $arrow-half-cycle ease-in-out infinite alternate;
+}
+
+a:hover .icon-arrow-up
+{
+    animation: arrow-up $arrow-half-cycle ease-in-out infinite alternate;
+}
+
+@keyframes arrow-right
+{
+    to { transform: translateX($arrow-offset); }
+}
+
+@keyframes arrow-left
+{
+    to { transform: translateX(-$arrow-offset); }
+}
+
+@keyframes arrow-up
+{
+    to { transform: translateY(-$arrow-offset); }
+}

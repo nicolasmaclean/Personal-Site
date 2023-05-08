@@ -11,6 +11,11 @@
 @import '_icons'; // baked out subset of font awesome icons
 
 // --- default html element styles --- //
+html
+{
+    scroll-behavior: smooth;
+}
+
 body
 {
     background-color: $clr-background;
@@ -144,7 +149,7 @@ button
 
 // hide half rule if at bottom of content
 // simplifies list iterations
-main > hr:last-child
+main > hr:last-child, .content > hr:last-child
 {
-        display: none;
+    display: none;
 }

@@ -2,13 +2,16 @@
 // there should be NO hard-coded colors, they should all be here
 // should be imported by each dependent module
 
-// --- Global --- //
-$clr-background: #171717;
+// colors from [Monokai Dark Soda Theme](https://github.com/AdamCaviness/vs-code-theme-monokai-dark-soda)
+$clr-white: #F8F8F2;
+$clr-blue: #66D9EF;
+$clr-gray: #8C8C8C;
+$clr-red: #F92672;
 
-$clr-text-primary: #fff;
-$clr-text-highlight: #00D9FA;
-$clr-text-dark: #8C9A98;
-$clr-text-highlight-alt: #f83577;
+$clr-pink: #CD5AC5;
+$clr-lavender: #FFB2F9;
+$clr-orange: #FD971F;
+$clr-green: #60cf30;
 
 // --- SGDA --- //
 $clr-sgda-blue:     #36a8b3;
@@ -18,3 +21,11 @@ $clr-sgda-red:      #cc3629;
 $clr-sgda-purple:   #664766;
 $clr-sgda-lightgrey:#8a9899;
 $clr-sgda-darkgrey: #2b2f33;
+
+// --- Global Theme --- //
+$clr-background: #171717;
+
+$clr-text-primary: $clr-white;
+$clr-text-highlight: $clr-blue;
+$clr-text-dark: $clr-gray;
+$clr-text-highlight-alt: $clr-red;

@@ -1,0 +1,19 @@
+# Used in _pages/about.html page
+
+# - title: name of the experience or job
+#   comany: company name
+#   company-link: (optional) link to company's website
+#   points: list of details about experience
+
+- title: Technical Director
+  company: UTDallas Animation Lab
+  company-link: https://www.atec-animgames.com/anim-lab
+  points:
+    - Maya 2023 and Unreal 5.1
+    - Python and PySide2
+- title: Lead Programmer
+  company: UTDallas Game Lab
+  company-link: https://www.atec-animgames.com/game-lab
+  points:
+    - Unreal 5.1 with Blueprints
+    - Lead a team of 10 programmers

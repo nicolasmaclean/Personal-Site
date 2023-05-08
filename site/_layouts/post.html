@@ -4,7 +4,7 @@ layout: default
 
 <article class="content mb-12 pt-4">
     {% unless page.hide-title %}
-    <header class="mb-6"> <h1 style="text-align: center;">{{page.title}}</h1> </header>
+    <header class="mb-6"> <h1 class="text-center">{{page.title}}</h1> </header>
     {% endunless %}
 
     <section>
@@ -12,7 +12,7 @@ layout: default
 
         {% if page.date %}
         {% unless page.hide-date %}
-        <p class="text-left c-text-dark pt-1 font-light"> Last Updated: {{ page.date | date: "%B %Y" }} </p>
+        <p class="c-text-dark pt-1 font-light"> Last Updated: {{ page.date | date: "%B %Y" }} </p>
         {% endunless %}
         {% endif %}
 

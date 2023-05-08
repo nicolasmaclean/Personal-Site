@@ -1,19 +1,23 @@
-<div class="flex flex-column sm:flex-row justify-between font-xl items-center">
+<div class="grid has-3-rows sm:has-1-rows sm:has-3-columns font-xl items-center">
     {% if page.previous %}
-    <a href="{{ page.previous.url }}" class="no-underline">
+    <a href="{{ page.previous.url }}" class="no-underline mt-5 sm:mt-0 justify-self-center sm:justify-self-start">
         <i class="icon-arrow-left my-auto mr-2"></i> {{ page.previous.title }}
     </a>
+    {% else %}
+    <div></div>
+    {% endif %}
     
-    <a href="#top" class="mt-5 sm:mt-0 no-underline">
+    <a href="#top" class="mt-5 sm:mt-0 no-underline justify-self-center">
         <i class="icon-arrow-up my-auto mr-2"></i>
         Back to Top
         <i class="icon-arrow-up my-auto ml-2"></i>
     </a>
 
-    {% endif %}
     {% if page.next %}
-    <a href="{{ page.next.url }}" class="no-underline mt-5 sm:mt-0">
+    <a href="{{ page.next.url }}" class="no-underline mt-5 sm:mt-0 justify-self-center sm:justify-self-end">
         {{ page.next.title }} <i class="icon-arrow-right my-auto ml-2"></i>
     </a>
+    {% else %}
+    <div></div>
     {% endif %}
 </div>

@@ -17,6 +17,7 @@ linkedin_username: nick maclean
 linkedin_link: https://linkedin.com/in/nick-maclean
 
 # Build settings
+theme: none
 include: ["_pages", "_redirects"]
 markdown: kramdown
 highlighter: rouge

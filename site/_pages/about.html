@@ -16,11 +16,15 @@ description: This is a page about Nick Maclean and who is.
             I'm currently an <a href="https://aht.utdallas.edu/degrees/undergraduate-degrees/arts-technology-and-emerging-communication/" target="_blank"> ATEC </a> student at <a href="https://www.utdallas.edu/" target="_blank"> The University of Texas at Dallas. </a> I specialize in programming, but I also have experience as a 3D environment artist.
         </p>
 
+        <p>
+            My <a href="/github" target="_blank"> GitHub </a> is a great place to see some my work. Unfortunately, I don't have much <em> Python </em> on my public profile.
+        </p>
+
         {% for exp in site.data.experience %}
         <details class="mb-4">
             <summary> <h3 class="display-inline"> {{ exp.title }} </h3> </summary>
             
-            <p class="my-0 ml-4"> {% if exp.company-link %} <a href="https://www.atec-animgames.com/anim-lab" target="_blank"> {% endif %} {{ exp.company }} {% if exp.company-link %} </a> {% endif %} </p>
+            <p class="my-0 ml-5"> {% if exp.company-link %} <a href="https://www.atec-animgames.com/anim-lab" target="_blank"> {% endif %} {{ exp.company }} {% if exp.company-link %} </a> {% endif %} </p>
             {% if exp.points %}
             <ul class="mt-1 style-none pl-5">
                 {% for point in exp.points %}
@@ -31,10 +35,6 @@ description: This is a page about Nick Maclean and who is.
         </details>
         {% endfor %}
 
-        <p>
-            My <a href="/github" target="_blank"> GitHub </a> is a great place to see some my work. Unfortunately, most of my <em> Python </em> work is done in a private repo.
-        </p>
-
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nicolasmaclean&hide_progress=true&layout=compact&theme=transparent&hide_border=true&title_color=66D9EF&text_color=F8F8F2">
+        <!-- <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nicolasmaclean&hide_progress=true&layout=compact&theme=transparent&hide_border=true&title_color=66D9EF&text_color=F8F8F2"> -->
     </div>
 </div>

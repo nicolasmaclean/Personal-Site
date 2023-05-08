@@ -5,7 +5,7 @@ categories: [programming, web]
 tags: [Jekyll, HTML, CSS, Web-Development]
 ---
 
-<iframe src="https://utdsgda.club" class="w-100 no-side-margin img-center" style="height: 30rem;"></iframe>
+<iframe src="https://utdsgda.club" class="w-full" style="height: 30rem;"></iframe>
 
 After becoming a Junior Officer for UTDallas' Student Game Developer Association (SGDA), I was paired with our new Technical Officer [John Mai](https://www.linkedin.com/in/john-huy-mai/). Our first job was to redesign the club's site to match [Phu Lee](https://www.linkedin.com/in/phu--le)'s rebranding of the club's graphics. I did all of the programming and helped develop the new design.
 
@@ -25,6 +25,6 @@ Again, my focus was to reset our site's tech debt. I wanted to design our site t
 
 ### Optimization
 
-{% include image.html type="post" name="lighthouse.png" class="pc-80 no-side-margin img-center" caption="Google Lighthouse Score: 100's" %}
+{% include media.html type="post" name="lighthouse.png" class="w-4/5 mx-auto" caption="Google Lighthouse Score: 100's" %}
 
 Lastly, I spent time optimizing the website's request count, load speed, and accessibility with the help of Google Chrome's LightHouse. The extremely small page-specific CSS files could be inlined using Jekyll's `Include` functionality while remaining separate files; Sass' `@import` is used to concatenate `.scss` fies at compile time to reduce the number `.css` files linked on a page; and minification of `.html` and `.css` files upon build further optimize files.

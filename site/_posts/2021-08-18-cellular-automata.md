@@ -5,7 +5,7 @@ categories: [programming, web]
 tags: [JavaScript, React]
 ---
 
-{% include video.html type="post" name="Cellular Automata.mp4" class="pc-100 no-side-margin img-center" %}
+{% include media.html type="post" name="Cellular Automata.mp4" %}
 
 I, as well as many others, was drawn to Cellular Automata and the many endless rulesets we can create. At its core, cellular automata is a discrete simulation, usually in 2D or 3D space. We define a ruleset to specify how cells may change states and provide an intial seed, or configuration of cells. In discrete steps of time, the simulation uses the ruleset to update cells as necessary.
 
@@ -25,6 +25,6 @@ As I was creating this project, I wanted to solve the problems myself, so I avoi
 
 I've come back to this project a couple times since finshing it to try writing some custom rules. I've been amazed at how easy it is to create completely new simluations by adding 2 or 3 lines of code to a save file. I was able to quickly simulate gravity by having a "sand" cell move downwards till it reaches a ground or sand cell.
 
-{% include image.html type="post" name="gravity.gif" class="pc-80 no-side-margin img-center" %}
+{% include media.html type="post" name="gravity.gif" class="w-4/5 mx-auto" %}
 
 I'm also quite proud that I was able to figure out how to deal with an infinite 2D space. This bit I did do a little bit of research. I found the concept of a sparse matrix on Wikipedia and ran with it. All of the cells in the simulation with the default state aren't stored and assumed to have that state, so the only data that is stored are the states of cells that are not the default.

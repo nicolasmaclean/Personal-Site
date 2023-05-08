@@ -5,9 +5,9 @@ categories: [programming, web]
 tags: [Unreal, Leadership, Blueprints]
 ---
 
-<div class="flex-row items-center">
-    {% include image.html type="post" name="Concept_Cellar.png" class="w-100 pc-90 img-center no-margin-top" %}
-    {% include image.html type="post" name="Concept_Squeeze.png" class="w-100 pc-90 img-center no-margin-top" %}
+<div class="flex flex-row align-items-center">
+    {% include media.html type="post" name="Concept_Cellar.png" class="w-100 pc-90 img-center no-margin-top" %}
+    {% include media.html type="post" name="Concept_Squeeze.png" class="w-100 pc-90 img-center no-margin-top" %}
 </div>
 
 Death Bloom is an immersive, FPS, horror game created in Unreal 5.1 for the Game Lab class. The player finds themself in an old, decrepit house that they must escape from while being chased by Árveado.
@@ -30,7 +30,7 @@ Related to programming, I filled in the cracks, kept the project organized, prov
 
 ## Spline Mesh
 
-{% include image.html type="post" name="SplineRoots.png" class="w-80 pc-90 img-center no-margin-top" %}
+{% include media.html type="post" name="SplineRoots.png" class="w-4/5 mx-auto" %}
 
 This was my first semester in Unreal, so Blueprints and the generally lower barrier to develop simple tools was eye-opening for me. I found splines to be really useful for exposing more intuitive controls for tools. For the above root, this is really the only approach but I also used it for a "Squeeze Through" mechanic.
 
@@ -48,16 +48,16 @@ While doing moving the code to an `ActorComponent` I forced my team to use a sys
 
 ## Squeeze
 
-<div class="flex-row items-center">
-    {% include image.html type="post" name="Squeeze_Straight.png" class="w-60 pc-90 img-center no-margin-top" %}
-    {% include image.html type="post" name="Squeeze_Curve.png" class="w-100 pc-90 img-center no-margin-top" %}
+<div class="flex flex-row align-items-center">
+    {% include media.html type="post" name="Squeeze_Straight.png" class="w-2/5 mx-auto" %}
+    {% include media.html type="post" name="Squeeze_Curve.png" class="w-3/5 mx-auto" %}
 </div>
 
 Our design team requested a "Squeeze" mechanism so that the player, when in a squeeze mode, is constrained to a specific movement path and camera angle. The initial design, from [Dani Murillo](https://www.linkedin.com/in/danielmarmur/), simply used 2 triggers to enter and exit the "Squeeze" mode and while in this mode, the player's position was a function of time between these 2 triggers.
 
 I helped him rework the blueprint to simlify our level designer's experience with customizing the instance and introduce a spline to drive the position. Now, triggers are automatically created the ends of the spline meaning designers have less to adjust when placing this blueprint in the level; and more points may be added to the spline to allow squeezing through corridors that aren't straight. This also has the nice side effect of allowing some more complex vertical movement during the squeeze.
 
-{% include image.html type="post" name="Squeeze.gif" class="w-100 pc-90 img-center no-margin-top" caption="Squeezing in our Pre-Alpha" %}
+{% include media.html type="post" name="Squeeze.gif" caption="Squeezing in our Pre-Alpha" %}
 
 ## Reflection
 

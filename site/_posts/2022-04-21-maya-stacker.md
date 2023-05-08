@@ -5,7 +5,7 @@ categories: [tool]
 tags: [Maya, Python, PySide2, PyQt5]
 ---
 
-{% include video.html type="post" name="demo.mp4" class="pc-100 no-side-margin img-center" %}
+{% include media.html type="post" name="demo.mp4" %}
 
 This tool was created throughout the Spring 2022 semester in Scripting for Animation. As we learned more about Python, Maya, and PySide2 the tool evolved.
 
@@ -25,11 +25,11 @@ During the second phase I built a gui using PyQt's VBox and HBox layouts to orga
 
 As seen in my demo, I quickly realized the potential applications for this tool. I used a modular set of building I found on the Synty Store to easily create randomized buildings.
 
-{% include image.html type="post" name="gui_first.jpg" class="pc-60 no-side-margin img-center" caption="1st Pass GUI"%}
+{% include media.html type="post" name="gui_first.jpg" class="w-3/5 mx-auto" caption="1st Pass GUI"%}
 
 The final iteration of the project allowed further parameterization with adjustable stack sizes and separation of the stacks. Additionally, a TreeViewWidget (on the right) displays the stacks created by the user to allow easy selection/viewing and XML "Assembly" files may be read to organize stacks' position in the scene.
 
-{% include image.html type="post" name="gui_final.jpg" class="pc-60 no-side-margin img-center" caption="The Final GUI"%}
+{% include media.html type="post" name="gui_final.jpg" class="w-3/5 mx-auto" caption="The Final GUI"%}
 
 ## Conclusion
 

@@ -5,16 +5,11 @@ categories: [programming, game-dev, game-jam]
 tags: [Unity, Game-Jam, 3D]
 ---
 
-<!-- {% include video.html type="post" name="gameplay.mp4" class="pc-100 no-side-margin img-center" %} -->
-
-<div class="flex-row items-center">
-    {% include image.html type="post" name="game-start.png" class="w-100 pc-90 img-center margin-bottom-1rem" %}
-    {% include image.html type="post" name="game-hall.png" class="w-100 pc-90 img-center margin-bottom-1rem" %}
-</div>
-
-<div class="flex-row items-center">
-    {% include image.html type="post" name="game-title.png" class="w-100 pc-90 img-center no-margin-top" %}
-    {% include image.html type="post" name="game-lose.png" class="w-100 pc-90 img-center no-margin-top" %}
+<div class="grid has-2-columns has-2-rows">
+    {% include media.html type="post" name="game-start.png" class="p-1" %}
+    {% include media.html type="post" name="game-hall.png" class="p-1" %}
+    {% include media.html type="post" name="game-title.png" class="p-1" %}
+    {% include media.html type="post" name="game-lose.png" class="p-1" %}
 </div>
 
 I worked with 8 other members of the SGDA, including [Phu Lee](https://www.linkedin.com/in/phu--le), [Ariana Mendez](https://www.linkedin.com/in/ariana-z-mendez/), Shelley Sugiharto, and [John Mai](https://www.linkedin.com/in/john-huy-mai/). The final build can be found on [itch.io](https://amendez.itch.io/roll-dem-bones)!
@@ -25,7 +20,7 @@ As I have gained more experience developing FPS games in Unity, a lot of the wor
 
 I learned to lean into the Animator Controller. Instead of tracking cooldowns and the progress of the current animation state from within other components, I learned to poll that information from the Animator Controller. This enabled Phu to adjust the transitions between animation clips from the inspector, which improved our workflow and the visual quality of transitions.
 
-{% include image.html type="post" name="animator.png" class="w-100 pc-90 img-center no-margin-top" %}
+{% include media.html type="post" name="animator.png" class="w-4/5 mx-auto" %}
 
 One of the more challenging features that forced me to clean up the Player's animator was the ability to combo melee attacks. There were 3 different animation clips (each for a different type of swing) that needed to be depending on the length of time since the last swing. My initial efforts to track the time spent in each state and since state changes created a complicated mess of edge cases that broke the animations.
 

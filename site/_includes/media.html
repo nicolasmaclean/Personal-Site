@@ -10,9 +10,9 @@
 
 {% if include.caption %}
 <figure {% if include.class %} class="{{ include.class }}" {% endif %}>
-{% if include.video %}
+{% if include.name contains ".mp4" %}
 <video muted autoplay controls loop>
-<source src="{{ videopath }}">
+<source src="{{ imagePath }}">
 Your browser will not load/play .mp4 files.
 </video>
 {% else %}
@@ -23,9 +23,9 @@ Your browser will not load/play .mp4 files.
 
 {% else %}
 <figure {% if include.class %} class="{{ include.class }}" {% endif %}>
-{% if include.video %}
+{% if include.name contains ".mp4" %}
 <video muted autoplay controls loop>
-<source src="{{ videopath }}">
+<source src="{{ imagePath }}">
 Your browser will not load/play .mp4 files.
 </video>
 {% else %}

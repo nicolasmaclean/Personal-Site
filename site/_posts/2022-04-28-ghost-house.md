@@ -5,7 +5,7 @@ categories: [programming, game-dev]
 tags: [Unity, Programming]
 ---
 
-{% include video.html type="post" name="trailer.mp4" class="pc-100 no-side-margin img-center" %}
+{% include media.html type="post" name="trailer.mp4" %}
 
 Ghost House is a 3rd person, narrative driven game created in Unity 2019. The player explores the narrative and environment by performing 100+ interactions with the scene that trigger dialog between characters, move or manipulate items in the house, and even talk to a bird.
 
@@ -21,7 +21,7 @@ The professors do a great job balancing creative freedom for the students and se
 
 My main role on the team was the implementing and teaching of the dialog system and acting as a general game programmer where necessary. More specifically, I integrated [Yarn Spinner](https://docs.yarnspinner.dev/) and extended custom DialogViews to fit the needs of our game.
 
-{% include image.html type="post" name="dialog.png" class="pc-80 no-side-margin img-center"%}
+{% include media.html type="post" name="dialog.png" class="w-4/5 mx-auto"%}
 
 I chose to leverage Yarn Spinner as a part of our dialog system for 2 reasons: the twine-like syntax makes it easy for narrative designers to pick up and quite honestly I saw this as an oportunity to learn more about Yarn Spinner. Its an open source project that is still growing quite fast and I saw them as the best option over other Unity oriented packages short of creating my own system.
 

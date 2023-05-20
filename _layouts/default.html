@@ -16,6 +16,10 @@ layout: compress
         <!-- {% if page.custom-css != null %}
             <link rel="stylesheet" type="text/css" href="/assets/styles/{{page.custom-css}}.css">
         {% endif %} -->
+        
+        <script type="text/javascript" src="/assets/js/burger.js"></script>
+        {% include analytics.html %}
+
     </head>
     <body class="flex flex-column justify-between mh-100vh">
         {% unless page.hide-nav %}
@@ -30,11 +34,7 @@ layout: compress
         {% include footer.html %}
         {% endunless%}
         
-        <script>
-            {% include js/burger.js %}
-        </script>
 
-        {% include analytics.html %}
     </body>
 
 </html>

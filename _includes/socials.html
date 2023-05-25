@@ -1,7 +1,7 @@
 <div class="{{ include.class }}">
     {% for item in site.data.socials %}
     <div>
-        <a href="{{ item.link | relative_url }}" class="flex flex-row {{include.child-class}}" aria-label="{{ item.name }}">
+        <a href="{{ item.link | relative_url }}" class="flex flex-row {{include.child-class}}" aria-label="{{ item.name }}" target="_blank">
             {% if item.fa %}
             <i class="{{ item.fa }} my-auto mr-2"></i>
             {% endif %}

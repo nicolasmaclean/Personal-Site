@@ -35,4 +35,4 @@ The final iteration of the project allowed further parameterization with adjusta
 
 This project was extremely satisfying to work on. The incremental and tangible progress felt rewarding as I learned more about Python, PyQt, and Maya.
 
-It also filled me with anticipation for the future. As a programmer, I find great pleasure in helping artist (with much greater skill than me) realize their vision. The Scripting for Animation class has led me to join Animation Lab for Fall 2022, so I'm excited to work with the talented artists at UTD.
+It also filled me with anticipation for the future. As a programmer, I find great pleasure in helping artist realize their vision. The Scripting for Animation class has led me to join Animation Lab for Fall 2022, so I'm excited to work with the talented artists at UTD.

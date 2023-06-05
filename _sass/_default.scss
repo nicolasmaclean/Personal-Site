@@ -133,7 +133,7 @@ figure
 figure > img, figure > video
 {
     width: 100%;
-    border-radius: .25rem;
+    border-radius: .1rem;
 }
 
 figcaption
@@ -146,6 +146,28 @@ button
 {
     outline: none;
     border: none;
+}
+
+details
+{
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+
+    margin-left: 2rem;
+}
+
+details > summary
+{
+    font-size: 1.4rem;
+    color: $clr-text-highlight;
+    
+    margin-bottom: .5rem;
+    margin-left: -1.8rem;
+}
+
+details > summary::marker
+{
+    color: $clr-text-primary;
 }
 
 // hide half rule if at bottom of content

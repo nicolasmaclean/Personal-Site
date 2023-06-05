@@ -10,4 +10,3 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 # plugins
 gem "jekyll-redirect-from"
 gem 'jekyll-seo-tag'
-gem "jekyll-archives"

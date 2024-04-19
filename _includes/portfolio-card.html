@@ -1,0 +1,13 @@
+<!-- TODO: find post by title; get thumbnail and tools from its front-matter -->
+
+<a href="{{ include.href }}" class="relative c-text-primary no-underline display-block {{ include.class }}" {% if include.style %} style="{{ include.style }}" {% endif %}>
+    <img class="w-full h-full" style="object-fit: cover;" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpixnio.com%2Ffree-images%2F2017%2F09%2F26%2F2017-09-26-09-33-16.jpg&f=1&nofb=1&ipt=2aa3e8f3603d82ff31d3b56e5b1749f74b784c22720109887589bcdf95fd9cef&ipo=images">
+    <div class="absolute bottom-0 pb-1 w-full h-full flex flex-row justify-between items-end">
+        <h2 class="my-0 ml-3"> {{ include.title }} </h2>
+        <div class="mr-3 flex flex-column">
+            <i class="icon-github font-4xl pt-2"></i>
+            <i class="icon-github font-4xl pt-2"></i>
+            <i class="icon-github font-4xl pt-2"></i>
+        </div>
+    </div>
+</a>

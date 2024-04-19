@@ -1,9 +1,19 @@
 <footer class="content-wrapper py-5">
     <div class="content flex flex-column sm:flex-row justify-between">
-        <a href="/" class="text-center sm:text-left display-block my-auto no-underline h-fit"> 
-            <h1 class="font-2xl m-0 lh-8"> Nick Maclean </h1>
-        </a>
+        <div class="links flex flex-column">
+        {% assign i = 0 %}
+        {% for item in site.data.navigation %}
+            <a class="w-full h-full lg:pl-4 no-underline c-text-primary {% if page.title == item.title %}font-bold current-page{% else %}dark-to-default{% endif %}" href="{{ item.link }}"> {{ item.title }} </a>
+            {% assign i = i | plus: 1 %}
+        {% endfor %}
+        </div>
 
-        {% include socials.html hide-on-mobile=true class="flex flex-row flex-wrap justify-center font-4xl sm:font-2xl mt-4 sm:mt-0" child-class="mx-3 sm:my-2 c-text-primary no-underline dark-to-default" %}
+        <div class="flex flex-column">
+            <a href="/" class="text-center display-block no-underline"> 
+                <h1 class="font-2xl m-0 lh-8"> Nick Maclean </h1>
+            </a>
+
+            {% include socials.html hide-text=true class="flex flex-row flex-wrap justify-center font-4xl sm:font-2xl mt-4 sm:mt-0" child-class="mx-3 sm:my-2 c-text-primary no-underline dark-to-default" %}
+        </div>
     </div>
 </footer>

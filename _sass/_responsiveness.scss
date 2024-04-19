@@ -22,3 +22,28 @@ $max-width: 850px;
         padding-right: 1.75rem;
     }
 }
+
+
+// --- portfolio --- //
+#portfolio
+{
+    grid-template-columns: 7fr 5fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "top top"
+    "left right"
+    ;
+}
+
+@media (max-width: 725px)
+{
+    #portfolio
+    {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "top"
+            "left"
+            "right"
+        ;   
+    }
+}

@@ -29,6 +29,11 @@
     color: $clr-text-dark;
 }
 
+a.current-page, a.current-page:hover
+{
+    color: $clr-text-highlight-alt;
+}
+
 // --- links --- //
 a.no-underline:hover
 {

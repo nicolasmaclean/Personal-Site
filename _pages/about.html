@@ -6,35 +6,18 @@ title: About
 description: This is a page about Nick Maclean and who is.
 ---
 
-<div class="content grid has-1-columns md:has-2-columns align-items-center">
-    <img src="/assets/images/portrait.png" alt="Portrait of me :)" class="w-4/5 sm:w-3/5 md:w-full mx-auto p-4">
-    <div class="h-fit my-auto">
-        <h2> 👋 Hello, I'm Nick! </h2>
-        <p class="c-text-dark mt-1 font-light"> Tools and Pipeline Programmer </p>
-
+<div class="content grid has-1-columns md:has-2-columns align-items-center"> 
+    <img src="/assets/images/portrait.png" alt="Portrait of me :)" class="w-4/5 sm:w-3/5 md:w-full mx-auto p-4"> 
+    <div class="h-fit my-auto"> 
+        <h2> 👋 Hello, I'm Nick! </h2> 
+        <p class="c-text-dark mt-1 font-light"> Tools and Pipeline Programmer </p> 
+ 
+        <p>  
+            I am a programmer graduating from <a href="https://www.utdallas.edu/" target="_blank"> The University of Texas at Dallas' </a> <a href="https://bass.utdallas.edu/degrees/undergraduate-degrees/arts-technology-and-emerging-communication/" target="_blank"> AHT </a> program in May 2024. I also some experience as a 3D environment artist, which gives me a strong advantage as a technical artist and while collaborating with artists. 
+        </p> 
+ 
         <p> 
-            I'm currently an <a href="https://aht.utdallas.edu/degrees/undergraduate-degrees/arts-technology-and-emerging-communication/" target="_blank"> ATEC </a> student at <a href="https://www.utdallas.edu/" target="_blank"> The University of Texas at Dallas. </a> I specialize in programming, but I also have experience as a 3D environment artist.
-        </p>
-
-        <p>
-            My <a href="/github" target="_blank"> GitHub </a> is a great place to see some my work. Unfortunately, most of my recent work has to be private so please reach if you want to see any code samples.
-        </p>
-
-        {% for exp in site.data.experience %}
-        <details class="mb-4">
-            <summary> <a><h3 class="display-inline"> {{ exp.title }} </h3></a> </summary>
-            
-            <p class="my-0 ml-5"> {% if exp.company-link %} <a href="{{exp.company-link}}" target="_blank"> {% endif %} {{ exp.company }} {% if exp.company-link %} </a> {% endif %} </p>
-            {% if exp.points %}
-            <ul class="mt-1 style-none pl-5">
-                {% for point in exp.points %}
-                <li> {{ point }} </li>
-                {% endfor %}
-            </ul>
-            {% endif %}
-        </details>
-        {% endfor %}
-
-        <!-- <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nicolasmaclean&hide_progress=true&layout=compact&theme=transparent&hide_border=true&title_color=66D9EF&text_color=F8F8F2"> -->
-    </div>
-</div>
+            My <a href="/github" target="_blank"> GitHub </a> is a great place to see some my work. Unfortunately, most of my recent work must be private so please reach if you would like additional code samples. 
+        </p> 
+    </div> 
+</div> 

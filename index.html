@@ -7,36 +7,8 @@ description: This Nick Maclean's personal portfolio.
 hide-title: true
 ---
 
-
-<div class="content flex flex-column pt-12 pb-4">
-    <style>
-        @media (max-width: 576px)
-        {
-            figure
-            {
-                min-width: 50%;
-                width: 50%;
-                max-width: 50%;
-            }
-        }
-        @media (min-width: 577px)
-        {
-            figure
-            {
-                min-width: 115px;
-                width: 155px;
-                max-width: 115px;
-            }
-        }
-    </style>
-
-    {% for post in site.posts %}
-    
-        {% unless site.data.portfolio contains post.title %}
-            {% continue %}
-        {% endunless %}
-        
-        {% include post-horizontal.html title=post.title url=post.url thumbnail="thumbnail.jpg" alt=post.title description=post.description %}
-        <hr class="my-12 sm:my-4">
-    {% endfor %}
+<div id="portfolio" class="content my-8 grid row-gap-5 column-gap-5">
+    {% include portfolio-card.html href="#" title="File Launcher" style="grid-area: top; max-height: 21rem"%}
+    {% include portfolio-card.html href="#" title="Asset Catalog" style="grid-area: left; max-height: 21rem"%}
+    {% include portfolio-card.html href="#" title="App Executer" style="grid-area: right; max-height: 21rem"%}
 </div>
